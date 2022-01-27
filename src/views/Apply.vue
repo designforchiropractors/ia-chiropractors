@@ -1,10 +1,10 @@
 <template>
-  Home
+  Apply
 </template>
 
 <script>
 export default {
-  name: "home",
+  name: "apply",
   components: {},
 };
 </script>

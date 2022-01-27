@@ -1,10 +1,10 @@
 <template>
-  Home
+  Not Found
 </template>
 
 <script>
 export default {
-  name: "home",
+  name: "notfound",
   components: {},
 };
 </script>

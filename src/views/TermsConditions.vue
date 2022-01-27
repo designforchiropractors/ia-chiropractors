@@ -1,10 +1,10 @@
 <template>
-  Home
+    Terms and Conditions
 </template>
 
 <script>
 export default {
-  name: "home",
+  name: "terms-conditions",
   components: {},
 };
 </script>

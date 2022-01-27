@@ -1,7 +1,16 @@
 <template>
-    <!--Footer links and social media-->
+  <!--Footer links and social media-->
   <footer class="py-16">
-    <div class="flex flex-col lg:flex-row items-center justify-between mx-auto max-w-screen-xl">
+    <div
+      class="
+        flex flex-col
+        lg:flex-row
+        items-center
+        justify-between
+        mx-auto
+        max-w-screen-xl
+      "
+    >
       <div class="flex items-center">
         <!-- Logo SVG
         <a class="ml-4" href="/">
@@ -15,28 +24,51 @@
           </svg>
         </a>-->
       </div>
-      <ul class="flex flex-col lg:flex-row items-center text-sm font-semibold text-gray-500 py-12 lg:py-0">
+      <ul
+        class="
+          flex flex-col
+          lg:flex-row
+          items-center
+          text-sm
+          font-semibold
+          text-gray-500
+          py-12
+          lg:py-0
+        "
+      >
         <li class="mx-7 uppercase hover:text-gray-700 mb-2 lg:mb-0">
-          <a href="/apply-to-be-listed.html">
-            Apply to Be Listed
-          </a>
+          <router-link :to="{ name: 'apply' }">
+            APPLY TO BE LISTED
+          </router-link>
         </li>
 
         <li class="mx-7 uppercase hover:text-gray-700 mb-2 lg:mb-0">
-          <a href="/contact.html">
-            CONTACT
-          </a>
+          <router-link :to="{ name: 'contact' }"> CONTACT </router-link>
         </li>
 
         <li class="mx-7 uppercase hover:text-gray-700 mb-2 lg:mb-0">
-          <a href="/blog.html">
-            BLOG
-          </a>
+          <router-link :to="{ name: 'blog' }"> BLOG </router-link>
+        </li>
+
+        <li
+          class="
+            mx-6
+            w-mc
+            transition-colors
+            duration-300
+            hover:text-green-800
+            mb-4
+            lg:mb-0
+          "
+        >
+          <router-link :to="{ name: 'directory' }">
+            VIEW CHIROPRACTORS
+          </router-link>
         </li>
       </ul>
 
       <div class="flex text-green-700">
-          <!--
+        <!--
         Twitter Logo
         <a class="hover:text-green-900" href="/">
           <svg class="mx-4 fill-current" width="21" height="17" viewBox="0 0 21 17" fill="none"
@@ -76,26 +108,29 @@
     <!-- Fine Print-->
     <div class="flex flex-col items-center mt-12 text-xs text-gray-400">
       <div class="mb-4">
-        <a class="mx-4 hover:text-gray-600" href="/privacy-policy.html" rel="nofollow">
-            Privacy Policy
-        </a>
-        <a class="mx-4 hover:text-gray-600" href="/terms-and-conditions.html" rel="nofollow">
-            Terms &amp; Conditions
-        </a>
+        <router-link
+          class="mx-4 hover:text-gray-600"
+          :to="{ name: 'privacy-policy' }"
+          rel="nofollow"
+        >
+          Privacy Policy
+        </router-link>
+        <router-link
+          class="mx-4 hover:text-gray-600"
+          :to="{ name: 'terms-conditions' }"
+          rel="nofollow"
+        >
+          Terms &amp; Conditions
+        </router-link>
       </div>
-      <span>
-          &copy; Cody Eklov 2022
-      </span>
+      <span> &copy; Cody Eklov 2022 </span>
     </div>
   </footer>
 </template>
 
 <script>
-
 export default {
-    name: "FooterComponent",
-    setup() {
-
-    }
-}
+  name: "FooterComponent",
+  setup() {},
+};
 </script>

@@ -1,10 +1,10 @@
 <template>
-  Home
+    Privacy Policy
 </template>
 
 <script>
 export default {
-  name: "home",
+  name: "privacy-policy",
   components: {},
 };
 </script>
