@@ -1,5 +1,5 @@
 <template>
-  <header class="relative w-full z-50 bg-white">
+  <header class="relative w-full z-50 bg-white pb-12">
     <nav
       class="
         max-w-screen-xl
@@ -34,8 +34,9 @@
           </svg>
         </router-link>
       </div>
+
       <div class="inline-block h-8 mr-3 lg:hidden">
-        <button :id="navButton" class="h-full w-full">
+        <button @click="isOpen" class="h-full w-full">
           <svg
             class="h-full w-auto"
             xmlns="http://www.w3.org/2000/svg"
@@ -78,13 +79,88 @@
           </svg>
         </button>
       </div>
+
       <div
-        id="nav_content"
+        v-show="show"
         class="
           w-full
-          hidden
           py-8
           mr-3
+          lg:hidden
+        "
+      >
+        <ul
+          class="
+            flex flex-col
+            ml-auto
+            text-md text-gray-600
+            font-bold
+          "
+        >
+          <li
+            class="
+              mx-6
+              w-mc
+              transition-colors
+              duration-300
+              hover:text-green-800
+              mb-4
+            "
+          >
+            <router-link :to="{ name: 'apply' }">
+              APPLY TO BE LISTED
+            </router-link>
+          </li>
+
+          <li
+            class="
+              mx-6
+              w-mc
+              transition-colors
+              duration-300
+              hover:text-green-800
+              mb-4
+            "
+          >
+            <router-link :to="{ name: 'contact' }"> CONTACT </router-link>
+          </li>
+
+          <li
+            class="
+              mx-6
+              w-mc
+              transition-colors
+              duration-300
+              hover:text-green-800
+              mb-4
+            "
+          >
+            <router-link :to="{ name: 'blog' }"> BLOG </router-link>
+          </li>
+
+          <li
+            class="
+              mx-6
+              w-mc
+              transition-colors
+              duration-300
+              hover:text-green-800
+              mb-4
+            "
+          >
+            <router-link :to="{ name: 'directory' }">
+              VIEW CHIROPRACTORS
+            </router-link>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="
+          w-full
+          py-8
+          mr-3
+          hidden
           lg:flex lg:w-auto lg:py-0 lg:items-center
         "
       >
@@ -158,14 +234,22 @@
           </li>
         </ul>
       </div>
+
+
     </nav>
   </header>
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
   name: "HeaderComponent",
-  setup() {},
+  setup() {
+    let show = ref(false);
+    const isOpen = () => (show.value = !show.value);
+    return { show, isOpen };
+  }
 };
 </script>
 
