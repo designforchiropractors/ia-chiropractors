@@ -80,78 +80,59 @@
         </button>
       </div>
 
-      <div
-        v-show="show"
-        class="
-          w-full
-          py-8
-          mr-3
-          lg:hidden
-        "
-      >
-        <ul
-          class="
-            flex flex-col
-            ml-auto
-            text-md text-gray-600
-            font-bold
-          "
-        >
-          <li
+      <div v-show="show" class="w-full py-8 mr-3 lg:hidden">
+        <ul class="flex flex-col ml-auto text-md font-bold">
+          <router-link
+            :to="{ name: 'apply' }"
             class="
-              mx-6
               w-mc
               transition-colors
               duration-300
-              hover:text-green-800
-              mb-4
+              hover:text-white hover:bg-gray-700
+              p-6
             "
           >
-            <router-link :to="{ name: 'apply' }">
-              APPLY TO BE LISTED
-            </router-link>
-          </li>
+            APPLY TO BE LISTED
+          </router-link>
 
-          <li
+          <router-link
+            :to="{ name: 'contact' }"
             class="
-              mx-6
               w-mc
               transition-colors
               duration-300
-              hover:text-green-800
-              mb-4
+              hover:text-white hover:bg-gray-700
+              p-6
             "
           >
-            <router-link :to="{ name: 'contact' }"> CONTACT </router-link>
-          </li>
+            CONTACT
+          </router-link>
 
-          <li
+          <router-link
+            :to="{ name: 'blog' }"
             class="
-              mx-6
               w-mc
               transition-colors
               duration-300
-              hover:text-green-800
-              mb-4
+              hover:text-white hover:bg-gray-700
+              p-6
             "
           >
-            <router-link :to="{ name: 'blog' }"> BLOG </router-link>
-          </li>
+            BLOG
+          </router-link>
 
-          <li
+          <router-link
+            :to="{ name: 'directory' }"
             class="
-              mx-6
               w-mc
               transition-colors
               duration-300
-              hover:text-green-800
-              mb-4
+              hover:text-white hover:bg-gray-700
+              p-6
             "
           >
-            <router-link :to="{ name: 'directory' }">
-              VIEW CHIROPRACTORS
-            </router-link>
-          </li>
+            VIEW CHIROPRACTORS
+          </router-link>
         </ul>
       </div>
 
@@ -173,69 +154,67 @@
             lg:flex-row
           "
         >
-          <li
+          <router-link
+            :to="{ name: 'apply' }"
+            tag="li"
             class="
-              mx-6
               w-mc
               transition-colors
               duration-300
-              hover:text-green-800
-              mb-4
+              hover:text-white hover:bg-gray-700
+              p-6
               lg:mb-0
             "
           >
-            <router-link :to="{ name: 'apply' }">
-              APPLY TO BE LISTED
-            </router-link>
-          </li>
+            APPLY TO BE LISTED
+          </router-link>
 
-          <li
+          <router-link
+            :to="{ name: 'contact' }"
             class="
-              mx-6
               w-mc
               transition-colors
               duration-300
-              hover:text-green-800
+              hover:text-white hover:bg-gray-700
+              p-6
               mb-4
               lg:mb-0
             "
           >
-            <router-link :to="{ name: 'contact' }"> CONTACT </router-link>
-          </li>
+            CONTACT
+          </router-link>
 
-          <li
+          <router-link
+            :to="{ name: 'blog' }"
             class="
-              mx-6
               w-mc
               transition-colors
               duration-300
-              hover:text-green-800
+              hover:text-white hover:bg-gray-700
+              p-6
               mb-4
               lg:mb-0
             "
           >
-            <router-link :to="{ name: 'blog' }"> BLOG </router-link>
-          </li>
+            BLOG
+          </router-link>
 
-          <li
+          <router-link
+            :to="{ name: 'directory' }"
             class="
-              mx-6
               w-mc
               transition-colors
               duration-300
-              hover:text-green-800
+              hover:text-white hover:bg-gray-700
+              p-6
               mb-4
               lg:mb-0
             "
           >
-            <router-link :to="{ name: 'directory' }">
-              VIEW CHIROPRACTORS
-            </router-link>
-          </li>
+            VIEW CHIROPRACTORS
+          </router-link>
         </ul>
       </div>
-
-
     </nav>
   </header>
 </template>
@@ -249,7 +228,7 @@ export default {
     let show = ref(false);
     const isOpen = () => (show.value = !show.value);
     return { show, isOpen };
-  }
+  },
 };
 </script>
 

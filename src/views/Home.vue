@@ -1,25 +1,9 @@
 <template>
-  <!--start of hero (landing) section-->
-  <section class="hero__container h-screen grid grid-cols-2">
-    <!-- video -->
-    <div class="absolute h-screen overflow-hidden">
-      <!--<video class="bg-grey-800 object-cover object-bottom h-full w-full lg:object-none lg:object-right"
-        src="./video/landing-video.mp4" autoplay loop muted></video>-->
+  <section class="cover relative bg-gradient-to-r from-blue-400 to-gray-700 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex items-center">
+    <div class="h-full absolute top-0 left-0 right-0 z-0">
+      <img src="../assets/dsm-chiropractors.jpg" alt="DSM Chiropractors" class="w-full h-full object-cover opacity-20" />
     </div>
-    <!-- Image Colour Overlay -->
-    <div
-      class="
-        absolute
-        top-0
-        left-0
-        w-full
-        h-full
-        bg-gray-900
-        opacity-20
-        md:bg-green-800 md:opacity-5
-        z-10
-      "
-    ></div>
+
     <div
       class="
         col-start-1 col-end-3
@@ -49,28 +33,8 @@
         points for subtle poetic prose and even more points for actually getting
         to the point.
       </p>
-      <div class="flex flex-col lg:block">
-        <a href="#benefit">
-          <svg
-            class="fill-current inline-block h-10 w-10 text-white"
-            width="30"
-            height="48"
-            viewBox="0 0 30 48"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M15 9C15.3978 9 15.7794 9.15804 16.0607 9.43934C16.342 9.72064 16.5 10.1022 16.5 10.5V16.5C16.5 16.8978 16.342 17.2794 16.0607 17.5607C15.7794 17.842 15.3978 18 15 18C14.6022 18 14.2206 17.842 13.9393 17.5607C13.658 17.2794 13.5 16.8978 13.5 16.5V10.5C13.5 10.1022 13.658 9.72064 13.9393 9.43934C14.2206 9.15804 14.6022 9 15 9V9ZM27 33C27 36.1826 25.7357 39.2348 23.4853 41.4853C21.2348 43.7357 18.1826 45 15 45C11.8174 45 8.76515 43.7357 6.51472 41.4853C4.26428 39.2348 3 36.1826 3 33V15C3 11.8174 4.26428 8.76516 6.51472 6.51472C8.76515 4.26428 11.8174 3 15 3C18.1826 3 21.2348 4.26428 23.4853 6.51472C25.7357 8.76516 27 11.8174 27 15V33ZM15 0C11.0218 0 7.20644 1.58035 4.3934 4.3934C1.58035 7.20644 0 11.0218 0 15V33C0 36.9782 1.58035 40.7936 4.3934 43.6066C7.20644 46.4196 11.0218 48 15 48C18.9782 48 22.7936 46.4196 25.6066 43.6066C28.4196 40.7936 30 36.9782 30 33V15C30 11.0218 28.4196 7.20644 25.6066 4.3934C22.7936 1.58035 18.9782 0 15 0V0Z"
-            />
-          </svg>
-          <span class="ml-2 text-white">
-            scroll down
-          </span>
-        </a>
-      </div>
     </div>
   </section>
-  <!--end of hero (landing) section-->
 
   <!--start of Cards section-->
   <section
@@ -82,7 +46,7 @@
       flex-wrap
       justify-center
       items-center
-      py-30
+      py-12
       z-10
       shadow-inner
       bg-gray-200
