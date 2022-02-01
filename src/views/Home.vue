@@ -1,5 +1,5 @@
 <template>
-  <section class="cover relative bg-gradient-to-r from-blue-400 to-gray-700 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex items-center">
+  <section class="cover relative bg-gradient-to-r to-blue-400 from-gray-500 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex items-center">
     <div class="h-full absolute top-0 left-0 right-0 z-0">
       <img src="../assets/dsm-chiropractors.jpg" alt="DSM Chiropractors" class="w-full h-full object-cover opacity-20" />
     </div>
