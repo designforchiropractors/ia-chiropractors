@@ -66,7 +66,7 @@
           Terms &amp; Conditions
         </router-link>
       </div>
-      <span> &copy; Cody Eklov 2022 </span>
+      <span> &copy; Design for Chiropractors LLC 2022 </span>
     </div>
   </footer>
 </template>

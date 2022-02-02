@@ -8,9 +8,9 @@
       <!-- Terms & Conditions Text -->
       <div class="max-w-prose mx-6 lg:mx-auto text-gray-600 mt-16 lg:mt-24">
         <h2 class="text-xl lg:text-2xl mt-12 mb-4 text-gray-600">General</h2>
-        <p class="mb-4">
+        <p class="mb-4 leading-relaxed">
           This website www.dsmchiropractors.com (the “SITE”) is owned and
-          operated by Cody Eklov (“COMPANY” “we” or “us”). By using the
+          operated by Design for Chiropractors LLC (“COMPANY” “we” or “us”). By using the
           Site, you agree to be bound by these Terms of Service and to use the
           Site in accordance with these Terms of Service, our Privacy Policy and
           any additional terms and conditions that may apply to specific
@@ -22,7 +22,7 @@
         <h2 class="text-xl lg:text-2xl mt-12 mb-4 text-gray-600">
           Disclaimers
         </h2>
-        <p class="mb-4">
+        <p class="mb-4 leading-relaxed">
           Throughout the Site, we provide links to internet sites maintained by
           third parties. Some of the links we provide are “affiliate links.”
           This means if you click on the link and purchase the item connected to
@@ -41,7 +41,7 @@
           while acting in his/her official capacity.
         </p>
 
-        <p class="mb-4">
+        <p class="mb-4 leading-relaxed">
           The information, products and services offered on or through the site
           and by company and any third-party sites are provided “as is” and
           without warranties of any kind either express or implied. To the
@@ -58,7 +58,7 @@
           reliability or otherwise.
         </p>
 
-        <p class="mb-4">
+        <p class="mb-4 leading-relaxed">
           By accessing the site, you agree at all times to defend, indemnify and
           hold harmless COMPANY its affiliates, their successors, transferees,
           assignees and licensees and their respective parent and subsidiary
@@ -74,8 +74,13 @@
 </template>
 
 <script>
+import { useMeta } from "vue-meta";
+
 export default {
   name: "terms-conditions",
   components: {},
+  setup() {
+    useMeta({ title: "Terms & Conditions: DSM Chiropractors" })
+  }
 };
 </script>

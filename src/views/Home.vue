@@ -370,8 +370,13 @@
 </template>
 
 <script>
+import { useMeta } from "vue-meta";
+
 export default {
   name: "home",
   components: {},
+  setup() {
+    useMeta({ title: "DSM Chiropractors" })
+  }
 };
 </script>

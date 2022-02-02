@@ -7,7 +7,7 @@
       </h1>
       <!-- Privacy Policy Text -->
       <div class="max-w-prose mx-6 lg:mx-auto text-gray-600 mt-12">
-        <p class="mb-4">
+        <p class="mb-4 leading-relaxed">
           The following Privacy Policy governs the online information collection
           practices of www.dsmchiropractors.com (“we” or “us” or “Site”). By
           visiting and using the Site, you agree that your use of our Site, and
@@ -20,7 +20,7 @@
           third party.
         </p>
 
-        <p class="mb-4">
+        <p class="mb-4 leading-relaxed">
           We may collect and store personal or other information that you
           voluntarily supply to us online while using the Site (e.g., while on
           the Site or in responding via email to a feature provided on the
@@ -32,7 +32,7 @@
           provided to us by you.
         </p>
 
-        <p class="mb-4">
+        <p class="mb-4 leading-relaxed">
           We also collect and store information that is generated automatically
           as you navigate online through the Site. For example, we may collect
           information about your computer’s connection to the Internet, which
@@ -46,7 +46,7 @@
           and track user trends and patterns.
         </p>
 
-        <p class="mb-4">
+        <p class="mb-4 leading-relaxed">
           The Site also includes links to websites we endorse or sponsor and
           provides access to products and services offered by third parties,
           whose privacy policies we do not control. Some of the links we provide
@@ -58,7 +58,7 @@
           you are visiting or the provider of such products or services.
         </p>
 
-        <p class="mb-4">
+        <p class="mb-4 leading-relaxed">
           We may also make some content, products and services available through
           our Site through cooperative relationships with third-party providers,
           where the brands of our provider partner appear on the Site in
@@ -74,7 +74,7 @@
           provider partner directly for more information.
         </p>
 
-        <p class="mb-4">
+        <p class="mb-4 leading-relaxed">
           Your information is stored at the list server that delivers this
           Site’s newsletters. Your information can only be accessed by those who
           help manage those lists in order to deliver e-mail to those who would
@@ -90,8 +90,13 @@
 </template>
 
 <script>
+import { useMeta } from "vue-meta";
+
 export default {
   name: "privacy-policy",
   components: {},
+  setup() {
+    useMeta({ title: "Privacy Policy: DSM Chiropractors" })
+  }
 };
 </script>
