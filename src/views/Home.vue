@@ -1,7 +1,7 @@
 <template>
-  <section class="cover relative bg-gradient-to-r to-blue-400 from-gray-500 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex items-center">
+  <section class="cover relative bg-gradient-to-r from-gray-700 to-gray-50 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex items-center">
     <div class="dsm_chiropractors h-full absolute top-0 left-0 right-0 z-0">
-      <img src="../assets/dsm-chiropractors.jpg" alt="DSM Chiropractors" class="w-full h-full object-cover opacity-20" />
+      <img :src="require('@/assets/dsm-chiropractors.jpg')" alt="DSM Chiropractors" class="w-full h-full object-cover opacity-20" />
     </div>
 
     <div
