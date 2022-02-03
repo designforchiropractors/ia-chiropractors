@@ -67,7 +67,7 @@
         </router-link>
       </div>
       <span>
-        <a href="https://www.designforchiropractors.com" target="_blank">
+        <a href="https://www.designforchiropractors.com" class="hover:text-gray-600" target="_blank">
           &copy; Design for Chiropractors LLC 2022
         </a>
       </span>
