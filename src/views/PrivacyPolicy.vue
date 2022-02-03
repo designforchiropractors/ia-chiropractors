@@ -2,6 +2,11 @@
   <!-- Start of Privacy Policy text-->
   <section class="pt-24 pb-40 lg:pt-28 lg:pb-40 flex justify-center">
     <article class="max-w-screen-xl lg:mx-8">
+      <div class="inline-block p-3 lg:p-4 rounded-full mb-1 bg-gradient-to-r from-gray-500 to-blue-400">
+        <svg class="h-8 w-8" width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 3.25333L21.3333 7.4V13.6667C21.3333 19.6933 17.36 25.2533 12 26.9067C6.64 25.2533 2.66667 19.6933 2.66667 13.6667V7.4L12 3.25333ZM12 0.333328L0 5.66666V13.6667C0 21.0667 5.12 27.9867 12 29.6667C18.88 27.9867 24 21.0667 24 13.6667V5.66666L12 0.333328ZM10.6667 8.33333H13.3333V11H10.6667V8.33333ZM10.6667 13.6667H13.3333V21.6667H10.6667V13.6667Z" fill="white" />
+        </svg>
+      </div>
       <h1 class="text-3xl lg:text-4xl mx-4 lg:mx-0 font-semibold text-gray-700">
         Privacy Policy
       </h1>
