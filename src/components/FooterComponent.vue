@@ -10,8 +10,7 @@
         max-w-screen-xl
       "
     >
-      <div class="flex items-center">
-      </div>
+      <div class="flex items-center"></div>
       <ul
         class="
           flex flex-col
@@ -45,8 +44,7 @@
         </li>
       </ul>
 
-      <div class="flex text-gray-700">
-      </div>
+      <div class="flex text-gray-700"></div>
     </div>
 
     <div class="flex flex-col items-center mt-12 text-xs text-gray-400">
@@ -67,7 +65,11 @@
         </router-link>
       </div>
       <span>
-        <a href="https://www.designforchiropractors.com" class="hover:text-gray-600" target="_blank">
+        <a
+          href="https://www.designforchiropractors.com"
+          class="hover:text-gray-600"
+          target="_blank"
+        >
           &copy; Design for Chiropractors LLC 2022
         </a>
       </span>

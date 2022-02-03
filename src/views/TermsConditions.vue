@@ -2,9 +2,30 @@
   <!-- Start of Terms and Conditions text-->
   <section class="pt-24 pb-40 lg:pt-28 lg:pb-40 flex justify-center">
     <article class="max-w-screen-xl lg:mx-8">
-      <div class="inline-block p-3 lg:p-4 rounded-lg mb-1 bg-gradient-to-r from-gray-500 to-blue-400">
-        <svg class="h-8 w-8" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M25.7 9.3L18.7 2.3C18.5 2.1 18.3 2 18 2H8C6.9 2 6 2.9 6 4V28C6 29.1 6.9 30 8 30H24C25.1 30 26 29.1 26 28V10C26 9.7 25.9 9.5 25.7 9.3ZM18 4.4L23.6 10H18V4.4ZM24 28H8V4H16V10C16 11.1 16.9 12 18 12H24V28Z" fill="white" />
+      <div
+        class="
+          inline-block
+          p-3
+          lg:p-4
+          rounded-lg
+          mb-1
+          bg-gradient-to-r
+          from-gray-700
+          to-gray-50
+        "
+      >
+        <svg
+          class="h-8 w-8"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M25.7 9.3L18.7 2.3C18.5 2.1 18.3 2 18 2H8C6.9 2 6 2.9 6 4V28C6 29.1 6.9 30 8 30H24C25.1 30 26 29.1 26 28V10C26 9.7 25.9 9.5 25.7 9.3ZM18 4.4L23.6 10H18V4.4ZM24 28H8V4H16V10C16 11.1 16.9 12 18 12H24V28Z"
+            fill="white"
+          />
           <path d="M10 22H22V24H10V22Z" fill="white" />
           <path d="M10 16H22V18H10V16Z" fill="white" />
         </svg>
@@ -17,13 +38,13 @@
         <h2 class="text-xl lg:text-2xl mt-12 mb-4 text-gray-600">General</h2>
         <p class="mb-4 leading-relaxed">
           This website www.dsmchiropractors.com (the “SITE”) is owned and
-          operated by Design for Chiropractors LLC (“COMPANY” “we” or “us”). By using the
-          Site, you agree to be bound by these Terms of Service and to use the
-          Site in accordance with these Terms of Service, our Privacy Policy and
-          any additional terms and conditions that may apply to specific
-          sections of the Site or to products and services available through the
-          Site or from COMPANY. Accessing the Site, in any manner, whether
-          automated or otherwise, constitutes use of the Site.
+          operated by Design for Chiropractors LLC (“COMPANY” “we” or “us”). By
+          using the Site, you agree to be bound by these Terms of Service and to
+          use the Site in accordance with these Terms of Service, our Privacy
+          Policy and any additional terms and conditions that may apply to
+          specific sections of the Site or to products and services available
+          through the Site or from COMPANY. Accessing the Site, in any manner,
+          whether automated or otherwise, constitutes use of the Site.
         </p>
 
         <h2 class="text-xl lg:text-2xl mt-12 mb-4 text-gray-600">
@@ -87,7 +108,7 @@ export default {
   name: "terms-conditions",
   components: {},
   setup() {
-    useMeta({ title: "Terms & Conditions: DSM Chiropractors" })
-  }
+    useMeta({ title: "Terms & Conditions: DSM Chiropractors" });
+  },
 };
 </script>

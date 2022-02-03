@@ -13,43 +13,43 @@ const routes = [
     path: "/",
     name: "home",
     component: Home,
-    alias: ["/home", "/index.html", "/index.htm"]
+    alias: ["/home", "/index.html", "/index.htm"],
   },
   {
     path: "/apply",
     name: "apply",
-    component: Apply
+    component: Apply,
   },
   {
     path: "/blog",
     name: "blog",
-    component: Blog
+    component: Blog,
   },
   {
     path: "/contact",
     name: "contact",
-    component: Contact
+    component: Contact,
   },
   {
     path: "/directory",
     name: "directory",
-    component: Directory
+    component: Directory,
   },
   {
     path: "/terms-conditions",
     name: "terms-conditions",
-    component: TermsConditions
+    component: TermsConditions,
   },
   {
     path: "/privacy-policy",
     name: "privacy-policy",
-    component: PrivacyPolicy
+    component: PrivacyPolicy,
   },
   {
     path: "/notfound",
     name: "notfound",
-    component: NotFound
-  }
+    component: NotFound,
+  },
 ];
 
 const router = createRouter({

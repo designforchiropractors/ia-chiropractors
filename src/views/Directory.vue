@@ -38,7 +38,8 @@
             lg:mx-auto
           "
         >
-          Take your health and well-being into your own hands by browsing the licensed professionals listed here.
+          Take your health and well-being into your own hands by browsing the
+          licensed professionals listed here.
         </p>
       </div>
 
@@ -48,7 +49,6 @@
         :key="chiropractor.id"
       >
       </directory-item-component>
-      
     </div>
   </section>
 </template>
@@ -62,7 +62,7 @@ import DirectoryItemComponent from "@/components/DirectoryItemComponent";
 export default {
   name: "directory",
   components: {
-    DirectoryItemComponent
+    DirectoryItemComponent,
   },
   setup() {
     useMeta({ title: "Directory: DSM Chiropractors" });
