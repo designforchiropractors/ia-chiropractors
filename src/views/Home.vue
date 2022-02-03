@@ -1,6 +1,6 @@
 <template>
   <section class="cover relative bg-gradient-to-r to-blue-400 from-gray-500 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex items-center">
-    <div class="h-full absolute top-0 left-0 right-0 z-0">
+    <div class="dsm_chiropractors h-full absolute top-0 left-0 right-0 z-0">
       <img src="../assets/dsm-chiropractors.jpg" alt="DSM Chiropractors" class="w-full h-full object-cover opacity-20" />
     </div>
 
@@ -254,7 +254,7 @@
     </div>
   </section>
 
-  <!-- Chiropractor selection -->
+  <!-- View Directory -->
   <section
     class="
       chiropractor_select
@@ -286,9 +286,10 @@
         Search the Directory
       </h2>
       <p
-        class="text-xl text-center mx-4 lg:mx-auto lg:w-2/3 mb-12 text-gray-100"
+        class="text-xl text-center mx-4 lg:mx-auto mb-12 text-gray-100"
       >
         Looking for a chiropractor in your area?
+        <br/>
         Start browsing the directory now to find what professionals are nearby!
       </p>
       <div class="flex flex-wrap gap-8 justify-center">
@@ -306,7 +307,7 @@
             text-lg text-black
             border-gray-100
             bg-gray-200
-            hover:bg-gray-900 hover:text-gray-100 hover:shadow-md
+            hover:bg-gray-700 hover:text-gray-100 hover:shadow-md
           "
           href="/chiropractors-camps-bay.html"
         >
@@ -346,6 +347,7 @@
       </h2>
       <p class="text-xl text-center mx-4 lg:mx-auto lg:w-2/3 mb-12 text-gray-900">
         Are you a chiropractor in the Des Moines metro area?
+        <br/>
         Get more clients through the door by getting listed in our directory!
       </p>
       <div class="flex flex-wrap gap-8 justify-center">
@@ -362,7 +364,7 @@
             duration-300
             text-lg
             border-gray-100
-            hover:bg-gray-50
+            hover:bg-gray-100
             hover:text-gray-900
             bg-gray-700 
             text-gray-100 
