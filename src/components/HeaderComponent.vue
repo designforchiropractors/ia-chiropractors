@@ -15,7 +15,9 @@
       <div>
         <router-link :to="{ name: 'home' }" class="flex items-center ml-3 lg:mt-4">
           <img src="../assets/favicon.svg" class="h-8" alt="DSM Chiropractors" />
-          <span class="ml-auto text-md font-bold">DSM Chiropractors</span>
+          <span class="ml-auto text-md font-bold lg:pt-1">
+            DSM Chiropractors
+          </span>
         </router-link>
       </div>
 

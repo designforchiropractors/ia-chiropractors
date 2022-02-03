@@ -66,7 +66,11 @@
           Terms &amp; Conditions
         </router-link>
       </div>
-      <span> &copy; Design for Chiropractors LLC 2022 </span>
+      <span>
+        <a href="https://www.designforchiropractors.com" target="_blank">
+          &copy; Design for Chiropractors LLC 2022
+        </a>
+      </span>
     </div>
   </footer>
 </template>
