@@ -12,7 +12,7 @@ export default createStore({
         service1: 'Attend to something that hurts',
         service2: 'Make right something that was wrong',
         service3: 'Fix that aching shoulder of yours',
-        picture: 'chiro-1.jpg'
+        picture: 'chiro-2.jpg'
       },
       {
         id: 2,
@@ -23,7 +23,7 @@ export default createStore({
         service1: 'Attend to something that hurts',
         service2: 'Make right something that was wrong',
         service3: 'Fix that aching shoulder of yours',
-        picture: 'chiro-2.jpg'
+        picture: 'chiro-1.jpg'
       },
       {
         id: 3,
