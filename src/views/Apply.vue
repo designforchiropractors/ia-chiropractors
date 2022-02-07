@@ -1,9 +1,9 @@
 <template>
-    <div class="py-16 md:py-20 bg-white">
+    <div class="py-16 md:py-20 custom_bg-pattern">
         <div class="lg:max-w-7xl lg:mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
                 <h2 class="text-base text-gray-700 font-semibold tracking-wide uppercase">
-                  Listings
+                  Get Listed
                 </h2>
                 <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                     Turn curious searchers into paying clients.
@@ -14,7 +14,7 @@
                 </p>
             </div>
 
-            <div class="custom_bg-pattern shadow-inner px-6 md:px-10 lg:px-20 py-8 md:py-12 lg:py-16 w-full mt-20">
+            <div class="shadow-inner px-6 md:px-10 lg:px-20 py-8 md:py-12 lg:py-16 w-full mt-20 bg-white">
                 <h1 class="pb-8 text-2xl lg:text-3xl font-semibold text-center tracking-wide text-gray-900">
                     How a Listing Benefits You
                 </h1>

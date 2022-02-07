@@ -1,5 +1,5 @@
 <template>
-  <section class="custom_bg-pattern pt-28 pb-32 lg:pt-40 lg:pb-28">
+  <section class="custom_bg-pattern py-16 md:py-20">
     <div class="max-w-screen-lg mx-auto">
       <div class="mb-16 lg:mb-24 lg:text-center">
         <h2
