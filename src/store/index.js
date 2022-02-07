@@ -107,6 +107,28 @@ export default createStore({
         caption: "The Right Chiropractor",
         text: "With so many options in the Des Moines metro area, it will not be difficult to find the right chiropractor for you and your needs. Just take a look through our directory to find the professional and the treatment that is right for you."
       }
+    ],
+    listingBenefits: [
+      {
+        id: 1,
+        caption: "Advertise your business",
+        text: "Not only is a listing in an online direfctory one more way to capture the attention of potential customers, it can be more effective than traditional advertising."
+      },
+      {
+        id: 2,
+        caption: "Get more website traffic",
+        text: "Most of your potential customers are trying to find your services on the Internet. An online listing means more exposure and more visibility for your website."
+      },
+      {
+        id: 3,
+        caption: "Take control of your business image",
+        text: "When a third party directory such as this lists your practice, you establish more legitimacy and trust for your business and its services."
+      },
+      {
+        id: 4,
+        caption: "Keep costs low",
+        text: "The fees for an online listing average about only $25 per month -- a very low cost for the high value of more web traffic and more clients."
+      }
     ]
   },
   mutations: {},

@@ -1,11 +1,16 @@
-<template>Contact</template>
+<template>
+  <contact-form></contact-form>
+</template>
 
 <script>
 import { useMeta } from "vue-meta";
+import ContactForm from "@/components/ContactForm.vue";
 
 export default {
   name: "contact",
-  components: {},
+  components: {
+    ContactForm
+  },
   setup() {
     useMeta({ title: "Contact: DSM Chiropractors" });
   },

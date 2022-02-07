@@ -2,17 +2,17 @@
     <div
       class="
         mx-12
-        md:mx-4 md:mb-8
+        sm:my-8
+        md:mx-4
+        md:my-4
         lg:mx-12
-        mb-10
-        lg:mb-0
         w-80
         overflow-hidden
         shadow-md
         bg-white
       "
     >
-      <p class="p-8 text-gray-700">
+      <p class="p-8 text-gray-700 leading-snug">
         {{ infoCard.text }}
       </p>
       <div

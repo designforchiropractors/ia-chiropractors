@@ -54,7 +54,7 @@
     </div>
   </section>
 
-  <!--start of Cards section-->
+  <!-- Info Cards -->
   <section
     id="benefit"
     class="
@@ -163,6 +163,7 @@
     </div>
   </section>
 
+  <!-- List Your Business -->
   <section
     class="
       relative
