@@ -19,7 +19,7 @@
   >
     <div class="dsm_chiropractors h-full absolute top-0 left-0 right-0 z-0">
       <img
-        :src="require('@/assets/dsm-chiropractors.jpg')"
+        :src="require('@/assets/dsm-chiropractors.webp')"
         alt="DSM Chiropractors"
         class="w-full h-full object-cover opacity-20"
       />
@@ -264,7 +264,7 @@
         <div class="relative w-full pb-96 overflow-hidden lg:pb-0 lg:ml-44">
           <img
             class="absolute w-full h-full object-cover"
-            src="../assets/people.jpg"
+            src="../assets/people.webp"
             alt="A row of happy chiropractors."
           />
         </div>
