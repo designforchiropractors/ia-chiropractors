@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="10.601691"
-     inkscape:cx="-0.03379628"
+     inkscape:cx="19.910173"
      inkscape:cy="27.258523"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -63,22 +63,29 @@
        height="8.9958267"
        x="3.4395833"
        y="285.09375"
-       style="fill:none;stroke:#2563eb;stroke-width:0.86832273;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.87058824" />
+       style="fill:none;stroke:#a0aec0;stroke-width:0.86832273;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       style="fill:none;stroke:#3b82f6;stroke-width:0.93252218;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.68627451"
+       style="fill:none;stroke:#cbd5e0;stroke-width:0.93252218;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect836"
        width="10.054167"
        height="10.583325"
        x="2.6458333"
        y="284.29999" />
     <rect
-       style="fill:none;stroke:#3b82f6;stroke-width:0.92794198;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.68627451"
+       style="fill:none;stroke:#cbd5e0;stroke-width:0.92794198;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect840"
-       width="6.8791671"
-       height="7.4083414"
-       x="4.2333331"
-       y="285.88751"
+       width="6.3499999"
+       height="6.8791809"
+       x="4.4979167"
+       y="286.15207"
        inkscape:export-xdpi="85.258743"
        inkscape:export-ydpi="85.258743" />
+    <rect
+       style="fill:none;stroke:#a0aec0;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect819"
+       width="7.9375"
+       height="8.4666662"
+       x="3.7041667"
+       y="285.35834" />
   </g>
 </svg>
