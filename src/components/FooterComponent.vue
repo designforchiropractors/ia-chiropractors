@@ -1,5 +1,5 @@
 <template>
-  <footer class="py-16">
+  <footer class="py-16 bg-white">
     <div
       class="
         flex flex-col

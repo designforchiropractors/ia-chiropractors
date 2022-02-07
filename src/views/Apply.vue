@@ -1,5 +1,5 @@
 <template>
-    <div class="py-16 md:py-20 custom_bg-pattern">
+    <div class="py-16 md:py-20 bg-gray-100 custom_bg-pattern">
         <div class="lg:max-w-7xl lg:mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
                 <h2 class="text-base text-gray-700 font-semibold tracking-wide uppercase">
@@ -14,7 +14,7 @@
                 </p>
             </div>
 
-            <div class="shadow-inner px-6 md:px-10 lg:px-20 py-8 md:py-12 lg:py-16 w-full mt-20 bg-white">
+            <div class="shadow-inner px-6 md:px-10 lg:px-20 py-8 md:py-12 lg:py-16 w-full mt-20 bg-white mb-12">
                 <h1 class="pb-8 text-2xl lg:text-3xl font-semibold text-center tracking-wide text-gray-900">
                     How a Listing Benefits You
                 </h1>
@@ -28,7 +28,9 @@
                 </dl>
             </div>
 
+          <div class="w-full lg:flex bg-gray-100">
             <contact-form></contact-form>
+          </div>
         </div>
     </div>
 </template>

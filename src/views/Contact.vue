@@ -1,5 +1,7 @@
 <template>
-  <contact-form></contact-form>
+  <div class="w-full lg:flex custom_bg-pattern">
+    <contact-form></contact-form>
+  </div>
 </template>
 
 <script>
