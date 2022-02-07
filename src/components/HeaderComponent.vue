@@ -15,7 +15,7 @@
       <div>
         <router-link
           :to="{ name: 'home' }"
-          class="flex items-center ml-3 lg:mt-4"
+          class="flex items-center ml-3 lg:mt-2"
         >
           <img
             src="../assets/favicon.svg"
@@ -82,7 +82,7 @@
               transition-colors
               duration-300
               hover:text-white hover:bg-gray-700
-              p-6
+              p-4
             "
           >
             APPLY TO BE LISTED
@@ -95,7 +95,7 @@
               transition-colors
               duration-300
               hover:text-white hover:bg-gray-700
-              p-6
+              p-4
             "
           >
             CONTACT
@@ -108,7 +108,7 @@
               transition-colors
               duration-300
               hover:text-white hover:bg-gray-700
-              p-6
+              p-4
             "
           >
             BLOG
@@ -121,7 +121,7 @@
               transition-colors
               duration-300
               hover:text-white hover:bg-gray-700
-              p-6
+              p-4
             "
           >
             VIEW CHIROPRACTORS
@@ -155,7 +155,7 @@
               transition-colors
               duration-300
               hover:text-white hover:bg-gray-700
-              p-6
+              p-4
               lg:mb-0
             "
           >
@@ -169,7 +169,7 @@
               transition-colors
               duration-300
               hover:text-white hover:bg-gray-700
-              p-6
+              p-4
               mb-4
               lg:mb-0
             "
@@ -184,7 +184,7 @@
               transition-colors
               duration-300
               hover:text-white hover:bg-gray-700
-              p-6
+              p-4
               mb-4
               lg:mb-0
             "
@@ -199,7 +199,7 @@
               transition-colors
               duration-300
               hover:text-white hover:bg-gray-700
-              p-6
+              p-4
               mb-4
               lg:mb-0
             "

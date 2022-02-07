@@ -48,6 +48,11 @@ export default createStore({
         picture: "chiro-3.jpg",
       },
     ],
+    navLinks: [
+      {
+        
+      }
+    ]
   },
   mutations: {},
   actions: {},
