@@ -23,25 +23,12 @@
           lg:py-0
         "
       >
-        <li class="mx-7 uppercase hover:text-gray-700 mb-2 lg:mb-0">
-          <router-link :to="{ name: 'apply' }">
-            APPLY TO BE LISTED
-          </router-link>
-        </li>
-
-        <li class="mx-7 uppercase hover:text-gray-700 mb-2 lg:mb-0">
-          <router-link :to="{ name: 'contact' }"> CONTACT </router-link>
-        </li>
-
-        <li class="mx-7 uppercase hover:text-gray-700 mb-2 lg:mb-0">
-          <router-link :to="{ name: 'blog' }"> BLOG </router-link>
-        </li>
-
-        <li class="mx-7 uppercase hover:text-gray-700 mb-2 lg:mb-0">
-          <router-link :to="{ name: 'directory' }">
-            VIEW CHIROPRACTORS
-          </router-link>
-        </li>
+        <footer-nav-link
+            v-for="navLink in navLinks"
+            :navLink="navLink"
+            :key="navLink.id"
+          >
+          </footer-nav-link>
       </ul>
 
       <div class="flex text-gray-700"></div>
@@ -78,8 +65,19 @@
 </template>
 
 <script>
+import { computed } from "vue";
+import { useStore } from "vuex";
+import FooterNavLink from "@/components/FooterNavLink";
+
 export default {
   name: "FooterComponent",
-  setup() {},
+  components: {
+    FooterNavLink,
+  },
+  setup() {
+    const store = useStore();
+    const navLinks = computed(() => store.state.navLinks);
+    return { navLinks };
+  },
 };
 </script>

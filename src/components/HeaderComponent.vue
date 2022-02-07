@@ -75,57 +75,12 @@
 
       <div v-show="show" class="w-full mr-3 lg:hidden">
         <ul class="flex flex-col ml-auto text-md font-bold">
-          <router-link
-            :to="{ name: 'apply' }"
-            class="
-              w-mc
-              transition-colors
-              duration-300
-              hover:text-white hover:bg-gray-700
-              p-4
-            "
+          <header-nav-link
+            v-for="navLink in navLinks"
+            :navLink="navLink"
+            :key="navLink.id"
           >
-            APPLY TO BE LISTED
-          </router-link>
-
-          <router-link
-            :to="{ name: 'contact' }"
-            class="
-              w-mc
-              transition-colors
-              duration-300
-              hover:text-white hover:bg-gray-700
-              p-4
-            "
-          >
-            CONTACT
-          </router-link>
-
-          <router-link
-            :to="{ name: 'blog' }"
-            class="
-              w-mc
-              transition-colors
-              duration-300
-              hover:text-white hover:bg-gray-700
-              p-4
-            "
-          >
-            BLOG
-          </router-link>
-
-          <router-link
-            :to="{ name: 'directory' }"
-            class="
-              w-mc
-              transition-colors
-              duration-300
-              hover:text-white hover:bg-gray-700
-              p-4
-            "
-          >
-            VIEW CHIROPRACTORS
-          </router-link>
+          </header-nav-link>
         </ul>
       </div>
 
@@ -147,65 +102,12 @@
             lg:flex-row
           "
         >
-          <router-link
-            :to="{ name: 'apply' }"
-            tag="li"
-            class="
-              w-mc
-              transition-colors
-              duration-300
-              hover:text-white hover:bg-gray-700
-              p-4
-              lg:mb-0
-            "
+          <header-nav-link
+            v-for="navLink in navLinks"
+            :navLink="navLink"
+            :key="navLink.id"
           >
-            APPLY TO BE LISTED
-          </router-link>
-
-          <router-link
-            :to="{ name: 'contact' }"
-            class="
-              w-mc
-              transition-colors
-              duration-300
-              hover:text-white hover:bg-gray-700
-              p-4
-              mb-4
-              lg:mb-0
-            "
-          >
-            CONTACT
-          </router-link>
-
-          <router-link
-            :to="{ name: 'blog' }"
-            class="
-              w-mc
-              transition-colors
-              duration-300
-              hover:text-white hover:bg-gray-700
-              p-4
-              mb-4
-              lg:mb-0
-            "
-          >
-            BLOG
-          </router-link>
-
-          <router-link
-            :to="{ name: 'directory' }"
-            class="
-              w-mc
-              transition-colors
-              duration-300
-              hover:text-white hover:bg-gray-700
-              p-4
-              mb-4
-              lg:mb-0
-            "
-          >
-            VIEW CHIROPRACTORS
-          </router-link>
+          </header-nav-link>
         </ul>
       </div>
     </nav>
@@ -214,13 +116,21 @@
 
 <script>
 import { ref } from "vue";
+import { computed } from "vue";
+import { useStore } from "vuex";
+import HeaderNavLink from "@/components/HeaderNavLink";
 
 export default {
   name: "HeaderComponent",
+  components: {
+    HeaderNavLink,
+  },
   setup() {
     let show = ref(false);
     const isOpen = () => (show.value = !show.value);
-    return { show, isOpen };
+    const store = useStore();
+    const navLinks = computed(() => store.state.navLinks);
+    return { show, isOpen, navLinks };
   },
 };
 </script>

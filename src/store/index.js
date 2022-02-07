@@ -50,18 +50,22 @@ export default createStore({
     ],
     navLinks: [
       {
+        id: 1,
         text: "APPLY TO BE LISTED",
         link: 'apply'
       },
       {
+        id: 2,
         text: "CONTACT",
         link: 'contact'
       },
       {
+        id: 3,
         text: "BLOG",
         link: 'blog'
       },
       {
+        id: 4,
         text: "VIEW CHIROPRACTORS",
         link: 'directory'
       }
