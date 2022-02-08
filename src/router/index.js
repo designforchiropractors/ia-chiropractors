@@ -6,6 +6,7 @@ import Contact from "../views/Contact.vue";
 import Directory from "../views/Directory.vue";
 import TermsConditions from "../views/TermsConditions.vue";
 import PrivacyPolicy from "../views/PrivacyPolicy.vue";
+import BlogPost from "../views/BlogPost.vue";
 import NotFound from "../views/NotFound.vue";
 
 const routes = [
@@ -46,9 +47,9 @@ const routes = [
     component: Blog,
   },
   {
-    path: "/blog/:title",
+    path: "/blog/:postLink",
     name: "blogPost",
-    component: Blog,
+    component: BlogPost,
     props: true
   },
   {

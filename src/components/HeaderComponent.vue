@@ -11,7 +11,6 @@
       "
       role="navigation"
     >
-      <!-- COMPANY LOGO (SVG) -->
       <div>
         <router-link
           :to="{ name: 'home' }"
@@ -115,8 +114,7 @@
 </template>
 
 <script>
-import { ref } from "vue";
-import { computed } from "vue";
+import { ref, computed } from "vue";
 import { useStore } from "vuex";
 import HeaderNavLink from "@/components/HeaderNavLink";
 

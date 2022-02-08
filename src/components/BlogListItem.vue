@@ -15,15 +15,16 @@
         z-10
       "
     ></div>
+
     <router-link
-        :to="{ name: 'home' }"
+        :to="{ name: 'blogPost', params: { postLink: blogPost.postLink } }"
         class="relative inline-block h-full"
     >
       <div class="absolute h-full overflow-hidden">
         <img
           class="h-full w-full object-cover bg-green-700"
-          src="../assets/benefits-of-chiropractic-care.jpg"
-          alt="A clipboard containing a diagram of a spine."
+          :src="require('@/assets/' + blogPost.postImage)"
+          :alt="blogPost.postTitle"
         />
       </div>
       <div class="relative flex flex-col items-center px-8 py-16 z-20 h-full">
