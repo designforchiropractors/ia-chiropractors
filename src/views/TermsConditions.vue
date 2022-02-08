@@ -9,9 +9,9 @@
           lg:p-4
           rounded-lg
           mb-1
-          bg-gradient-to-r
-          from-gray-700
-          to-gray-50
+          ml-5
+          sm:ml-0
+          bg-green-700
         "
       >
         <svg

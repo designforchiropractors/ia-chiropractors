@@ -21,11 +21,6 @@ const routes = [
     component: Apply,
   },
   {
-    path: "/blog",
-    name: "blog",
-    component: Blog,
-  },
-  {
     path: "/contact",
     name: "contact",
     component: Contact,
@@ -46,9 +41,24 @@ const routes = [
     component: PrivacyPolicy,
   },
   {
+    path: "/blog",
+    name: "blog",
+    component: Blog,
+  },
+  {
+    path: "/blog/:title",
+    name: "blogPost",
+    component: Blog,
+    props: true
+  },
+  {
     path: "/notfound",
     name: "notfound",
     component: NotFound,
+  },
+  {
+    path: "/:catchAll(.*)",
+    redirect: "/notfound",
   },
 ];
 

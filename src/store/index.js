@@ -129,6 +129,34 @@ export default createStore({
         caption: "Keep costs low",
         text: "The fees for an online listing average about only $25 per month -- a very low cost for the high value of more web traffic and more clients."
       }
+    ],
+    blogPosts: [
+      {
+        id: 1,
+        authorName: "Cody Eklov",
+        authorTitle: "Chief Operating Manager",
+        authorCompany: "Design for Chiropractors LLC",
+        authorImage: "cody-eklov.png",
+        postLink: "simple-ways-to-grow-chiropractor-business-online",
+        postTitle: "3 Simple Ways to Grow Your Chiropractor Business Online",
+        postImage: "benefits-of-chiropractic-care.jpg",
+        postContents: "<h2>An example header</h2>",
+        postDate: "Feb 8, 2022",
+        postCategory: "Advice"
+      },
+      {
+        id: 2,
+        authorName: "Cody Eklov",
+        authorTitle: "Chief Operating Manager",
+        authorCompany: "Design for Chiropractors LLC",
+        authorImage: "cody-eklov.png",
+        postLink: "benefits-chiropractic-care",
+        postTitle: "The Benefits of Chiropractic Care - A Brief Overview",
+        postImage: "benefits-of-chiropractic-care.jpg",
+        postContents: "<h2>An example header</h2>",
+        postDate: "Jan 5, 2022",
+        postCategory: "Lesson"
+      }
     ]
   },
   mutations: {},
