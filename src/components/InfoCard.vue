@@ -2,7 +2,7 @@
     <div
       class="
         mx-12
-        sm:my-8
+        my-8
         md:mx-4
         md:my-4
         lg:mx-12
@@ -24,7 +24,7 @@
           py-4
           rounded-tr-5xl
           text-gray-50
-          bg-gray-700
+          bg-green-700
         "
       >
         <svg

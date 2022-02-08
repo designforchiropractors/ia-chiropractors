@@ -5,7 +5,7 @@
             w-mc
             transition-colors
             duration-300
-            hover:text-white hover:bg-gray-700
+            hover:text-white hover:bg-green-700
             p-4
         "
         >

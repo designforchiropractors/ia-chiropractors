@@ -58,7 +58,7 @@
                   border border-gray-700
                 "
               >
-                <span class="font-bold text-xs text-gray-700"> 1 </span>
+                <span class="font-bold text-xs text-green-700"> 1 </span>
               </div>
               <li class="text-gray-700 flex justify-center items-center">
                 {{ chiropractor.service1 }}
@@ -76,7 +76,7 @@
                   border border-gray-700
                 "
               >
-                <span class="font-bold text-xs text-gray-700"> 2 </span>
+                <span class="font-bold text-xs text-green-700"> 2 </span>
               </div>
               <li class="text-gray-700 flex justify-center items-center">
                 {{ chiropractor.service2 }}
@@ -94,7 +94,7 @@
                   border border-gray-700
                 "
               >
-                <span class="font-bold text-xs text-gray-700"> 3 </span>
+                <span class="font-bold text-xs text-green-700"> 3 </span>
               </div>
               <li class="text-gray-700 flex justify-center items-center">
                 {{ chiropractor.service3 }}
@@ -111,7 +111,7 @@
             py-3
             shadow-sm
             text-gray-50
-            bg-gray-700
+            bg-green-700
             transition-colors
             duration-300
             hover:shadow-md hover:bg-gray-50 hover:text-gray-700

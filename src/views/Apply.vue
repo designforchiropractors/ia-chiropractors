@@ -2,11 +2,11 @@
     <div class="py-16 md:py-20 bg-gray-100 custom_bg-pattern">
         <div class="lg:max-w-7xl lg:mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
-                <h2 class="text-base text-gray-700 font-semibold tracking-wide uppercase">
+                <h2 class="text-base text-green-700 font-semibold tracking-wide uppercase">
                   Get Listed
                 </h2>
                 <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    Turn curious searchers into paying clients.
+                    Turn casual browsers into paying clients.
                 </p>
                 <p class="mt-4 max-w-3xl text-xl text-gray-500 lg:mx-auto">
                     Visitors to this directory are interested in finding the top chiropractors in their area.

@@ -5,7 +5,7 @@
         <h2
           class="
             mx-4
-            text-base text-gray-700
+            text-base text-green-700
             font-semibold
             tracking-wide
             uppercase

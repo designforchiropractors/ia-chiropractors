@@ -155,7 +155,6 @@
             bg-gray-200
             hover:bg-gray-700 hover:text-gray-100 hover:shadow-md
           "
-          href="/chiropractors-camps-bay.html"
         >
           View the Directory
         </router-link>
@@ -186,13 +185,13 @@
           mx-4
           lg:mx-0
           font-semibold
-          text-5xl text-gray-700
+          text-5xl text-gray-900
         "
       >
         List Your Business
       </h2>
       <p
-        class="text-xl text-center mx-4 lg:mx-auto lg:w-2/3 mb-12 text-gray-900"
+        class="text-xl text-center mx-4 lg:mx-auto lg:w-2/3 mb-12 text-gray-700"
       >
         Are you a chiropractor in the Des Moines metro area?
         <br />
@@ -213,11 +212,10 @@
             text-lg
             border-gray-100
             hover:bg-gray-100 hover:text-gray-900
-            bg-gray-700
+            bg-green-700
             text-gray-100
             hover:shadow-md
           "
-          href="/chiropractors-camps-bay.html"
         >
           List Your Business
         </router-link>
