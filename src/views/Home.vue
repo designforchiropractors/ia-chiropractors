@@ -4,7 +4,7 @@
       cover
       relative
       bg-gradient-to-r
-      from-green-600
+      from-green-700
       to-gray-50
       px-4
       sm:px-8
