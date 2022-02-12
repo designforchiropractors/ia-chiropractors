@@ -67,7 +67,7 @@
                 >Telephone Number</span
               >
               <span class="block font-medium text-gray-600"
-                ><a href="tel:+27813434552">(+27) 81 343 4552</a></span
+                ><a href="tel:+27813434552">(515) 612-7010</a></span
               >
             </div>
           </div>
@@ -113,7 +113,7 @@
             >
             <span class="block font-medium text-gray-600"
               ><a href="mailto:accounting@business.com">
-                agency@business.com</a
+                support@designforchiropractors.com</a
               ></span
             >
           </div>
@@ -167,10 +167,16 @@
                 uppercase
                 tracking-widest
               "
-              >Physical Address</span
+              >Website</span
             >
             <span class="block font-medium text-gray-600"
-              >3 Abbey Rd, London, United Kingdom</span
+              >
+              <a href="https://www.designforchiropractors.com"
+                target="_blank"
+              >
+                Design for Chiropractors LLC
+              </a>
+            </span
             >
           </div>
         </div>
@@ -180,12 +186,12 @@
       <div class="flex justify-center">
         <div>
           <h2 class="text-xl lg:text-xl font-medium mb-1 text-gray-700">
-            Have a Question?
+            Want to get listed? Have a question?
           </h2>
           <span class="text-sm mb-4 text-gray-400"
-            >Pop us a message and we'll get in touch.</span
+            >Send us a message and we'll get in touch.</span
           >
-          <!-- Form -->
+          
           <form
             name="contact"
             data-netlify="true"
@@ -227,8 +233,8 @@
                 name="question"
                 placeholder="Your Question"
                 id="question"
-                cols="30"
-                rows="5"
+                cols="40"
+                rows="8"
                 minLength="10"
                 maxLength="100"
                 required
@@ -248,11 +254,11 @@
                 my-4
                 lg:mb-0
                 focus:ring-4 focus:ring-blue-300
-                text-green-50
+                text-gray-50
                 bg-green-700
                 transition-colors
                 duration-300
-                hover:shadow-md hover:bg-green-800
+                hover:shadow-md hover:bg-gray-100 hover:text-green-700
               "
             >
               Send Message
