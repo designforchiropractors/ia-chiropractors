@@ -78,6 +78,7 @@
             v-for="navLink in navLinks"
             :navLink="navLink"
             :key="navLink.id"
+            @click="isOpen"
           >
           </header-nav-link>
         </ul>
