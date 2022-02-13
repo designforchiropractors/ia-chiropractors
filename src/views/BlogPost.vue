@@ -87,8 +87,6 @@ import { computed } from "vue";
 export default {
   name: "blogPost",
   setup() {
-    useMeta({ title: "DSM Chiropractors" });
-
     const route = useRoute();
     const store = useStore();
     const blogPosts = computed(() => store.state.blogPosts);
@@ -96,6 +94,18 @@ export default {
     const blogPost = blogPosts.value.find((item) => {
         return item.postLink == route.params.postLink;
     });
+
+    useMeta({ title: blogPost.postTitle,
+      description: blogPost.postTitle,
+      meta: [
+        { property: "og:title",  content: blogPost.postTitle },
+        { property: "og:site_name",  content: blogPost.postTitle },
+        { property: "og:description",  content: blogPost.postTitle },
+        { property: "og:type",  content: "blog" },
+        { property: "og:url",  content: "https://www.dsmchiropractors.com/#/blog/" + blogPost.postLink },
+        { property: "og:image",  content: "https://www.dsmchiropractors.com/img/" + blogPost.postImage },
+      ]
+     });
 
     return { blogPost };
   },

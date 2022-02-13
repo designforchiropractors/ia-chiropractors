@@ -238,7 +238,18 @@ export default {
     RightCard
   },
   setup() {
-    useMeta({ title: "DSM Chiropractors" });
+    useMeta({ title: "DSM Chiropractors",
+      description: "DSM Chiropractors",
+      meta: [
+        { property: "og:title",  content: "DSM Chiropractors" },
+        { property: "og:site_name",  content: "DSM Chiropractors" },
+        { property: "og:description",  content: "DSM Chiropractors" },
+        { property: "og:type",  content: "website" },
+        { property: "og:url",  content: "https://www.dsmchiropractors.com/" },
+        { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
+      ]
+     });
+
     const store = useStore();
     const infoCards = computed(() => store.state.infoCards);
     const rightCards = computed(() => store.state.rightCards);

@@ -49,7 +49,18 @@ export default {
     ContactForm
   },
   setup() {
-    useMeta({ title: "Apply to Be Listed: DSM Chiropractors" });
+    useMeta({ title: "Apply to Be Listed: DSM Chiropractors",
+      description: "Apply to Be Listed on DSM Chiropractors",
+      meta: [
+        { property: "og:title",  content: "Apply to be Listed on DSM Chiropractors" },
+        { property: "og:site_name",  content: "Apply" },
+        { property: "og:description",  content: "Apply to be Listed on DSM Chiropractors" },
+        { property: "og:type",  content: "website" },
+        { property: "og:url",  content: "https://www.dsmchiropractors.com/#/apply" },
+        { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
+      ]
+     });
+
     const store = useStore();
     const listingBenefits = computed(() => store.state.listingBenefits);
     return { listingBenefits };

@@ -65,7 +65,17 @@ export default {
     DirectoryItemComponent,
   },
   setup() {
-    useMeta({ title: "Directory: DSM Chiropractors" });
+    useMeta({ title: "Directory: DSM Chiropractors",
+      description: "Directory for DSM Chiropractors",
+      meta: [
+        { property: "og:title",  content: "Directory for DSM Chiropractors" },
+        { property: "og:site_name",  content: "Directory" },
+        { property: "og:description",  content: "Directory for DSM Chiropractors" },
+        { property: "og:type",  content: "website" },
+        { property: "og:url",  content: "https://www.dsmchiropractors.com/#/directory" },
+        { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
+      ]
+     });
 
     const store = useStore();
     const chiropractors = computed(() => store.state.chiropractors);

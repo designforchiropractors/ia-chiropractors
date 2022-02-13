@@ -45,7 +45,18 @@ export default {
   name: "blog",
   components: {BlogListItem},
   setup() {
-    useMeta({ title: "Blog: DSM Chiropractors" });
+    useMeta({ title: "Blog: DSM Chiropractors",
+      description: "Blog for DSM Chiropractors",
+      meta: [
+        { property: "og:title",  content: "Blog for DSM Chiropractors" },
+        { property: "og:site_name",  content: "Blog" },
+        { property: "og:description",  content: "Blog for DSM Chiropractors" },
+        { property: "og:type",  content: "blog" },
+        { property: "og:url",  content: "https://www.dsmchiropractors.com/#/blog" },
+        { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
+      ]
+     });
+
     const store = useStore();
     const blogPosts = computed(() => store.state.blogPosts);
     return { blogPosts };
