@@ -46,11 +46,10 @@ export default {
   components: {BlogListItem},
   setup() {
     useMeta({ title: "Blog: DSM Chiropractors",
-      description: "Blog for DSM Chiropractors",
+      description: "Blog for DSM Chiropractors. Advice, articles, and information focused on Des Moines chiropractors and their businesses",
       meta: [
         { property: "og:title",  content: "Blog for DSM Chiropractors" },
-        { property: "og:site_name",  content: "Blog" },
-        { property: "og:description",  content: "Blog for DSM Chiropractors" },
+        { property: "og:description",  content: "Blog for DSM Chiropractors. Advice, articles, and information focused on Des Moines chiropractors and their businesses" },
         { property: "og:type",  content: "blog" },
         { property: "og:url",  content: "https://www.dsmchiropractors.com/#/blog" },
         { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },

@@ -96,11 +96,10 @@ export default {
     });
 
     useMeta({ title: blogPost.postTitle,
-      description: blogPost.postTitle,
+      description: blogPost.postSnippet,
       meta: [
         { property: "og:title",  content: blogPost.postTitle },
-        { property: "og:site_name",  content: blogPost.postTitle },
-        { property: "og:description",  content: blogPost.postTitle },
+        { property: "og:description",  content: blogPost.postSnippet },
         { property: "og:type",  content: "blog" },
         { property: "og:url",  content: "https://www.dsmchiropractors.com/#/blog/" + blogPost.postLink },
         { property: "og:image",  content: "https://www.dsmchiropractors.com/img/" + blogPost.postImage },

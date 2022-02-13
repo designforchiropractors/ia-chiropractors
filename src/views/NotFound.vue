@@ -11,7 +11,6 @@ export default {
       description: "404 Page for DSM Chiropractors",
       meta: [
         { property: "og:title",  content: "404 Not Found on DSM Chiopractors" },
-        { property: "og:site_name",  content: "404 Not Found" },
         { property: "og:description",  content: "404 Not Found on DSM Chiopractors" },
         { property: "og:type",  content: "website" },
         { property: "og:url",  content: "https://www.dsmchiropractors.com/#/notfound" },

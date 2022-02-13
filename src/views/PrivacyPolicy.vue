@@ -126,7 +126,6 @@ export default {
       description: "Privacy Policy for DSM Chiropractors",
       meta: [
         { property: "og:title",  content: "Privacy Policy for DSM Chiropractors" },
-        { property: "og:site_name",  content: "Privacy Policy" },
         { property: "og:description",  content: "Privacy Policy for DSM Chiropractors" },
         { property: "og:type",  content: "website" },
         { property: "og:url",  content: "https://www.dsmchiropractors.com/#/privacy-policy" },

@@ -109,11 +109,10 @@ export default {
   components: {},
   setup() {
     useMeta({ title: "Terms & Conditions: DSM Chiropractors",
-      description: "Terms & Conditions for DSM Chiropractors",
+      description: "Terms and Conditions for DSM Chiropractors",
       meta: [
         { property: "og:title",  content: "Terms & Conditions for DSM Chiropractors" },
-        { property: "og:site_name",  content: "Terms & Conditions" },
-        { property: "og:description",  content: "Terms & Conditions for DSM Chiropractors" },
+        { property: "og:description",  content: "Terms and Conditions for DSM Chiropractors" },
         { property: "og:type",  content: "website" },
         { property: "og:url",  content: "https://www.dsmchiropractors.com/#/terms-conditions" },
         { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },

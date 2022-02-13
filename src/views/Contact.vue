@@ -16,11 +16,10 @@ export default {
   setup() {
     useMeta({
       title: "Contact: DSM Chiropractors",
-      description: "Contact DSM Chiropractors",
+      description: "Contact DSM Chiropractors. Inquire about our services through phone, e-mail, or contact form.",
       meta: [
         { property: "og:title",  content: "Contact DSM Chiropractors" },
-        { property: "og:site_name",  content: "Contact" },
-        { property: "og:description",  content: "Contact DSM Chiropractors or Design for Chiropractors LLC" },
+        { property: "og:description",  content: "Contact DSM Chiropractors. Inquire about our services through phone, e-mail, or contact form." },
         { property: "og:type",  content: "website" },
         { property: "og:url",  content: "https://www.dsmchiropractors.com/#/contact" },
         { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
