@@ -142,7 +142,7 @@ export default createStore({
         postImage: "benefits-of-chiropractic-care.jpg",
         postSnippet: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eligendi libero sit nihil tempora, totam reprehenderit aliquam beatae obcaecati ratione. Libero consequatur cumque magnam ipsam quae sequi laudantium pariatur veritatis? Totam reprehenderit aliquame.",
         postContents: "<p class='mb-4 leading-snug'>Nunc dictum nec tellus nec hendrerit. Etiam leo felis, congue vitae placerat vel, vestibulum id massa. Maecenas cursus, ante sit amet placerat rhoncus, risus est auctor diam, in pulvinar magna lectus at erat.</p><h2 class='text-xl lg:text-2xl mt-12 mb-4 text-gray-700'>A Secondary Heading</h2><p class='mb-4 leading-snug'> Nunc dictum nec tellus nec hendrerit. Etiam leo felis, congue vitae placerat vel, vestibulum id massa. Maecenas cursus, ante sit amet placerat rhoncus, risus est auctor diam, in pulvinar magna lectus at erat.</p><p class='mb-4 leading-snug'>Nullam eget neque tellus. In tellus odio, pretium ac risus vitae, bibendum dignissim lectus. Vestibulum hendrerit libero nec mauris feugiat vehicula. Duis malesuada diam tempor odio efficitur, vitae faucibus purus ornare.</p><h2 class='text-xl lg:text-2xl mt-12 mb-4 text-gray-700'>Summary</h2><p class='mb-4 leading-snug'>Nullam eget neque tellus. In tellus odio, pretium ac risus vitae, bibendum dignissim lectus. Vestibulum hendrerit libero nec mauris feugiat vehicula. Duis malesuada diam tempor odio efficitur, vitae faucibus purus ornare.</p><p class='mb-4 leading-snug'>Aenean rhoncus mauris id sapien gravida lobortis. Praesent vel eleifend purus. Nulla euismod pharetra massa sit amet vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras nec semper quam.</p>",
-        postDate: "Feb 8, 2022",
+        postDate: new Date("2022-02-08"),
         postCategory: "Advice"
       },
       {
@@ -151,12 +151,12 @@ export default createStore({
         authorTitle: "Chief Operating Manager",
         authorCompany: "Design for Chiropractors LLC",
         authorImage: "cody-eklov.png",
-        postLink: "benefits-chiropractic-care",
-        postTitle: "The Benefits of Chiropractic Care - A Brief Overview",
-        postImage: "benefits-of-chiropractic-care.jpg",
-        postSnippet: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eligendi libero sit nihil tempora, totam reprehenderit aliquam beatae obcaecati ratione. Libero consequatur cumque magnam ipsam quae sequi laudantium pariatur veritatis? Totam reprehenderit aliquame.",
+        postLink: "reasons-business-should-be-listed-online-directory",
+        postTitle: "5 Reasons Your Business Should Be Listed in an Online Directory",
+        postImage: "reasons-business-should-be-listed-online-directory.jpg",
+        postSnippet: "From added business exposure to an SEO boost, there are so many reasons to have your business listed in an online directory.",
         postContents: "<p class='mb-4 leading-snug'>Nunc dictum nec tellus nec hendrerit. Etiam leo felis, congue vitae placerat vel, vestibulum id massa. Maecenas cursus, ante sit amet placerat rhoncus, risus est auctor diam, in pulvinar magna lectus at erat.</p><h2 class='text-xl lg:text-2xl mt-12 mb-4 text-gray-700'>A Secondary Heading</h2><p class='mb-4 leading-snug'> Nunc dictum nec tellus nec hendrerit. Etiam leo felis, congue vitae placerat vel, vestibulum id massa. Maecenas cursus, ante sit amet placerat rhoncus, risus est auctor diam, in pulvinar magna lectus at erat.</p><p class='mb-4 leading-snug'>Nullam eget neque tellus. In tellus odio, pretium ac risus vitae, bibendum dignissim lectus. Vestibulum hendrerit libero nec mauris feugiat vehicula. Duis malesuada diam tempor odio efficitur, vitae faucibus purus ornare.</p><p class='mb-4 leading-snug'>Nunc dictum nec tellus nec hendrerit. Etiam leo felis, congue vitae placerat vel, vestibulum id massa. Maecenas cursus, ante sit amet placerat rhoncus, risus est auctor diam, in pulvinar magna lectus at erat.</p><h2 class='text-xl lg:text-2xl mt-12 mb-4 text-gray-700'>A Secondary Heading</h2><p class='mb-4 leading-snug'> Nunc dictum nec tellus nec hendrerit. Etiam leo felis, congue vitae placerat vel, vestibulum id massa. Maecenas cursus, ante sit amet placerat rhoncus, risus est auctor diam, in pulvinar magna lectus at erat.</p><p class='mb-4 leading-snug'>Nullam eget neque tellus. In tellus odio, pretium ac risus vitae, bibendum dignissim lectus. Vestibulum hendrerit libero nec mauris feugiat vehicula. Duis malesuada diam tempor odio efficitur, vitae faucibus purus ornare.</p><h2 class='text-xl lg:text-2xl mt-12 mb-4 text-gray-700'>Summary</h2><p class='mb-4 leading-snug'>Nullam eget neque tellus. In tellus odio, pretium ac risus vitae, bibendum dignissim lectus. Vestibulum hendrerit libero nec mauris feugiat vehicula. Duis malesuada diam tempor odio efficitur, vitae faucibus purus ornare.</p><p class='mb-4 leading-snug'>Aenean rhoncus mauris id sapien gravida lobortis. Praesent vel eleifend purus. Nulla euismod pharetra massa sit amet vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras nec semper quam.</p>",
-        postDate: "Jan 5, 2022",
+        postDate: new Date("2022-01-05"),
         postCategory: "Lesson"
       }
     ]

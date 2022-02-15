@@ -51,7 +51,7 @@
                     {{ blogPost.authorName }}
                 </span>
                 <span class="block text-sm font-medium text-gray-50">
-                    {{ blogPost.postDate }}
+                    {{ this.formatDate(blogPost.postDate) }}
                 </span>
               </div>
             </div>
@@ -106,7 +106,11 @@ export default {
       ]
      });
 
-    return { blogPost };
+    const formatDate = (d) => {
+      return d.toLocaleString("default", { month: "short" }) + " " + d.getDate() + ", " + d.getFullYear();
+    }
+    
+    return { blogPost, formatDate };
   },
 };
 </script>

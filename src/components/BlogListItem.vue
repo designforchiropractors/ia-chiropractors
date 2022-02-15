@@ -34,7 +34,7 @@
                 {{ blogPost.postCategory }}
             </span>
             <span class="text-gray-50 mx-2 font-medium text-sm">
-                {{ blogPost.postDate }}
+                {{ this.formatDate(blogPost.postDate) }}
             </span>
           </div>
           <h2
@@ -97,6 +97,11 @@ export default {
   props: {
     blogPost: Object,
   },
-  setup() {},
+  setup() {
+    const formatDate = (d) => {
+      return d.toLocaleString("default", { month: "short" }) + " " + d.getDate() + ", " + d.getFullYear();
+    }
+    return { formatDate }
+  },
 };
 </script>

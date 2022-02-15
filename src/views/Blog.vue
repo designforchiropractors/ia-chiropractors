@@ -57,7 +57,7 @@ export default {
      });
 
     const store = useStore();
-    const blogPosts = computed(() => store.state.blogPosts);
+    const blogPosts = computed(() => store.state.blogPosts.slice().sort((a, b) => b.postDate.getTime() - a.postDate.getTime()));
     return { blogPosts };
   },
 };
