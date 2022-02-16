@@ -63,7 +63,7 @@
           <img
             class="h-full w-full object-cover"
             :src="require('@/assets/' + blogPost.postImage)"
-            :alt="blogPost.postTitle"
+            :alt="blogPost.postImageAlt"
           />
         </div>
       </div>
@@ -105,7 +105,7 @@ export default {
         { property: "og:description",  content: blogPost.postSnippet },
         { property: "og:type",  content: "blog" },
         { property: "og:url",  content: "https://www.dsmchiropractors.com/#/blog/" + blogPost.postLink },
-        { property: "og:image",  content: "https://www.dsmchiropractors.com/img/" + blogPost.postImage },
+        { property: "og:image",  content: blogPost.postImageUrl },
       ]
      });
 

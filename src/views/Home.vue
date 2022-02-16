@@ -20,7 +20,7 @@
     <div class="dsm_chiropractors h-full absolute top-0 left-0 right-0 z-0">
       <img
         :src="require('@/assets/dsm-chiropractors.webp')"
-        alt="DSM Chiropractors"
+        alt="The city of Des Moines"
         class="w-full h-full object-cover opacity-20"
       />
     </div>
@@ -95,7 +95,7 @@
           <img
             class="absolute w-full h-full object-cover"
             src="../assets/people.webp"
-            alt="A row of happy chiropractors."
+            alt="A row of happy people"
           />
         </div>
       </div>
