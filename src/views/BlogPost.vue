@@ -97,6 +97,9 @@ export default {
 
     useMeta({ title: blogPost.postTitle,
       description: blogPost.postSnippet,
+      link: [
+        { rel: "canonical", href: blogPost.postOrigin },
+      ],
       meta: [
         { property: "og:title",  content: blogPost.postTitle },
         { property: "og:description",  content: blogPost.postSnippet },

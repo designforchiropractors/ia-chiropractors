@@ -12,7 +12,7 @@
         text-gray-700
       "
     >
-      Latest Updates
+      Blog: DSM Chiropractors
     </h2>
 
     <div

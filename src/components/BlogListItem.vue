@@ -7,7 +7,7 @@
         left-0
         right-0
         h-full
-        opacity-50
+        opacity-70
         group-hover:opacity-80
         duration-300
         group-hover:bg-green-900
