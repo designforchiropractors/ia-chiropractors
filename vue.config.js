@@ -11,7 +11,10 @@ module.exports = {
          // Absolute path to compiled SPA
          path.resolve(__dirname, 'dist'),
          // List of routes to prerender
-         [ '/', '/apply', '/blog', '/contact', '/directory', '/privacy-policy', '/terms-conditions', '/notfound' ],
+         [
+            '/', '/apply', '/blog', '/contact', '/directory', '/privacy-policy', '/terms-conditions', '/notfound',
+            '/blog/reasons-business-should-be-listed-online-directory', '/blog/simple-ways-to-grow-chiropractor-business-online'
+        ],
        ),
      ]
    }
