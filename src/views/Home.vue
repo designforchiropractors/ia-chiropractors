@@ -240,6 +240,9 @@ export default {
   setup() {
     useMeta({ title: "DSM Chiropractors",
       description: "DSM Chiropractors. Find the top chiropractors in the Des Moines area.",
+      link: [
+        { rel: "canonical", href: "https://www.dsmchiropractors.com/" },
+      ],
       meta: [
         { property: "og:title",  content: "DSM Chiropractors" },
         { property: "og:description",  content: "DSM Chiropractors. Find the top chiropractors in the Des Moines area." },
