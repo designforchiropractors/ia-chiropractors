@@ -7,8 +7,9 @@
     "build": "set NODE_ENV=production && npm run build:vue && npm run copy",
     "lint": "vue-cli-service lint",
     "build:vue": "vue-cli-service build",
-    "copy": "npm run copy:robots && npm run copy:sitemap",
+    "copy": "npm run copy:robots && npm run copy:sitemap && npm run copy:redirects",
     "copy:robots": "cp ./robots.txt ./dist",
+    "copy:redirects": "cp ./_redirects ./dist",
     "copy:sitemap": "cp ./sitemap.xml ./dist"
   },
   "dependencies": {
