@@ -114,7 +114,7 @@ export default {
         { property: "og:title",  content: "Terms & Conditions for DSM Chiropractors" },
         { property: "og:description",  content: "Terms and Conditions for DSM Chiropractors" },
         { property: "og:type",  content: "website" },
-        { property: "og:url",  content: "https://www.dsmchiropractors.com/#/terms-conditions" },
+        { property: "og:url",  content: "https://www.dsmchiropractors.com/terms-conditions" },
         { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
       ]
      });

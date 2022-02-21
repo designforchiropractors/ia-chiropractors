@@ -1,4 +1,5 @@
 <template>
+  
   <metainfo>
     <template v-slot:title="{ content }">
       {{ content ? `${content}` : `DSM Chiropractors` }}

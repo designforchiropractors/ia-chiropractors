@@ -55,7 +55,7 @@ export default {
         { property: "og:title",  content: "Apply to be Listed on DSM Chiropractors" },
         { property: "og:description",  content: "Apply to be Listed on DSM Chiropractors and turn casual browsers into paying clients" },
         { property: "og:type",  content: "website" },
-        { property: "og:url",  content: "https://www.dsmchiropractors.com/#/apply" },
+        { property: "og:url",  content: "https://www.dsmchiropractors.com/apply" },
         { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
       ]
      });

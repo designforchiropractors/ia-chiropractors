@@ -51,7 +51,7 @@ export default {
         { property: "og:title",  content: "Blog for DSM Chiropractors" },
         { property: "og:description",  content: "Blog for DSM Chiropractors. Advice, articles, and information focused on Des Moines chiropractors and their businesses" },
         { property: "og:type",  content: "blog" },
-        { property: "og:url",  content: "https://www.dsmchiropractors.com/#/blog" },
+        { property: "og:url",  content: "https://www.dsmchiropractors.com/blog" },
         { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
       ]
      });

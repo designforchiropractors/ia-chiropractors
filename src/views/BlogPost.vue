@@ -104,7 +104,7 @@ export default {
         { property: "og:title",  content: blogPost.postTitle },
         { property: "og:description",  content: blogPost.postSnippet },
         { property: "og:type",  content: "blog" },
-        { property: "og:url",  content: "https://www.dsmchiropractors.com/#/blog/" + blogPost.postLink },
+        { property: "og:url",  content: "https://www.dsmchiropractors.com/blog/" + blogPost.postLink },
         { property: "og:image",  content: blogPost.postImageUrl },
       ]
      });

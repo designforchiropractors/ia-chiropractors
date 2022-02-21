@@ -71,7 +71,7 @@ export default {
         { property: "og:title",  content: "Directory for DSM Chiropractors" },
         { property: "og:description",  content: "Directory for DSM Chiropractors. Find the top chiropractors in the Des Moines area." },
         { property: "og:type",  content: "website" },
-        { property: "og:url",  content: "https://www.dsmchiropractors.com/#/directory" },
+        { property: "og:url",  content: "https://www.dsmchiropractors.com/directory" },
         { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
       ]
      });
