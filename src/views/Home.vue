@@ -244,11 +244,15 @@ export default {
         { rel: "canonical", href: "https://www.dsmchiropractors.com/" },
       ],
       meta: [
-        { property: "og:title",  content: "DSM Chiropractors" },
+        { property: "og:title",  content: "Des Moines Chiropractors" },
         { property: "og:description",  content: "DSM Chiropractors. Find the top chiropractors in the Des Moines area." },
         { property: "og:type",  content: "website" },
         { property: "og:url",  content: "https://www.dsmchiropractors.com/" },
         { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
+        { property: "twitter:title",  content: "Des Moines Chiropractors" },
+        { property: "twitter:card",  content: "summary" },
+        { property: "twitter:description",  content: "Des Moines Chiropractors. Find the top chiropractors in the Des Moines area." },
+        { property: "twitter:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
       ]
      });
 
