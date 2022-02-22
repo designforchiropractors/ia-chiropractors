@@ -110,12 +110,19 @@ export default {
   setup() {
     useMeta({ title: "Terms & Conditions: DSM Chiropractors",
       description: "Terms and Conditions for DSM Chiropractors",
+      link: [
+        { rel: "canonical", href: "https://www.dsmchiropractors.com/terms-conditions" },
+      ],
       meta: [
         { property: "og:title",  content: "Terms & Conditions for DSM Chiropractors" },
-        { property: "og:description",  content: "Terms and Conditions for DSM Chiropractors" },
+        { property: "og:description",  content: "Terms and Conditions for DSM Chiropractors." },
         { property: "og:type",  content: "website" },
         { property: "og:url",  content: "https://www.dsmchiropractors.com/terms-conditions" },
         { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
+        { property: "twitter:title",  content: "Terms & Conditions for DSM Chiropractors." },
+        { property: "twitter:card",  content: "summary" },
+        { property: "twitter:description",  content: "Terms & Conditions for DSM Chiropractors." },
+        { property: "twitter:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
       ]
      });
   },

@@ -26,7 +26,7 @@ export default {
     useMeta({
       title: "",
       description: "",
-      htmlAttrs: { lang: "en", amp: true },
+      htmlAttrs: { lang: "en" },
     });
   },
 };

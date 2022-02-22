@@ -124,12 +124,19 @@ export default {
   setup() {
     useMeta({ title: "Privacy Policy: DSM Chiropractors",
       description: "Privacy Policy for DSM Chiropractors",
+      link: [
+        { rel: "canonical", href: "https://www.dsmchiropractors.com/privacy-policy" },
+      ],
       meta: [
         { property: "og:title",  content: "Privacy Policy for DSM Chiropractors" },
-        { property: "og:description",  content: "Privacy Policy for DSM Chiropractors" },
+        { property: "og:description",  content: "Privacy Policy for DSM Chiropractors." },
         { property: "og:type",  content: "website" },
         { property: "og:url",  content: "https://www.dsmchiropractors.com/privacy-policy" },
         { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
+        { property: "twitter:title",  content: "Privacy Policy for DSM Chiropractors." },
+        { property: "twitter:card",  content: "summary" },
+        { property: "twitter:description",  content: "Privacy Policy for DSM Chiropractors." },
+        { property: "twitter:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
       ]
      });
   },
