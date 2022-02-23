@@ -75,6 +75,9 @@
         <div v-html="$sanitize(blogPost.postContents)"></div>       
       </div>
     </article>
+    <div class="w-full lg:flex">
+      <contact-form></contact-form>
+    </div>
   </section>
 </template>
 
@@ -83,9 +86,13 @@ import { useMeta } from "vue-meta";
 import { useRoute } from "vue-router";
 import { useStore } from "vuex";
 import { computed } from "vue";
+import ContactForm from "@/components/ContactForm.vue";
 
 export default {
   name: "blogPost",
+  components: {
+    ContactForm
+  },
   setup() {
     const route = useRoute();
     const store = useStore();
@@ -95,10 +102,11 @@ export default {
         return item.postLink == route.params.postLink;
     });
 
-    useMeta({ title: blogPost.postTitle,
+    useMeta({
+      title: blogPost.postTitle,
       description: blogPost.postSnippet,
       link: [
-        { rel: "canonical", href: blogPost.postOrigin },
+        { rel: "canonical", href: blogPost.postOrigin === "" ? blogPost.postLink + "/" : blogPost.postOrigin },
       ],
       meta: [
         { property: "og:title",  content: blogPost.postTitle },

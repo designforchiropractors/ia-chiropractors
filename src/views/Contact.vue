@@ -1,17 +1,37 @@
 <template>
   <div class="w-full lg:flex custom_bg-pattern">
-    <contact-form></contact-form>
+    <div class="w-full lg:flex">
+      <div
+        class="
+          shadow-inner
+          relative
+          flex-grow
+          justify-center
+          px-8
+          lg:px-20
+          flex
+          items-center
+          py-20
+          lg:py-28
+        "
+      >
+        <contact-info></contact-info>
+      </div>
+      <contact-form></contact-form>
+    </div>
   </div>
 </template>
 
 <script>
 import { useMeta } from "vue-meta";
 import ContactForm from "@/components/ContactForm.vue";
+import ContactInfo from "@/components/ContactInfo.vue";
 
 export default {
   name: "contact",
   components: {
-    ContactForm
+    ContactForm,
+    ContactInfo
   },
   setup() {
     const metaTitle = "Contact DSM Chiropractors"
