@@ -1,6 +1,6 @@
 <template>
   <section class="custom_bg-pattern pb-32">
-    <h2
+    <h1
       class="
         font-bold
         text-xl
@@ -13,7 +13,7 @@
       "
     >
       Blog: DSM Chiropractors
-    </h2>
+    </h1>
 
     <div
       class="

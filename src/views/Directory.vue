@@ -2,7 +2,7 @@
   <section class="custom_bg-pattern py-16 md:py-20">
     <div class="max-w-screen-lg mx-auto">
       <div class="mb-16 lg:mb-24 lg:text-center">
-        <h2
+        <h1
           class="
             mx-4
             text-base text-green-700
@@ -12,7 +12,7 @@
           "
         >
           Directory of Des Moines Chiropractors
-        </h2>
+        </h1>
         <p
           class="
             mx-4

@@ -16,7 +16,7 @@
     >
       <!-- Contact Info -->
       <div>
-        <h2 class="font-medium mb-5 text-gray-600">Contact Us</h2>
+        <h1 class="font-medium mb-5 text-gray-600">Contact Us</h1>
         <div>
           <div class="flex items-center mb-10">
             <div
@@ -64,11 +64,14 @@
                   uppercase
                   tracking-widest
                 "
-                >Telephone Number</span
-              >
-              <span class="block font-medium text-gray-600"
-                ><a href="tel:+27813434552">(515) 612-7010</a></span
-              >
+                >
+                Telephone Number
+              </span>
+              <span class="block font-medium text-gray-600">
+                <a href="tel:+15156127010">
+                  (515) 612-7010
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -109,13 +112,14 @@
                 uppercase
                 tracking-widest
               "
-              >Email Address</span
-            >
-            <span class="block font-medium text-gray-600"
-              ><a href="mailto:accounting@business.com">
-                support@designforchiropractors.com</a
-              ></span
-            >
+              >
+              Email Address
+            </span>
+            <span class="block font-medium text-gray-600">
+              <a href="mailto:support@designforchiropractors.com">
+                support@designforchiropractors.com
+              </a>
+            </span>
           </div>
         </div>
         <div class="flex items-center mb-10">
@@ -167,8 +171,9 @@
                 uppercase
                 tracking-widest
               "
-              >Website</span
-            >
+              >
+              Business
+            </span>
             <span class="block font-medium text-gray-600"
               >
               <a href="https://www.designforchiropractors.com"
@@ -188,9 +193,9 @@
           <h2 class="text-xl lg:text-xl font-medium mb-1 text-gray-700">
             Want to get listed? Have a question?
           </h2>
-          <span class="text-sm mb-4 text-gray-400"
-            >Send us a message and we'll get in touch.</span
-          >
+          <span class="text-sm mb-4 text-gray-400">
+            Send us a message and we'll get in touch.
+          </span>
           
           <form
             name="contact"
@@ -224,9 +229,11 @@
                 required
                 placeholder="the placeholder"
               />
-              <label htmlFor="email" class="label-email"
-                ><span class="content-email">Email</span></label
-              >
+              <label htmlFor="email" class="label-email">
+                <span class="content-email">
+                  Email
+                </span>
+              </label>
             </div>
             <div>
               <textarea
@@ -278,8 +285,9 @@
                 bg-green-100
                 text-green-600
               "
-              >Thanks! We'll be in touch soon.</span
-            >
+              >
+              Thanks! We'll be in touch soon.
+            </span>
             <span
               id="error"
               class="
@@ -295,8 +303,9 @@
                 bg-red-100
                 text-red-600
               "
-              >Whoops... Something went wrong.</span
-            >
+              >
+              Whoops... Something went wrong.
+            </span>
           </form>
         </div>
       </div>
