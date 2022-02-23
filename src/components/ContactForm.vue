@@ -190,9 +190,9 @@
     <div class="flex-grow justify-center bg-white px-8 lg:px-20 py-20 lg:py-28">
       <div class="flex justify-center">
         <div>
-          <h2 class="text-xl lg:text-xl font-medium mb-1 text-gray-700">
+          <h1 class="text-xl lg:text-xl font-medium mb-1 text-gray-700">
             Want to get listed? Have a question?
-          </h2>
+          </h1>
           <span class="text-sm mb-4 text-gray-400">
             Send us a message and we'll get in touch.
           </span>
