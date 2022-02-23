@@ -52,13 +52,13 @@ export default {
     useMeta({ title: "Apply to Be Listed: DSM Chiropractors",
       description: "Apply to Be Listed on DSM Chiropractors and get found by potential clients in the Des Moines area.",
       link: [
-        { rel: "canonical", href: "https://www.dsmchiropractors.com/apply" },
+        { rel: "canonical", href: "https://www.dsmchiropractors.com/apply/" },
       ],
       meta: [
         { property: "og:title",  content: "Apply to be Listed on DSM Chiropractors" },
         { property: "og:description",  content: "Apply to be Listed on DSM Chiropractors and get found by potential clients in the Des Moines area." },
         { property: "og:type",  content: "website" },
-        { property: "og:url",  content: "https://www.dsmchiropractors.com/apply" },
+        { property: "og:url",  content: "https://www.dsmchiropractors.com/apply/" },
         { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
         { property: "twitter:title",  content: "Apply to be Listed on DSM Chiropractors" },
         { property: "twitter:card",  content: "summary" },
