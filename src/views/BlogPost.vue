@@ -106,7 +106,7 @@ export default {
       title: blogPost.postTitle,
       description: blogPost.postSnippet,
       link: [
-        { rel: "canonical", href: blogPost.postOrigin === "" ? blogPost.postLink + "/" : blogPost.postOrigin },
+        { rel: "canonical", href: blogPost.postOrigin !== "" ? blogPost.postOrigin : "https://www.dsmchiropractors.com/blog/" + blogPost.postLink + "/" },
       ],
       meta: [
         { property: "og:title",  content: blogPost.postTitle },
