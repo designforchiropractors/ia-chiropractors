@@ -17,49 +17,49 @@ const routes = [
     alias: ["/home", "/index.html", "/index.htm"],
   },
   {
-    path: "/apply",
+    path: "/apply/",
     name: "apply",
     component: Apply,
   },
   {
-    path: "/contact",
+    path: "/contact/",
     name: "contact",
     component: Contact,
   },
   {
-    path: "/directory",
+    path: "/directory/",
     name: "directory",
     component: Directory,
   },
   {
-    path: "/terms-conditions",
+    path: "/terms-conditions/",
     name: "terms-conditions",
     component: TermsConditions,
   },
   {
-    path: "/privacy-policy",
+    path: "/privacy-policy/",
     name: "privacy-policy",
     component: PrivacyPolicy,
   },
   {
-    path: "/blog",
+    path: "/blog/",
     name: "blog",
     component: Blog,
   },
   {
-    path: "/blog/:postLink",
+    path: "/blog/:postLink/",
     name: "blogPost",
     component: BlogPost,
     props: true
   },
   {
-    path: "/notfound",
+    path: "/notfound/",
     name: "notfound",
     component: NotFound,
   },
   {
     path: "/:catchAll(.*)",
-    redirect: "/notfound",
+    redirect: "/notfound/",
   },
 ];
 
