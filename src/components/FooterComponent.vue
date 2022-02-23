@@ -39,14 +39,12 @@
         <router-link
           class="mx-4 hover:text-gray-600"
           :to="{ name: 'privacy-policy' }"
-          rel="nofollow"
         >
           Privacy Policy
         </router-link>
         <router-link
           class="mx-4 hover:text-gray-600"
           :to="{ name: 'terms-conditions' }"
-          rel="nofollow"
         >
           Terms &amp; Conditions
         </router-link>

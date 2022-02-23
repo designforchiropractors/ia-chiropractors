@@ -2,16 +2,16 @@
     <div class="py-16 md:py-20 bg-gray-100 custom_bg-pattern">
         <div class="lg:max-w-7xl lg:mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
-                <h2 class="text-base text-green-700 font-semibold tracking-wide uppercase">
+                <h1 class="text-base text-green-700 font-semibold tracking-wide uppercase">
                   Get Listed
-                </h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                </h1>
+                <h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                     Turn casual browsers into paying clients.
-                </p>
-                <p class="mt-4 max-w-3xl text-xl text-gray-500 lg:mx-auto">
+                </h2>
+                <h3 class="mt-4 max-w-3xl text-xl text-gray-500 lg:mx-auto">
                     Visitors to this directory are interested in finding the top chiropractors in their area.
                     Get your business listed so they can find you.
-                </p>
+                </h3>
             </div>
 
             <div class="shadow-inner px-6 md:px-10 lg:px-20 py-8 md:py-12 lg:py-16 w-full mt-20 bg-white mb-12">
