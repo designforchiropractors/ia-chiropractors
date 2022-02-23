@@ -1,9 +1,23 @@
 <template>
-  <div class="w-full lg:flex custom_bg-pattern">
+  <section class="custom_bg-pattern pb-32">
+    <h1
+      class="
+        font-bold
+        text-xl
+        md:text-2xl
+        text-center
+        pt-12
+        pb-8
+        md:pt-16 md:pb-12
+        text-gray-700
+      "
+    >
+      Contact DSM Chiropractors
+    </h1>
+
     <div class="w-full lg:flex">
       <div
         class="
-          shadow-inner
           relative
           flex-grow
           justify-center
@@ -19,7 +33,7 @@
       </div>
       <contact-form></contact-form>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
