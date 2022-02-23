@@ -238,21 +238,28 @@ export default {
     RightCard
   },
   setup() {
-    useMeta({ title: "DSM Chiropractors",
-      description: "DSM Chiropractors. Find the top chiropractors in the Des Moines area or get your business listed in the directory.",
+    
+    const metaTitle = "DSM Chiropractors"
+    const metaDescription = "DSM Chiropractors. Find the top chiropractors in the Des Moines area or get your business listed in the directory."
+    const metaImage = "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp"
+    const metaUrl = "https://www.dsmchiropractors.com/"
+    
+    useMeta({
+      title: metaTitle,
+      description: metaDescription,
       link: [
-        { rel: "canonical", href: "https://www.dsmchiropractors.com/" },
+        { rel: "canonical", href: metaUrl },
       ],
       meta: [
-        { property: "og:title",  content: "Des Moines Chiropractors" },
-        { property: "og:description",  content: "DSM Chiropractors. Find the top chiropractors in the Des Moines area or get your business listed in the directory." },
+        { property: "og:title",  content: metaTitle },
+        { property: "og:description",  content: metaDescription },
         { property: "og:type",  content: "website" },
-        { property: "og:url",  content: "https://www.dsmchiropractors.com/" },
-        { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
-        { property: "twitter:title",  content: "Des Moines Chiropractors" },
+        { property: "og:url",  content: metaUrl },
+        { property: "og:image",  content: metaImage },
+        { property: "twitter:title",  content: metaTitle },
         { property: "twitter:card",  content: "summary" },
-        { property: "twitter:description",  content: "DSM Chiropractors. Find the top chiropractors in the Des Moines area or get your business listed in the directory." },
-        { property: "twitter:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
+        { property: "twitter:description",  content: metaDescription },
+        { property: "twitter:image",  content: metaImage },
       ]
      });
 

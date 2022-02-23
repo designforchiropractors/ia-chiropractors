@@ -45,21 +45,28 @@ export default {
   name: "blog",
   components: {BlogListItem},
   setup() {
-    useMeta({ title: "Blog: DSM Chiropractors",
-      description: "Blog for DSM Chiropractors. Advice, articles, and information focused on Des Moines chiropractors and their businesses.",
+
+    const metaTitle = "Blog for DSM Chiropractors"
+    const metaDescription = "Blog for DSM Chiropractors. Advice, articles, and information focused on Des Moines chiropractors and marketing their businesses."
+    const metaImage = "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp"
+    const metaUrl = "https://www.dsmchiropractors.com/blog/"
+    
+    useMeta({
+      title: metaTitle,
+      description: metaDescription,
       link: [
-        { rel: "canonical", href: "https://www.dsmchiropractors.com/blog/" },
+        { rel: "canonical", href: metaUrl },
       ],
       meta: [
-        { property: "og:title",  content: "Blog for DSM Chiropractors" },
-        { property: "og:description",  content: "Blog for DSM Chiropractors. Advice, articles, and information focused on Des Moines chiropractors and their businesses." },
+        { property: "og:title",  content: metaTitle },
+        { property: "og:description",  content: metaDescription },
         { property: "og:type",  content: "blog" },
-        { property: "og:url",  content: "https://www.dsmchiropractors.com/blog/" },
-        { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
-        { property: "twitter:title",  content: "Blog for Moines Chiropractors" },
+        { property: "og:url",  content: metaUrl },
+        { property: "og:image",  content: metaImage },
+        { property: "twitter:title",  content: metaTitle },
         { property: "twitter:card",  content: "summary" },
-        { property: "twitter:description",  content: "Blog for DSM Chiropractors. Advice, articles, and information focused on Des Moines chiropractors and their businesses." },
-        { property: "twitter:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
+        { property: "twitter:description",  content: metaDescription },
+        { property: "twitter:image",  content: metaImage },
       ]
      });
 

@@ -108,21 +108,28 @@ export default {
   name: "terms-conditions",
   components: {},
   setup() {
-    useMeta({ title: "Terms & Conditions: DSM Chiropractors",
-      description: "Terms and Conditions for DSM Chiropractors",
+
+    const metaTitle = "Terms & Conditions for DSM Chiropractors"
+    const metaDescription = "By visiting DSM Chiropractors, you agree to be bound by our Terms & Conditions and use this site accordingly."
+    const metaImage = "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp"
+    const metaUrl = "https://www.dsmchiropractors.com/terms-conditions/"
+    
+    useMeta({
+      title: metaTitle,
+      description: metaDescription,
       link: [
-        { rel: "canonical", href: "https://www.dsmchiropractors.com/terms-conditions/" },
+        { rel: "canonical", href: metaUrl },
       ],
       meta: [
-        { property: "og:title",  content: "Terms & Conditions for DSM Chiropractors" },
-        { property: "og:description",  content: "Terms and Conditions for DSM Chiropractors." },
+        { property: "og:title",  content: metaTitle },
+        { property: "og:description",  content: metaDescription },
         { property: "og:type",  content: "website" },
-        { property: "og:url",  content: "https://www.dsmchiropractors.com/terms-conditions/" },
-        { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
-        { property: "twitter:title",  content: "Terms & Conditions for DSM Chiropractors." },
+        { property: "og:url",  content: metaUrl },
+        { property: "og:image",  content: metaImage },
+        { property: "twitter:title",  content: metaTitle },
         { property: "twitter:card",  content: "summary" },
-        { property: "twitter:description",  content: "Terms & Conditions for DSM Chiropractors." },
-        { property: "twitter:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
+        { property: "twitter:description",  content: metaDescription },
+        { property: "twitter:image",  content: metaImage },
       ]
      });
   },

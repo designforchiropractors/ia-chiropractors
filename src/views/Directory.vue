@@ -65,21 +65,28 @@ export default {
     DirectoryItemComponent,
   },
   setup() {
-    useMeta({ title: "Directory: DSM Chiropractors",
-      description: "Directory for DSM Chiropractors. Find the top chiropractors in the Des Moines area.",
+
+    const metaTitle = "Directory for DSM Chiropractors"
+    const metaDescription = "Directory for DSM Chiropractors. Find the top chiropractors in the Des Moines area to manage pain, prevent injury, and start living again."
+    const metaImage = "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp"
+    const metaUrl = "https://www.dsmchiropractors.com/directory/"
+    
+    useMeta({
+      title: metaTitle,
+      description: metaDescription,
       link: [
-        { rel: "canonical", href: "https://www.dsmchiropractors.com/directory/" },
+        { rel: "canonical", href: metaUrl },
       ],
       meta: [
-        { property: "og:title",  content: "Directory for DSM Chiropractors" },
-        { property: "og:description",  content: "Directory for DSM Chiropractors. Find the top chiropractors in the Des Moines area." },
+        { property: "og:title",  content: metaTitle },
+        { property: "og:description",  content: metaDescription },
         { property: "og:type",  content: "website" },
-        { property: "og:url",  content: "https://www.dsmchiropractors.com/directory/" },
-        { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
-        { property: "twitter:title",  content: "Directory Des Moines Chiropractors" },
+        { property: "og:url",  content: metaUrl },
+        { property: "og:image",  content: metaImage },
+        { property: "twitter:title",  content: metaTitle },
         { property: "twitter:card",  content: "summary" },
-        { property: "twitter:description",  content: "Directory for DSM Chiropractors. Find the top chiropractors in the Des Moines area." },
-        { property: "twitter:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
+        { property: "twitter:description",  content: metaDescription },
+        { property: "twitter:image",  content: metaImage },
       ]
      });
 

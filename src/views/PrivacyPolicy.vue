@@ -122,21 +122,28 @@ export default {
   name: "privacy-policy",
   components: {},
   setup() {
-    useMeta({ title: "Privacy Policy: DSM Chiropractors",
-      description: "Privacy Policy for DSM Chiropractors",
+        
+    const metaTitle = "Privacy Policy for DSM Chiropractors"
+    const metaDescription = "The Privacy Policy that governs online information collection practices for visiting DSM Chiropractors."
+    const metaImage = "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp"
+    const metaUrl = "https://www.dsmchiropractors.com/privacy-policy/"
+    
+    useMeta({
+      title: metaTitle,
+      description: metaDescription,
       link: [
-        { rel: "canonical", href: "https://www.dsmchiropractors.com/privacy-policy/" },
+        { rel: "canonical", href: metaUrl },
       ],
       meta: [
-        { property: "og:title",  content: "Privacy Policy for DSM Chiropractors" },
-        { property: "og:description",  content: "Privacy Policy for DSM Chiropractors." },
+        { property: "og:title",  content: metaTitle },
+        { property: "og:description",  content: metaDescription },
         { property: "og:type",  content: "website" },
-        { property: "og:url",  content: "https://www.dsmchiropractors.com/privacy-policy/" },
-        { property: "og:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
-        { property: "twitter:title",  content: "Privacy Policy for DSM Chiropractors." },
+        { property: "og:url",  content: metaUrl },
+        { property: "og:image",  content: metaImage },
+        { property: "twitter:title",  content: metaTitle },
         { property: "twitter:card",  content: "summary" },
-        { property: "twitter:description",  content: "Privacy Policy for DSM Chiropractors." },
-        { property: "twitter:image",  content: "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp" },
+        { property: "twitter:description",  content: metaDescription },
+        { property: "twitter:image",  content: metaImage },
       ]
      });
   },
