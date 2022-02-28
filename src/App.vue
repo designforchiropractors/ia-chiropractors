@@ -27,6 +27,20 @@ export default {
       title: "",
       description: "",
       htmlAttrs: { lang: "en" },
+      link: [
+        { rel: "canonical", href: "" },
+      ],
+      meta: [
+        { property: "og:title",  content: "" },
+        { property: "og:description",  content: "" },
+        { property: "og:type",  content: "" },
+        { property: "og:url",  content: "" },
+        { property: "og:image",  content: "" },
+        { property: "twitter:title",  content: "" },
+        { property: "twitter:card",  content: "" },
+        { property: "twitter:description",  content: "" },
+        { property: "twitter:image",  content: "" },
+      ]
     });
   },
 };
