@@ -109,15 +109,15 @@ export default {
         { rel: "canonical", href: blogPost.postOrigin !== "" ? blogPost.postOrigin : "https://www.dsmchiropractors.com/blog/" + blogPost.postLink + "/" },
       ],
       meta: [
-        { property: "og:title",  content: blogPost.postTitle },
-        { property: "og:description",  content: blogPost.postSnippet },
-        { property: "og:type",  content: "blog" },
-        { property: "og:url",  content: "https://www.dsmchiropractors.com/blog/" + blogPost.postLink + "/" },
-        { property: "og:image",  content: blogPost.postImageUrl },
-        { property: "twitter:title",  content: blogPost.postTitle },
-        { property: "twitter:card",  content: "summary" },
-        { property: "twitter:description",  content: blogPost.postSnippet },
-        { property: "twitter:image",  content: blogPost.postImageUrl },
+        { property: "og:title", vmid="og:title", content: blogPost.postTitle },
+        { property: "og:description", vmid="og:description", content: blogPost.postSnippet },
+        { property: "og:type", vmid="og:type", content: "blog" },
+        { property: "og:url", vmid="og:url", content: "https://www.dsmchiropractors.com/blog/" + blogPost.postLink + "/" },
+        { property: "og:image", vmid="og:image", content: blogPost.postImageUrl },
+        { property: "twitter:title", vmid="twitter:title", content: blogPost.postTitle },
+        { property: "twitter:card", vmid="twitter:card", content: "summary" },
+        { property: "twitter:description", vmid="twitter:description", content: blogPost.postSnippet },
+        { property: "twitter:image", vmid="twitter:image", content: blogPost.postImageUrl },
       ]
      });
 
