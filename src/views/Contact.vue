@@ -1,19 +1,17 @@
 <template>
   <section class="custom_bg-pattern pb-32">
-    <h1
-      class="
-        font-bold
-        text-xl
-        md:text-2xl
-        text-center
-        pt-12
-        pb-8
-        md:pt-16 md:pb-12
-        text-gray-700
-      "
-    >
-      Contact DSM Chiropractors
-    </h1>
+    <div class="lg:text-center py-8 md:py-12 lg:py-16">
+        <h1 class="text-base text-green-700 font-semibold tracking-wide uppercase">
+          Contact DSM Chiropractors
+        </h1>
+        <h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            Get in contact with us
+        </h2>
+        <h3 class="mt-4 max-w-3xl text-xl text-gray-500 lg:mx-auto">
+            Inquire about our services by phone, e-mail, or contact form and we'll get back to you.
+            Get your business listed and turn casual browsers into paying clients.
+        </h3>
+    </div>
 
     <div class="w-full lg:flex">
       <div

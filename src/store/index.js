@@ -38,7 +38,7 @@ export default createStore({
       },
       {
         id: 4,
-        name: "Agnes Something",
+        name: "Agnes Johnson",
         experience: 7,
         location: "Des Moines",
         focus: "Kids",
