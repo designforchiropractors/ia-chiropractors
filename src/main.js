@@ -25,7 +25,12 @@ const sanitizeOverrides = {
         h3: [ "class" ],
         h4: [ "class" ],
         h5: [ "class" ],
-        h6: [ "class" ]
+        h6: [ "class" ],
+        dl: [ "class" ],
+        dt: [ "class" ],
+        dd: [ "class" ],
+        ul: [ "class" ],
+        li: [ "class" ]
     },
 };
 
