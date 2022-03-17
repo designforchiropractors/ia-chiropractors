@@ -79,7 +79,7 @@
           >
             Send Message
           </button>
-          <span
+          <div
             id="success"
             v-show="showSuccess"
             class="
@@ -96,8 +96,8 @@
             "
           >
             Thanks! We'll be in touch soon.
-          </span>
-          <span
+          </div>
+          <div
             id="error"
             v-show="showError"
             class="
@@ -114,7 +114,7 @@
             "
           >
             Whoops... Something went wrong.
-          </span>
+          </div>
         </form>
       </div>
     </div>
