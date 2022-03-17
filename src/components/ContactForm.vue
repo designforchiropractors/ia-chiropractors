@@ -58,6 +58,7 @@
           <button
             type="submit"
             id="submit-button"
+            @click="handleSubmit"
             class="
               w-full
               font-semibold
