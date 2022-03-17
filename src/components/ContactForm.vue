@@ -83,7 +83,6 @@
             id="success"
             v-show="showSuccess"
             class="
-              hidden
               absolute
               mt-2
               px-4
@@ -102,7 +101,6 @@
             id="error"
             v-show="showError"
             class="
-              hidden
               absolute
               mt-2
               px-4
