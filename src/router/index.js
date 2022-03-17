@@ -49,8 +49,7 @@ const routes = [
   {
     path: "/blog/:postLink/",
     name: "blogPost",
-    component: BlogPost,
-    props: true
+    component: BlogPost
   },
   {
     path: "/notfound/",

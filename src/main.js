@@ -1,9 +1,9 @@
 import { createApp } from "vue";
 import { createMetaManager } from "vue-meta";
-import Vue3Sanitize from "vue-3-sanitize";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import Vue3Sanitize from "vue-3-sanitize";
 import "./assets/tailwind.css";
 import "./assets/normalize-and-reset.css";
 
@@ -34,4 +34,8 @@ const sanitizeOverrides = {
     },
 };
 
-createApp(App).use(store).use(router).use(createMetaManager()).use(Vue3Sanitize, sanitizeOverrides).mount("#app");
+createApp(App).use(store)
+    .use(router)
+    .use(createMetaManager())
+    .use(Vue3Sanitize, sanitizeOverrides)
+    .mount("#app");

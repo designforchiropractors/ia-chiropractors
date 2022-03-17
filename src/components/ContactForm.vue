@@ -8,50 +8,46 @@
         <span class="text-sm mb-4 text-gray-400">
           Send us a message and we'll get in touch.
         </span>
-        
+
         <form
+          id="contact"
           name="contact"
+          method="post"
           data-netlify="true"
           autocomplete="off"
           netlify-honeypot="bot-field"
         >
-          <p class="hidden">
-            <label
-              >Don’t fill this out if you’re human: <input name="bot-field"
-            /></label>
-          </p>
+          <input type="hidden" name="form-name" value="contact" />
           <div class="input-animated">
             <input
               type="text"
-              id="name"
-              name="name"
+              id="contact-name"
+              name="contact-name"
               required
               pattern="\S+.*"
               placeholder="the placeholder"
             />
-            <label htmlFor="name" class="label-name"
+            <label htmlFor="contact-name" class="label-name"
               ><span class="content-name">Name</span></label
             >
           </div>
           <div class="input-animated">
             <input
               type="email"
-              id="email"
-              name="email"
+              id="contact-email"
+              name="contact-email"
               required
               placeholder="the placeholder"
             />
-            <label htmlFor="email" class="label-email">
-              <span class="content-email">
-                Email
-              </span>
+            <label htmlFor="contact-email" class="label-email">
+              <span class="content-email"> Email </span>
             </label>
           </div>
           <div>
             <textarea
-              name="question"
+              name="contact-question"
               placeholder="Your Question"
-              id="question"
+              id="contact-question"
               cols="40"
               rows="8"
               minLength="10"
@@ -84,6 +80,7 @@
           </button>
           <span
             id="success"
+            v-show="showSuccess"
             class="
               hidden
               absolute
@@ -97,11 +94,12 @@
               bg-green-100
               text-green-600
             "
-            >
+          >
             Thanks! We'll be in touch soon.
           </span>
           <span
             id="error"
+            v-show="showError"
             class="
               hidden
               absolute
@@ -115,7 +113,7 @@
               bg-red-100
               text-red-600
             "
-            >
+          >
             Whoops... Something went wrong.
           </span>
         </form>
@@ -125,7 +123,45 @@
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
-  setup() {},
+  setup() {
+    let showError = ref(false);
+    let showSuccess = ref(false);
+
+    const handleErrors = (response) => {
+      if (!response.ok) {
+        throw Error(response.statusText);
+      }
+      return response;
+    };
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      const form = document.getElementById("contact");
+      const formData = new FormData(form);
+
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(handleErrors)
+        .then(() => {
+          showSuccess.value = true;
+        })
+        .catch((error) => {
+          showError.value = true;
+          console.log(error);
+        });
+    };
+
+    return {
+      showError,
+      showSuccess,
+      handleSubmit,
+    };
+  },
 };
 </script>
