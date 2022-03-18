@@ -72,8 +72,8 @@
         </button>
       </div>
 
-      <div v-show="show" class="w-full mr-3 lg:hidden">
-        <ul class="flex flex-col ml-auto text-md font-bold">
+      <div id="sm-nav-content" v-show="show" class="w-full mr-3 lg:hidden">
+        <ul class="flex flex-col ml-auto text-md font-bold mt-4">
           <header-nav-link
             v-for="navLink in navLinks"
             :navLink="navLink"
@@ -85,6 +85,7 @@
       </div>
 
       <div
+        id="lg-nav-content"
         class="
           w-full
           py-8
