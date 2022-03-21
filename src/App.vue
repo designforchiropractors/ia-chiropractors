@@ -1,5 +1,4 @@
 <template>
-  
   <metainfo>
     <template v-slot:title="{ content }">
       {{ content ? `${content}` : `DSM Chiropractors` }}
@@ -27,20 +26,22 @@ export default {
       title: "",
       description: "",
       htmlAttrs: { lang: "en" },
-      link: [
-        { rel: "canonical", href: "" },
-      ],
+      link: [{ rel: "canonical", href: "" }],
       meta: [
-        { property: "og:title",  content: "", vmid: "og:title" },
-        { property: "og:description",  content: "", vmid: "og:description" },
-        { property: "og:type",  content: "", vmid: "og:type" },
-        { property: "og:url",  content: "", vmid: "og:url" },
-        { property: "og:image",  content: "", vmid: "og:image" },
-        { property: "twitter:title",  content: "", vmid: "twitter:title" },
-        { property: "twitter:card",  content: "", vmid: "twitter:card" },
-        { property: "twitter:description",  content: "", vmid: "twitter:description" },
-        { property: "twitter:image",  content: "", vmid: "twitter:images" },
-      ]
+        { property: "og:title", content: "", vmid: "og:title" },
+        { property: "og:description", content: "", vmid: "og:description" },
+        { property: "og:type", content: "", vmid: "og:type" },
+        { property: "og:url", content: "", vmid: "og:url" },
+        { property: "og:image", content: "", vmid: "og:image" },
+        { property: "twitter:title", content: "", vmid: "twitter:title" },
+        { property: "twitter:card", content: "", vmid: "twitter:card" },
+        {
+          property: "twitter:description",
+          content: "",
+          vmid: "twitter:description",
+        },
+        { property: "twitter:image", content: "", vmid: "twitter:images" },
+      ],
     });
   },
 };

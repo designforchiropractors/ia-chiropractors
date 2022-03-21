@@ -24,11 +24,11 @@
         "
       >
         <footer-nav-link
-            v-for="navLink in navLinks"
-            :navLink="navLink"
-            :key="navLink.id"
-          >
-          </footer-nav-link>
+          v-for="navLink in navLinks"
+          :navLink="navLink"
+          :key="navLink.id"
+        >
+        </footer-nav-link>
       </ul>
 
       <div class="flex text-gray-700"></div>

@@ -48,10 +48,10 @@
               </div>
               <div>
                 <span class="block font-semibold text-white">
-                    {{ blogPost.authorName }}
+                  {{ blogPost.authorName }}
                 </span>
                 <span class="block text-sm font-medium text-gray-50">
-                    {{ this.formatDate(blogPost.postDate) }}
+                  {{ this.formatDate(blogPost.postDate) }}
                 </span>
               </div>
             </div>
@@ -72,7 +72,7 @@
         <p class="mb-12 text-lg lg:text-xl font-semibold text-gray-700">
           {{ blogPost.postSnippet }}
         </p>
-        <div v-html="$sanitize(blogPost.postContents)"></div>       
+        <div v-html="$sanitize(blogPost.postContents)"></div>
       </div>
     </article>
     <div class="w-full lg:flex">
@@ -91,7 +91,7 @@ import ContactForm from "@/components/ContactForm.vue";
 export default {
   name: "blogPost",
   components: {
-    ContactForm
+    ContactForm,
   },
   setup() {
     const route = useRoute();
@@ -99,34 +99,69 @@ export default {
     const blogPosts = computed(() => store.state.blogPosts);
 
     const blogPost = blogPosts.value.find((item) => {
-        return item.postLink == route.params.postLink;
+      return item.postLink == route.params.postLink;
     });
 
-    const blogUrl = "https://www.dsmchiropractors.com/blog/" + blogPost.postLink + "/";
+    const blogUrl =
+      "https://www.dsmchiropractors.com/blog/" + blogPost.postLink + "/";
 
     useMeta({
       title: blogPost.postTitle,
       description: blogPost.postSnippet,
       link: [
-        { rel: "canonical", href: blogPost.postOrigin !== "" ? blogPost.postOrigin : "https://www.dsmchiropractors.com/blog/" + blogPost.postLink + "/" },
+        {
+          rel: "canonical",
+          href:
+            blogPost.postOrigin !== ""
+              ? blogPost.postOrigin
+              : "https://www.dsmchiropractors.com/blog/" +
+                blogPost.postLink +
+                "/",
+        },
       ],
       meta: [
         { property: "og:title", vmid: "og:title", content: blogPost.postTitle },
-        { property: "og:description", vmid: "og:description", content: blogPost.postSnippet },
+        {
+          property: "og:description",
+          vmid: "og:description",
+          content: blogPost.postSnippet,
+        },
         { property: "og:type", vmid: "og:type", content: "blog" },
         { property: "og:url", vmid: "og:url", content: blogUrl },
-        { property: "og:image", vmid: "og:image", content: blogPost.postImageUrl },
-        { property: "twitter:title", vmid: "twitter:title", content: blogPost.postTitle },
+        {
+          property: "og:image",
+          vmid: "og:image",
+          content: blogPost.postImageUrl,
+        },
+        {
+          property: "twitter:title",
+          vmid: "twitter:title",
+          content: blogPost.postTitle,
+        },
         { property: "twitter:card", vmid: "twitter:card", content: "summary" },
-        { property: "twitter:description", vmid: "twitter:description", content: blogPost.postSnippet },
-        { property: "twitter:image", vmid: "twitter:image", content: blogPost.postImageUrl },
-      ]
-     });
+        {
+          property: "twitter:description",
+          vmid: "twitter:description",
+          content: blogPost.postSnippet,
+        },
+        {
+          property: "twitter:image",
+          vmid: "twitter:image",
+          content: blogPost.postImageUrl,
+        },
+      ],
+    });
 
     const formatDate = (d) => {
-      return d.toLocaleString("default", { month: "short" }) + " " + d.getDate() + ", " + d.getFullYear();
-    }
-    
+      return (
+        d.toLocaleString("default", { month: "short" }) +
+        " " +
+        d.getDate() +
+        ", " +
+        d.getFullYear()
+      );
+    };
+
     return { blogPost, formatDate };
   },
 };

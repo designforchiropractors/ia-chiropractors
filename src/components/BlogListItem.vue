@@ -17,8 +17,8 @@
     ></div>
 
     <router-link
-        :to="{ name: 'blogPost', params: { postLink: blogPost.postLink } }"
-        class="relative inline-block h-full"
+      :to="{ name: 'blogPost', params: { postLink: blogPost.postLink } }"
+      class="relative inline-block h-full"
     >
       <div class="absolute h-full overflow-hidden">
         <img
@@ -31,10 +31,10 @@
         <div class="w-full">
           <div class="mt-2">
             <span class="uppercase font-semibold text-white text-xs">
-                {{ blogPost.postCategory }}
+              {{ blogPost.postCategory }}
             </span>
             <span class="text-gray-50 mx-2 font-medium text-sm">
-                {{ this.formatDate(blogPost.postDate) }}
+              {{ this.formatDate(blogPost.postDate) }}
             </span>
           </div>
           <h2
@@ -99,9 +99,15 @@ export default {
   },
   setup() {
     const formatDate = (d) => {
-      return d.toLocaleString("default", { month: "short" }) + " " + d.getDate() + ", " + d.getFullYear();
-    }
-    return { formatDate }
+      return (
+        d.toLocaleString("default", { month: "short" }) +
+        " " +
+        d.getDate() +
+        ", " +
+        d.getFullYear()
+      );
+    };
+    return { formatDate };
   },
 };
 </script>

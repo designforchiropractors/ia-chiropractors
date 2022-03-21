@@ -122,30 +122,45 @@ export default {
   name: "privacy-policy",
   components: {},
   setup() {
-        
-    const metaTitle = "Privacy Policy for DSM Chiropractors"
-    const metaDescription = "The Privacy Policy that governs online information collection practices for visiting DSM Chiropractors."
-    const metaImage = "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp"
-    const metaUrl = "https://www.dsmchiropractors.com/privacy-policy/"
-    
+    const metaTitle = "Privacy Policy for DSM Chiropractors";
+    const metaDescription =
+      "The Privacy Policy that governs online information collection practices for visiting DSM Chiropractors.";
+    const metaImage =
+      "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp";
+    const metaUrl = "https://www.dsmchiropractors.com/privacy-policy/";
+
     useMeta({
       title: metaTitle,
       description: metaDescription,
-      link: [
-        { rel: "canonical", href: metaUrl },
-      ],
+      link: [{ rel: "canonical", href: metaUrl }],
       meta: [
         { property: "og:title", vmid: "og:title", content: metaTitle },
-        { property: "og:description", vmid: "og:description", content: metaDescription },
+        {
+          property: "og:description",
+          vmid: "og:description",
+          content: metaDescription,
+        },
         { property: "og:type", vmid: "og:type", content: "website" },
         { property: "og:url", vmid: "og:url", content: metaUrl },
-        { property: "og:image", vmid: "og:image",content: metaImage },
-        { property: "twitter:title", vmid: "twitter:title",content: metaTitle },
-        { property: "twitter:card", vmid: "twitter:card",content: "summary" },
-        { property: "twitter:description", vmid: "twitter:description", content: metaDescription },
-        { property: "twitter:image", vmid: "twitter:image", content: metaImage },
-      ]
-     });
+        { property: "og:image", vmid: "og:image", content: metaImage },
+        {
+          property: "twitter:title",
+          vmid: "twitter:title",
+          content: metaTitle,
+        },
+        { property: "twitter:card", vmid: "twitter:card", content: "summary" },
+        {
+          property: "twitter:description",
+          vmid: "twitter:description",
+          content: metaDescription,
+        },
+        {
+          property: "twitter:image",
+          vmid: "twitter:image",
+          content: metaImage,
+        },
+      ],
+    });
   },
 };
 </script>
