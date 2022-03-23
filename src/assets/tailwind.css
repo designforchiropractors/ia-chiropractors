@@ -16,6 +16,14 @@
     }
     /* #endregion */
   
+    /* #region SPECIAL */
+
+    .blog-post-contents a {
+      @apply underline;
+    }
+
+    /* #endregion */
+
     /* #region Background Images */
     .chiropractor_select {
       background: url('../assets/area.webp');

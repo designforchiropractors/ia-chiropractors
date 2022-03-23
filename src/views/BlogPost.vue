@@ -72,7 +72,7 @@
         <p class="mb-12 text-lg lg:text-xl font-semibold text-gray-700">
           {{ blogPost.postSnippet }}
         </p>
-        <div v-html="$sanitize(blogPost.postContents)"></div>
+        <div class="blog-post-contents" v-html="$sanitize(blogPost.postContents)"></div>
       </div>
     </article>
     <div class="w-full lg:flex">
