@@ -13,7 +13,8 @@ module.exports = {
          // List of routes to prerender
          [
             '/', '/apply', '/blog', '/contact', '/directory', '/privacy-policy', '/terms-conditions', '/notfound',
-            '/blog/reasons-business-should-be-listed-online-directory', '/blog/simple-ways-to-grow-chiropractor-business-online'
+            '/blog/reasons-business-should-be-listed-online-directory', '/blog/simple-ways-to-grow-chiropractor-business-online',
+            '/blog/why-netlify-the-simple-fast-and-secure-platform-for-developers'
         ],
        ),
      ]
