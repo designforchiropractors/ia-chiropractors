@@ -44,9 +44,9 @@
       </div>
 
       <directory-item-component
-        v-for="chiropractor in chiropractors"
+        v-for="(chiropractor, index) in chiropractors"
         :chiropractor="chiropractor"
-        :key="chiropractor.id"
+        :key="index"
       >
       </directory-item-component>
     </div>

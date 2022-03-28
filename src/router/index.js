@@ -7,6 +7,7 @@ import Directory from "../views/Directory.vue";
 import TermsConditions from "../views/TermsConditions.vue";
 import PrivacyPolicy from "../views/PrivacyPolicy.vue";
 import BlogPost from "../views/BlogPost.vue";
+import DirectoryListing from "../views/DirectoryListing.vue";
 import NotFound from "../views/NotFound.vue";
 
 const routes = [
@@ -30,6 +31,11 @@ const routes = [
     path: "/directory/",
     name: "directory",
     component: Directory,
+  },
+  {
+    path: "/directory/:directoryLink/",
+    name: "directoryListing",
+    component: DirectoryListing,
   },
   {
     path: "/terms-conditions/",
