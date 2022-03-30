@@ -238,11 +238,11 @@ export default {
     RightCard,
   },
   setup() {
+    const store = useStore();
+
     const metaTitle = "DSM Chiropractors";
     const metaDescription =
       "DSM Chiropractors. Find the top chiropractors in the Des Moines area or get your business listed in the directory.";
-    const metaImage =
-      "";
     const metaUrl = "https://www.dsmchiropractors.com/";
 
     useMeta({
@@ -258,7 +258,11 @@ export default {
         },
         { property: "og:type", vmid: "og:type", content: "website" },
         { property: "og:url", vmid: "og:url", content: metaUrl },
-        { property: "og:image", vmid: "og:image", content: metaImage },
+        {
+          property: "og:image",
+          vmid: "og:image",
+          content: store.state.metaLogoImage,
+        },
         {
           property: "twitter:title",
           vmid: "twitter:title",
@@ -273,12 +277,11 @@ export default {
         {
           property: "twitter:image",
           vmid: "twitter:image",
-          content: metaImage,
+          content: store.state.metaLogoImage,
         },
       ],
     });
 
-    const store = useStore();
     const infoCards = computed(() => store.state.infoCards);
     const rightCards = computed(() => store.state.rightCards);
     return { infoCards, rightCards };

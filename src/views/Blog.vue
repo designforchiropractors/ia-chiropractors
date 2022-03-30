@@ -39,17 +39,18 @@
 import { useMeta } from "vue-meta";
 import { computed } from "vue";
 import { useStore } from "vuex";
+
 import BlogListItem from "../components/BlogListItem.vue";
 
 export default {
   name: "blog",
   components: { BlogListItem },
   setup() {
+    const store = useStore();
+
     const metaTitle = "Blog for DSM Chiropractors";
     const metaDescription =
       "Blog for DSM Chiropractors. Advice, articles, and information focused on Des Moines chiropractors and marketing their businesses.";
-    const metaImage =
-      "";
     const metaUrl = "https://www.dsmchiropractors.com/blog/";
 
     useMeta({
@@ -65,7 +66,11 @@ export default {
         },
         { property: "og:type", vmid: "og:type", content: "blog" },
         { property: "og:url", vmid: "og:url", content: metaUrl },
-        { property: "og:image", vmid: "og:image", content: metaImage },
+        {
+          property: "og:image",
+          vmid: "og:image",
+          content: store.state.metaLogoImage,
+        },
         {
           property: "twitter:title",
           vmid: "twitter:title",
@@ -80,12 +85,11 @@ export default {
         {
           property: "twitter:image",
           vmid: "twitter:image",
-          content: metaImage,
+          content: store.state.metaLogoImage,
         },
       ],
     });
 
-    const store = useStore();
     const blogPosts = computed(() =>
       store.state.blogPosts
         .slice()

@@ -81,6 +81,7 @@
 import { useMeta } from "vue-meta";
 import { computed } from "vue";
 import { useStore } from "vuex";
+
 import ListingBenefit from "@/components/ListingBenefit.vue";
 import ContactForm from "@/components/ContactForm.vue";
 
@@ -91,11 +92,11 @@ export default {
     ContactForm,
   },
   setup() {
+    const store = useStore();
+
     const metaTitle = "Apply to Be Listed on DSM Chiropractors";
     const metaDescription =
       "Apply to Be Listed on DSM Chiropractors among the top chiropractors in the Des Moines area and turn casual browsers into paying clients.";
-    const metaImage =
-      "";
     const metaUrl = "https://www.dsmchiropractors.com/apply/";
 
     useMeta({
@@ -111,7 +112,11 @@ export default {
         },
         { property: "og:type", vmid: "og:type", content: "website" },
         { property: "og:url", vmid: "og:url", content: metaUrl },
-        { property: "og:image", vmid: "og:image", content: metaImage },
+        {
+          property: "og:image",
+          vmid: "og:image",
+          content: store.state.metaLogoImage,
+        },
         {
           property: "twitter:title",
           vmid: "twitter:title",
@@ -126,12 +131,11 @@ export default {
         {
           property: "twitter:image",
           vmid: "twitter:image",
-          content: metaImage,
+          content: store.state.metaLogoImage,
         },
       ],
     });
 
-    const store = useStore();
     const listingBenefits = computed(() => store.state.listingBenefits);
     return { listingBenefits };
   },

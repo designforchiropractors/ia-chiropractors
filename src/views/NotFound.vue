@@ -24,15 +24,16 @@
 
 <script>
 import { useMeta } from "vue-meta";
+import { useStore } from "vuex";
 
 export default {
   name: "notfound",
   components: {},
   setup() {
+    const store = useStore();
+
     const metaTitle = "404: DSM Chiropractors";
     const metaDescription = "404 Page not found on DSM Chiropractors";
-    const metaImage =
-      "";
     const metaUrl = "https://www.dsmchiropractors.com/notfound/";
 
     useMeta({
@@ -48,7 +49,11 @@ export default {
         },
         { property: "og:type", vmid: "og:type", content: "website" },
         { property: "og:url", vmid: "og:url", content: metaUrl },
-        { property: "og:image", vmid: "og:image", content: metaImage },
+        {
+          property: "og:image",
+          vmid: "og:image",
+          content: store.state.metaLogoImage,
+        },
         {
           property: "twitter:title",
           vmid: "twitter:title",
@@ -63,7 +68,7 @@ export default {
         {
           property: "twitter:image",
           vmid: "twitter:image",
-          content: metaImage,
+          content: store.state.metaLogoImage,
         },
       ],
     });

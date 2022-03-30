@@ -57,6 +57,7 @@
 import { useMeta } from "vue-meta";
 import { computed } from "vue";
 import { useStore } from "vuex";
+
 import DirectoryItemComponent from "@/components/DirectoryItemComponent";
 
 export default {
@@ -65,11 +66,11 @@ export default {
     DirectoryItemComponent,
   },
   setup() {
+    const store = useStore();
+
     const metaTitle = "Directory for DSM Chiropractors";
     const metaDescription =
       "Directory for DSM Chiropractors. Find the top chiropractors in the Des Moines area to manage pain, prevent injury, and start living again.";
-    const metaImage =
-      "";
     const metaUrl = "https://www.dsmchiropractors.com/directory/";
 
     useMeta({
@@ -85,7 +86,7 @@ export default {
         },
         { property: "og:type", vmid: "og:type", content: "website" },
         { property: "og:url", vmid: "og:url", content: metaUrl },
-        { property: "og:image", vmid: "og:image", content: metaImage },
+        { property: "og:image", vmid: "og:image", content: store.state.metaLogoImage },
         {
           property: "twitter:title",
           vmid: "twitter:title",
@@ -100,12 +101,11 @@ export default {
         {
           property: "twitter:image",
           vmid: "twitter:image",
-          content: metaImage,
+          content: store.state.metaLogoImage,
         },
       ],
     });
 
-    const store = useStore();
     const chiropractors = computed(() => store.state.chiropractors);
     return { chiropractors };
   },

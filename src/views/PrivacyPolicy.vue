@@ -2,17 +2,7 @@
   <!-- Start of Privacy Policy text-->
   <section class="pt-24 pb-40 lg:pt-28 lg:pb-40 flex justify-center">
     <article class="max-w-screen-xl lg:mx-8">
-      <div
-        class="
-          inline-block
-          p-3
-          lg:p-4
-          rounded-full
-          mb-1
-          ml-5
-          bg-green-700
-        "
-      >
+      <div class="inline-block p-3 lg:p-4 rounded-full mb-1 ml-5 bg-green-700">
         <svg
           class="h-8 w-8"
           width="24"
@@ -116,16 +106,17 @@
 
 <script>
 import { useMeta } from "vue-meta";
+import { useStore } from "vuex";
 
 export default {
   name: "privacy-policy",
   components: {},
   setup() {
+    const store = useStore();
+
     const metaTitle = "Privacy Policy for DSM Chiropractors";
     const metaDescription =
       "The Privacy Policy that governs online information collection practices for visiting DSM Chiropractors.";
-    const metaImage =
-      "";
     const metaUrl = "https://www.dsmchiropractors.com/privacy-policy/";
 
     useMeta({
@@ -141,7 +132,11 @@ export default {
         },
         { property: "og:type", vmid: "og:type", content: "website" },
         { property: "og:url", vmid: "og:url", content: metaUrl },
-        { property: "og:image", vmid: "og:image", content: metaImage },
+        {
+          property: "og:image",
+          vmid: "og:image",
+          content: store.state.metaLogoImage,
+        },
         {
           property: "twitter:title",
           vmid: "twitter:title",
@@ -156,7 +151,7 @@ export default {
         {
           property: "twitter:image",
           vmid: "twitter:image",
-          content: metaImage,
+          content: store.state.metaLogoImage,
         },
       ],
     });

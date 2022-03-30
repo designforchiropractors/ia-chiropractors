@@ -49,6 +49,8 @@
 
 <script>
 import { useMeta } from "vue-meta";
+import { useStore } from "vuex";
+
 import ContactForm from "@/components/ContactForm.vue";
 import ContactInfo from "@/components/ContactInfo.vue";
 
@@ -59,11 +61,11 @@ export default {
     ContactInfo,
   },
   setup() {
+    const store = useStore();
+
     const metaTitle = "Contact DSM Chiropractors";
     const metaDescription =
       "Contact DSM Chiropractors. Inquire about our services by phone, e-mail, or contact form. Get your business listed and turn casual browsers into paying clients.";
-    const metaImage =
-      "";
     const metaUrl = "https://www.dsmchiropractors.com/contact/";
 
     useMeta({
@@ -79,7 +81,7 @@ export default {
         },
         { property: "og:type", vmid: "og:type", content: "website" },
         { property: "og:url", vmid: "og:url", content: metaUrl },
-        { property: "og:image", vmid: "og:image", content: metaImage },
+        { property: "og:image", vmid: "og:image", content: store.state.metaLogoImage },
         {
           property: "twitter:title",
           vmid: "twitter:title",
@@ -94,7 +96,7 @@ export default {
         {
           property: "twitter:image",
           vmid: "twitter:image",
-          content: metaImage,
+          content: store.state.metaLogoImage,
         },
       ],
     });
