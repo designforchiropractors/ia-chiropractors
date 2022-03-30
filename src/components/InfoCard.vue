@@ -5,7 +5,8 @@
       my-8
       md:mx-4 md:my-4
       lg:mx-12
-      w-80
+      sm:w-72
+      md:w-80
       overflow-hidden
       shadow-md
       bg-white
