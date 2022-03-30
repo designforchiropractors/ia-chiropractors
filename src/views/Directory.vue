@@ -69,7 +69,7 @@ export default {
     const metaDescription =
       "Directory for DSM Chiropractors. Find the top chiropractors in the Des Moines area to manage pain, prevent injury, and start living again.";
     const metaImage =
-      "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp";
+      "";
     const metaUrl = "https://www.dsmchiropractors.com/directory/";
 
     useMeta({

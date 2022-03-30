@@ -10,7 +10,6 @@
           rounded-full
           mb-1
           ml-5
-          sm:ml-0
           bg-green-700
         "
       >
@@ -126,7 +125,7 @@ export default {
     const metaDescription =
       "The Privacy Policy that governs online information collection practices for visiting DSM Chiropractors.";
     const metaImage =
-      "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp";
+      "";
     const metaUrl = "https://www.dsmchiropractors.com/privacy-policy/";
 
     useMeta({

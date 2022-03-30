@@ -19,7 +19,7 @@
   >
     <div class="dsm_chiropractors h-full absolute top-0 left-0 right-0 z-0">
       <img
-        :src="require('@/assets/dsm-chiropractors.webp')"
+        :src="require('@/assets/dsm-chiropractors.jpg')"
         alt="The city of Des Moines"
         class="w-full h-full object-cover opacity-20"
       />
@@ -94,7 +94,7 @@
         <div class="relative w-full pb-96 overflow-hidden lg:pb-0 lg:ml-44">
           <img
             class="absolute w-full h-full object-cover"
-            src="../assets/people.webp"
+            src="../assets/people.jpg"
             alt="A row of happy people"
           />
         </div>
@@ -242,7 +242,7 @@ export default {
     const metaDescription =
       "DSM Chiropractors. Find the top chiropractors in the Des Moines area or get your business listed in the directory.";
     const metaImage =
-      "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp";
+      "";
     const metaUrl = "https://www.dsmchiropractors.com/";
 
     useMeta({

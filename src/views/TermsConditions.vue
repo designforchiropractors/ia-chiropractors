@@ -10,7 +10,6 @@
           rounded-lg
           mb-1
           ml-5
-          sm:ml-0
           bg-green-700
         "
       >
@@ -112,7 +111,7 @@ export default {
     const metaDescription =
       "By visiting DSM Chiropractors, you agree to be bound by our Terms & Conditions and use this site accordingly.";
     const metaImage =
-      "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp";
+      "";
     const metaUrl = "https://www.dsmchiropractors.com/terms-conditions/";
 
     useMeta({

@@ -32,7 +32,7 @@ export default {
     const metaTitle = "404: DSM Chiropractors";
     const metaDescription = "404 Page not found on DSM Chiropractors";
     const metaImage =
-      "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp";
+      "";
     const metaUrl = "https://www.dsmchiropractors.com/notfound/";
 
     useMeta({

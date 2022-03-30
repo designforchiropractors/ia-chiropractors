@@ -95,7 +95,7 @@ export default {
     const metaDescription =
       "Apply to Be Listed on DSM Chiropractors among the top chiropractors in the Des Moines area and turn casual browsers into paying clients.";
     const metaImage =
-      "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp";
+      "";
     const metaUrl = "https://www.dsmchiropractors.com/apply/";
 
     useMeta({

@@ -49,7 +49,7 @@ export default {
     const metaDescription =
       "Blog for DSM Chiropractors. Advice, articles, and information focused on Des Moines chiropractors and marketing their businesses.";
     const metaImage =
-      "https://www.dsmchiropractors.com/img/dsm-chiropractors.bb8ecb53.webp";
+      "";
     const metaUrl = "https://www.dsmchiropractors.com/blog/";
 
     useMeta({
