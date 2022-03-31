@@ -16,6 +16,7 @@
           data-netlify="true"
           autocomplete="off"
           netlify-honeypot="bot-field"
+          @submit.prevent="handleSubmit"
         >
           <input type="hidden" name="form-name" value="contact" />
           <div class="input-animated">
@@ -23,7 +24,10 @@
               type="text"
               id="contact-name"
               name="contact-name"
+              v-model="formState.name"
               required
+              minLength="2"
+              maxLength="50"
               pattern="\S+.*"
               placeholder="the placeholder"
             />
@@ -31,11 +35,16 @@
               ><span class="content-name">Name</span></label
             >
           </div>
+          <span v-if="v$.name.$error">
+            {{ v$.name.$errors[0].$message }}
+          </span>
+
           <div class="input-animated">
             <input
               type="email"
               id="contact-email"
               name="contact-email"
+              v-model="formState.email"
               required
               placeholder="the placeholder"
             />
@@ -43,6 +52,10 @@
               <span class="content-email"> Email </span>
             </label>
           </div>
+          <span v-if="v$.email.$error">
+            {{ v$.email.$errors[0].$message }}
+          </span>
+
           <div>
             <textarea
               name="contact-question"
@@ -52,13 +65,17 @@
               rows="8"
               minLength="10"
               maxLength="100"
+              v-model="formState.question"
               required
             ></textarea>
           </div>
+          <span v-if="v$.question.$error">
+            {{ v$.question.$errors[0].$message }}
+          </span>
+
           <button
             type="submit"
             id="submit-button"
-            @click="handleSubmit"
             class="
               w-full
               font-semibold
@@ -122,12 +139,34 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, reactive, computed } from "vue";
+import useValidate from "@vuelidate/core";
+import { required, email, minLength, maxLength } from "@vuelidate/validators";
 
 export default {
   setup() {
     let showError = ref(false);
     let showSuccess = ref(false);
+
+    const formState = reactive({
+          name: '',
+          email: '',
+          question: '',
+    });
+
+    const rules = computed(() => {
+      return {
+        name: { required, minLength: minLength(2), maxLength: maxLength(50) },
+        email: { required, email },
+        question: {
+          required,
+          minLength: minLength(10),
+          maxLength: maxLength(250),
+        },
+      };
+    });
+
+    const v$ = useValidate(rules, formState);
 
     const handleErrors = (response) => {
       if (!response.ok) {
@@ -159,6 +198,8 @@ export default {
     return {
       showError,
       showSuccess,
+      formState,
+      v$,
       handleSubmit,
     };
   },
