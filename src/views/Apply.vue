@@ -5,7 +5,7 @@
         <h1
           class="text-base text-green-700 font-semibold tracking-wide uppercase"
         >
-          Get Listed
+          Get Listed among Top Des Moines Chiropractors
         </h1>
         <h2
           class="
@@ -94,9 +94,9 @@ export default {
   setup() {
     const store = useStore();
 
-    const metaTitle = "Apply to Be Listed on DSM Chiropractors";
+    const metaTitle = "Apply to Be Listed among Top Des Moines Chiropractors";
     const metaDescription =
-      "Apply to Be Listed on DSM Chiropractors among the top chiropractors in the Des Moines area and turn casual browsers into paying clients.";
+      "Apply to Be Listed on DSM Chiropractors among the Top Des Moines Chiropractors and turn casual browsers into paying clients.";
     const metaUrl = "https://www.dsmchiropractors.com/apply/";
 
     useMeta({

@@ -63,9 +63,9 @@ export default {
   setup() {
     const store = useStore();
 
-    const metaTitle = "Contact DSM Chiropractors";
+    const metaTitle = "Contact Des Moines Chiropractors";
     const metaDescription =
-      "Contact DSM Chiropractors. Inquire about our services by phone, e-mail, or contact form. Get your business listed and turn casual browsers into paying clients.";
+      "Contact DSM Chiropractors. Inquire about our services or Des Moines Chiropractors by phone, e-mail, or contact form. Get your business listed and turn casual browsers into paying clients.";
     const metaUrl = "https://www.dsmchiropractors.com/contact/";
 
     useMeta({

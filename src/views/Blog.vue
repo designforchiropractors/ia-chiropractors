@@ -20,7 +20,7 @@
         Advice, articles, and information
       </h2>
       <h3 class="mt-4 max-w-3xl text-xl text-gray-500 lg:mx-auto">
-        Focused on Des Moines chiropractors and marketing their businesses.
+        Focused on Des Moines Chiropractors and marketing their businesses.
       </h3>
     </div>
 
@@ -48,9 +48,9 @@ export default {
   setup() {
     const store = useStore();
 
-    const metaTitle = "Blog for DSM Chiropractors";
+    const metaTitle = "Blog for Des Moines Chiropractors";
     const metaDescription =
-      "Blog for DSM Chiropractors. Advice, articles, and information focused on Des Moines chiropractors and marketing their businesses.";
+      "Blog for DSM Chiropractors. Advice, articles, and information focused on Des Moines Chiropractors and marketing their businesses.";
     const metaUrl = "https://www.dsmchiropractors.com/blog/";
 
     useMeta({

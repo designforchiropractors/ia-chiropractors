@@ -54,7 +54,6 @@
     </div>
   </section>
 
-  <!-- Info Cards -->
   <section
     id="benefit"
     class="
@@ -102,7 +101,6 @@
     </div>
   </section>
 
-  <!-- View Directory -->
   <section
     class="
       chiropractor_select
@@ -162,7 +160,6 @@
     </div>
   </section>
 
-  <!-- List Your Business -->
   <section
     class="
       relative
@@ -242,12 +239,14 @@ export default {
 
     const metaTitle = "DSM Chiropractors";
     const metaDescription =
-      "DSM Chiropractors. Find the top chiropractors in the Des Moines area or get your business listed in the directory.";
+      "DSM Chiropractors. Find the Top Des Moines Chiropractors or get your business listed in the directory and turn casual browsers into paying clients.";
     const metaUrl = "https://www.dsmchiropractors.com/";
+    const metaKeywords = "DSM Chiropractors, Des Moines Chiropractors";
 
     useMeta({
       title: metaTitle,
       description: metaDescription,
+      keywords: metaKeywords,
       link: [{ rel: "canonical", href: metaUrl }],
       meta: [
         { property: "og:title", vmid: "og:title", content: metaTitle },

@@ -11,7 +11,7 @@
             uppercase
           "
         >
-          Directory of Des Moines Chiropractors
+          Directory of Top Des Moines Chiropractors
         </h1>
         <p
           class="
@@ -68,9 +68,9 @@ export default {
   setup() {
     const store = useStore();
 
-    const metaTitle = "Directory for DSM Chiropractors";
+    const metaTitle = "Directory of Top Des Moines Chiropractors";
     const metaDescription =
-      "Directory for DSM Chiropractors. Find the top chiropractors in the Des Moines area to manage pain, prevent injury, and start living again.";
+      "Directory of DSM Chiropractors. Find the Top Des Moines Chiropractors to manage pain, prevent injury, and start living again.";
     const metaUrl = "https://www.dsmchiropractors.com/directory/";
 
     useMeta({

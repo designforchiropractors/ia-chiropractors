@@ -100,7 +100,7 @@ export default {
   setup() {
     const store = useStore();
 
-    const metaTitle = "Terms & Conditions for DSM Chiropractors";
+    const metaTitle = "Terms & Conditions for Des Moines Chiropractors";
     const metaDescription =
       "By visiting DSM Chiropractors, you agree to be bound by our Terms & Conditions and use this site accordingly.";
     const metaUrl = "https://www.dsmchiropractors.com/terms-conditions/";
