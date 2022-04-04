@@ -114,7 +114,7 @@ export default {
   setup() {
     const store = useStore();
 
-    const metaTitle = "Privacy Policy for DSM Chiropractors";
+    const metaTitle = "Privacy Policy for Des Moines Chiropractors";
     const metaDescription =
       "The Privacy Policy that governs online information collection practices for visiting DSM Chiropractors.";
     const metaUrl = "https://www.dsmchiropractors.com/privacy-policy/";
