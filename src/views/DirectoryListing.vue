@@ -11,7 +11,6 @@
       bg-white
     "
   >
-
     <div class="relative w-full h-64 lg:h-full">
       <img
         class="absolute h-full w-full object-cover"
@@ -25,82 +24,97 @@
         {{ formatName(chiropractor) }}
       </h3>
       <div class="flex gap-x-8 mb-4">
-        <div>
+        <div v-if="chiropractor.experience != ''">
           <h4 class="uppercase font-semibold text-xs text-gray-400 mb-1">
             Experience
           </h4>
-          <span class="font-xl font-bold text-gray-800">{{ chiropractor.experience }} years</span>
+          <span class="font-xl font-bold text-gray-800"
+            >{{ chiropractor.experience }} years</span
+          >
         </div>
-        <div>
+        <div v-if="chiropractor.location != ''">
           <h4 class="uppercase font-semibold text-xs text-gray-400 mb-1">
-            {{ chiropractor.location }}
+            Location
           </h4>
-          <span class="font-xl font-bold text-gray-800">Green Point</span>
+          <span class="font-xl font-bold text-gray-800">{{
+            chiropractor.location
+          }}</span>
         </div>
-        <div>
+        <div v-if="chiropractor.focus != ''">
           <h4 class="uppercase font-semibold text-xs text-gray-400 mb-1">
             Patient Focus
           </h4>
-          <span class="font-xl font-bold text-gray-800">{{ chiropractor.focus }}</span>
+          <span class="font-xl font-bold text-gray-800">{{
+            chiropractor.focus
+          }}</span>
         </div>
       </div>
       <hr class="mb-8" />
       <div class="flex flex-col lg:grid lg:grid-cols-2 gap-8">
-        
-        <div>
+        <div v-if="chiropractor.education != ''">
           <h4 class="uppercase font-bold text-xs mb-2 text-green-700">
-            Services
+            Education
           </h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
-            commodi, corporis animi cumque quo ullam aspernatur molestias totam
-            tenetur consequuntur, nisi aliquam nulla repellendus? Ea dignissimos
-            enim odit cum quibusdam.
+            {{ chiropractor.education }}
           </p>
         </div>
-        <div>
-          <h4 class="uppercase font-bold text-xs mb-2 text-green-700">Extra</h4>
+        <div v-if="chiropractor.specialization != ''">
+          <h4 class="uppercase font-bold text-xs mb-2 text-green-700">
+            Specialization
+          </h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
-            commodi, corporis animi cumque quo ullam aspernatur molestias totam
-            tenetur consequuntur, nisi aliquam nulla repellendus? Ea dignissimos
-            enim odit cum quibusdam.
+            {{ chiropractor.specialization }}
           </p>
         </div>
-            
-        <div>
-          <h4 class="uppercase font-bold text-xs mb-2 text-green-700">Website</h4>
-          <p>TBD</p>
+
+        <div v-if="chiropractor.websiteUrl != '' && chiropractor.websiteName != ''">
+          <h4 class="uppercase font-bold text-xs mb-2 text-green-700">
+            Business
+          </h4>
+          <p>
+            <a :href="chiropractor.websiteUrl" target="_blank">
+              <u>
+                {{ chiropractor.websiteName }}
+              </u>
+            </a>
+          </p>
         </div>
-        <div class="flex flex-col justify-center mb-8 lg:mb-0">
-            <a
-                class="
-                inline-block
-                uppercase
-                text-center
-                font-semibold
-                px-6
-                py-3
-                shadow-sm
-                text-gray-50
-                bg-green-700
-                transition-colors
-                duration-300
-                hover:shadow-md hover:bg-gray-50 hover:text-gray-700
-                w-full
-                sm:w-3/4
-                md:w-1/2
-                lg:w-full
-                "
-                href="/"
-                target="_blank"
-                >Contact {{ formatName(chiropractor) }}</a
-            >
+        <div
+          v-if="chiropractor.contactUrl != ''"
+          class="flex flex-col justify-center mb-8 lg:mb-0"
+        >
+          <a
+            class="
+              inline-block
+              uppercase
+              text-center
+              font-semibold
+              px-6
+              py-3
+              shadow-sm
+              text-gray-50
+              bg-green-700
+              transition-colors
+              duration-300
+              hover:shadow-md hover:bg-gray-50 hover:text-gray-700
+              w-full
+              sm:w-3/4
+              md:w-1/2
+              lg:w-full
+            "
+            :href="chiropractor.contactUrl"
+            target="_blank"
+            >Contact {{ formatName(chiropractor) }}</a
+          >
         </div>
       </div>
     </div>
-    
-    <div class="col-start-1 col-end-2 p-6 lg:p-12 bg-gray-900">
+
+    <div
+      v-if="chiropractor.about != ''"
+      class="col-start-1 col-end-2 p-6 lg:p-12 bg-gray-900"
+    >
       <h3
         class="
           uppercase
@@ -117,7 +131,10 @@
         {{ chiropractor.about }}
       </p>
     </div>
-    <div class="col-start-2 col-end-3 p-6 pb-10 lg:pb-12 lg:p-12 bg-gray-900">
+    <div
+      v-if="chiropractor.extras != ''"
+      class="col-start-2 col-end-3 p-6 pb-10 lg:pb-12 lg:p-12 bg-gray-900"
+    >
       <h3
         class="
           uppercase
@@ -128,17 +145,16 @@
           text-gray-400
         "
       >
-        Qualifications
+        Extras
       </h3>
       <p class="max-w-prose text-gray-300">
-        {{ chiropractor.qualifications }}
+        {{ chiropractor.extras }}
       </p>
     </div>
 
-    <div class="w-full py-6 lg:py-12 text-center col-start-1 col-end-3">
+    <!--<div class="w-full py-6 lg:py-12 text-center col-start-1 col-end-3">
         Embed google map of location here
-    </div>
-
+    </div>-->
   </section>
 </template>
 

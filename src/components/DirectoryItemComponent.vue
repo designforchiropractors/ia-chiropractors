@@ -15,7 +15,7 @@
           {{ formatName(chiropractor) }}
         </h3>
         <div class="flex gap-x-8 mb-6">
-          <div>
+          <div v-if="chiropractor.experience != ''">
             <h4 class="uppercase font-semibold text-xs text-gray-400 mb-1">
               Experience
             </h4>
@@ -23,7 +23,7 @@
               {{ chiropractor.experience }} years
             </span>
           </div>
-          <div>
+          <div v-if="chiropractor.location != ''">
             <h4 class="uppercase font-semibold text-xs text-gray-400 mb-1">
               Location
             </h4>
@@ -31,7 +31,7 @@
               {{ chiropractor.location }}
             </span>
           </div>
-          <div>
+          <div v-if="chiropractor.focus != ''">
             <h4 class="uppercase font-semibold text-xs text-gray-400 mb-1">
               Patient Focus
             </h4>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <hr class="mb-8" />
-        <div class="mb-8">
+        <div v-if="chiropractor.services.length != 0" class="mb-8">
           <h4 class="uppercase font-semibold text-xs mb-4 text-gray-400">
             Services
           </h4>

@@ -48,8 +48,8 @@
           text-gray-50
         "
       >
-        Find a chiropractor near you to manage pain, prevent injury, and start
-        living again
+        Find top Des Moines chiropractors near you to manage pain, prevent
+        injury, and start living again
       </p>
     </div>
   </section>
