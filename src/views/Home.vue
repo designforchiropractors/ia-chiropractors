@@ -241,12 +241,10 @@ export default {
     const metaDescription =
       "DSM Chiropractors. Find the Top Des Moines Chiropractors or get your business listed in the directory and turn casual browsers into paying clients.";
     const metaUrl = "https://www.dsmchiropractors.com/";
-    const metaKeywords = "DSM Chiropractors, Des Moines Chiropractors";
 
     useMeta({
       title: metaTitle,
       description: metaDescription,
-      keywords: metaKeywords,
       link: [{ rel: "canonical", href: metaUrl }],
       meta: [
         { property: "og:title", vmid: "og:title", content: metaTitle },
