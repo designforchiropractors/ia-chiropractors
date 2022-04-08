@@ -1,6 +1,6 @@
 <template>
-  <section class="custom_bg-pattern pb-32">
-    <div class="lg:text-center py-8 md:py-12 lg:py-16">
+  <section class="py-16 md:py-20 bg-gray-100 custom_bg-pattern">
+    <div class="lg:max-w-7xl lg:mx-auto px-4 sm:px-6 lg:px-8 lg:text-center py-8 md:py-12 lg:py-16">
       <h1
         class="text-base text-green-700 font-semibold tracking-wide uppercase"
       >

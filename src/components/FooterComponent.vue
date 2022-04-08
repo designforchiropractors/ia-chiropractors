@@ -1,5 +1,5 @@
 <template>
-  <footer class="py-16 bg-white">
+  <footer class="py-8 lg:py-16 bg-white">
     <div
       class="
         flex flex-col
@@ -34,7 +34,7 @@
       <div class="flex text-gray-700"></div>
     </div>
 
-    <div class="flex flex-col items-center mt-12 text-xs text-gray-400">
+    <div class="flex flex-col items-center mt-6 lg:mt-12 text-xs text-gray-400">
       <div class="mb-4">
         <router-link
           class="mx-4 hover:text-gray-600"

@@ -1,5 +1,5 @@
 <template>
-  <div class="py-16 md:py-20 bg-gray-100 custom_bg-pattern">
+  <section class="py-16 md:py-20 bg-gray-100 custom_bg-pattern">
     <div class="lg:max-w-7xl lg:mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <h1
@@ -74,7 +74,7 @@
         <contact-form></contact-form>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
