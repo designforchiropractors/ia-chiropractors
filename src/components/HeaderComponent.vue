@@ -1,5 +1,5 @@
 <template>
-  <header class="relative w-full z-50 bg-white">
+  <header class="absolute w-full z-50 bg-white">
     <nav
       class="
         max-w-screen-xl
