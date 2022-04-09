@@ -115,7 +115,7 @@ export default createStore({
       {
         id: 4,
         caption: "Keep costs low",
-        text: "The fees for an online listing average about only $25 per month -- a very low cost for the high value of more web traffic and more clients."
+        text: "The fees for an online listing can be as low as $25 per month -- a very low cost for the high value of more web traffic and more clients."
       }
     ],
     blogPosts: [
