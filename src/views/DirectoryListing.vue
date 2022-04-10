@@ -4,8 +4,7 @@
       flex flex-col
       mx-4
       lg:grid lg:grid-cols-2
-      mt-16
-      mb-24
+      pt-12 md:pt-20
       2xl:max-w-screen-2xl 2xl:mx-auto
       shadow-lg
       bg-white
