@@ -22,6 +22,10 @@
       @apply underline;
     }
 
+    .blog-post-contents address a {
+      @apply no-underline;
+    }
+
     /* #endregion */
 
     /* #region Background Images */

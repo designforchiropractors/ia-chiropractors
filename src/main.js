@@ -17,7 +17,7 @@ const sanitizeOverrides = {
     "col", "colgroup", "table", "tbody", "td", "tfoot", "th", "thead", "tr" ],
     disallowedTagsMode: "discard",
     allowedAttributes: {
-        a: [ "href", "name", "target" ],
+        a: [ "href", "name", "target", "class" ],
         p: [ "class" ],
         img: [ "src", "srcset", "alt", "title", "width", "height", "loading" ],
         h1: [ "class" ],
@@ -30,7 +30,8 @@ const sanitizeOverrides = {
         dt: [ "class" ],
         dd: [ "class" ],
         ul: [ "class" ],
-        li: [ "class" ]
+        li: [ "class" ],
+        address: [ "class" ]
     },
 };
 
