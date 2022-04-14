@@ -68,11 +68,15 @@
         </div>
       </div>
 
-      <div class="max-w-prose mx-6 lg:mx-auto text-gray-600">
+      <div class="max-w-prose mx-6 mb-12 lg:mx-auto text-gray-600">
         <p class="mb-12 text-lg lg:text-xl font-semibold text-gray-700">
           {{ blogPost.postSnippet }}
         </p>
         <div class="blog-post-contents" v-html="$sanitize(blogPost.postContents)"></div>
+      </div>
+
+      <div v-if="blogPost.lastUpdateDate != null" class="max-w-prose mx-6 mb-12 lg:mx-auto text-gray-600 italic">
+        Last updated on {{ this.formatDate(blogPost.lastUpdateDate) }}
       </div>
     </article>
     <div class="w-full lg:flex">
