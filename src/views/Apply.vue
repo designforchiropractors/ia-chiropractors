@@ -5,7 +5,7 @@
         <h1
           class="text-base text-green-700 font-semibold tracking-wide uppercase"
         >
-          Get Listed among Top Des Moines Chiropractors
+          Apply to Be Listed among Top Des Moines Chiropractors
         </h1>
         <h2
           class="
@@ -70,6 +70,59 @@
         </dl>
       </div>
 
+    <div
+      class="
+        lg:max-w-7xl lg:mx-auto
+        px-4
+        sm:px-6
+        lg:px-8
+        py-8
+        md:py-12
+        lg:py-16
+      "
+    >
+      <div class="lg:text-center mb-12">
+        <h2
+          class="
+            mt-2
+            text-3xl
+            leading-8
+            font-extrabold
+            tracking-tight
+            text-gray-900
+            sm:text-4xl
+          "
+        >
+          Take a look at a listing customers will use to find you
+        </h2>
+
+        <h3 class="mt-16 mb-4 max-w-3xl text-xl text-gray-500 lg:mx-auto">
+            An example of how you would appear on <router-link :to="{ name: 'directory' }">our Directory page</router-link>
+        </h3>
+
+        <directory-item-component :chiropractor="demoChiropractor">
+        </directory-item-component>
+
+        <h3 class="mb-4 max-w-3xl text-xl text-gray-500 lg:mx-auto">
+            An example of how you would appear on your individualized listing page
+        </h3>
+
+        <div
+            class="
+            flex flex-col
+            mx-4
+            lg:grid lg:grid-cols-2
+            2xl:max-w-screen-2xl 2xl:mx-auto
+            shadow-lg
+            bg-white
+            "
+        >
+            <directory-listing-component :chiropractor="demoChiropractor">
+            </directory-listing-component>
+        </div>
+      </div>
+    </div>
+
       <div class="w-full lg:flex bg-gray-100">
         <contact-form></contact-form>
       </div>
@@ -84,15 +137,44 @@ import { useStore } from "vuex";
 
 import ListingBenefit from "@/components/ListingBenefit.vue";
 import ContactForm from "@/components/ContactForm.vue";
+import DirectoryItemComponent from "@/components/DirectoryItemComponent";
+import DirectoryListingComponent from "@/components/DirectoryListingComponent";
 
 export default {
   name: "apply",
   components: {
     ListingBenefit,
     ContactForm,
+    DirectoryItemComponent,
+    DirectoryListingComponent
   },
   setup() {
     const store = useStore();
+
+    const demoChiropractor = {
+      firstName: "This Could",
+      lastName: "Be You",
+      experience: 15,
+      location: "Your Location",
+      focus: "Your Focus",
+      services: [
+        "Potential clients end up here",
+        "So tell them what you do",
+        "And grow your business",
+      ],
+      picture: "this-could-be-you.jpg",
+      contactUrl: "#",
+      websiteName: "Link to Your Business",
+      websiteUrl: "#",
+      education:
+        "Take this space to tell your potential clients about your educational background. What degree do you have? Where did you receive it? Were you magna cum laude? Summa cum laude?",
+      specialization:
+        "Do you have a particular specialization? Does your practice focus on rehabilitation? Do you use a particular technology, methodology, etc? Tell potential clients what sets you apart.",
+      about:
+        "Make yourself more personable and relatable. Tell your potential clients about your family, hobbies, passions, and more. The more a client can relate to you, the more motivated they will be to come visit you.",
+      extras:
+        "Perhaps you have something else you would like potential patients to know. Add anything extra that you want to say right here.",
+    };
 
     const metaTitle = "Apply to Be Listed among Top Des Moines Chiropractors";
     const metaDescription =
@@ -137,7 +219,7 @@ export default {
     });
 
     const listingBenefits = computed(() => store.state.listingBenefits);
-    return { listingBenefits };
+    return { demoChiropractor, listingBenefits };
   },
 };
 </script>

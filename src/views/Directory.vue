@@ -1,7 +1,7 @@
 <template>
-  <section class="custom_bg-pattern py-16 md:py-20">
+  <section class="custom_bg-pattern pt-16 md:pt-20">
     <div class="max-w-screen-lg mx-auto py-8 md:py-12 lg:py-16">
-      <div class="mb-16 lg:mb-24 lg:text-center">
+      <div class="mb-12 lg:mb-16 lg:text-center">
         <h1
           class="
             mx-4
