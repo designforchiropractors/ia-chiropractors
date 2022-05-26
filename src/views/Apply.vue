@@ -121,6 +121,9 @@
             </directory-listing-component>
         </div>
       </div>
+
+      <subscription-component></subscription-component>
+
     </div>
 
       <div class="w-full lg:flex bg-gray-100">
@@ -139,6 +142,7 @@ import ListingBenefit from "@/components/ListingBenefit.vue";
 import ContactForm from "@/components/ContactForm.vue";
 import DirectoryItemComponent from "@/components/DirectoryItemComponent";
 import DirectoryListingComponent from "@/components/DirectoryListingComponent";
+import SubscriptionComponent from "@/components/SubscriptionComponent";
 
 export default {
   name: "apply",
@@ -146,7 +150,8 @@ export default {
     ListingBenefit,
     ContactForm,
     DirectoryItemComponent,
-    DirectoryListingComponent
+    DirectoryListingComponent,
+    SubscriptionComponent
   },
   setup() {
     const store = useStore();
