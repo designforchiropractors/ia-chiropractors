@@ -141,6 +141,8 @@
     <div class="text-sm my-6 text-gray-400">
         After completing your subscription, we will get in contact with you to finalize all the details of your custom listing. Your payment will be processed by Stripe and paid to Design for Chiropractors LLC, the owner and operator of this directory. 
     </div>
+
+    {{ env }}
   </div>
 </template>
 
@@ -152,11 +154,10 @@ export default {
   components: {
     SubscriptionBenefitComponent,
   },
-  setup() {
-      const isTest = process.env.NODE_ENV !== 'production';
+  setup() {      
+      const isTest = process.env.NODE_ENV === 'development';
       const monthlyUrl = isTest ? "https://buy.stripe.com/test_dR6g2t2bMaLz2Xe7ss" : "https://buy.stripe.com/dR66pvenK5IZ8Fi4gh";
       const annualUrl = isTest ? "https://buy.stripe.com/test_4gw17zdUu4nbapG001" : "https://buy.stripe.com/aEU29fgvS1sJdZCfYY";
-
       return { monthlyUrl, annualUrl }
   },
 };
