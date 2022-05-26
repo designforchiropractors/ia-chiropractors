@@ -155,10 +155,11 @@ export default {
     SubscriptionBenefitComponent,
   },
   setup() {      
+      const env = process.env.NODE_ENV;
       const isTest = process.env.NODE_ENV === 'development';
       const monthlyUrl = isTest ? "https://buy.stripe.com/test_dR6g2t2bMaLz2Xe7ss" : "https://buy.stripe.com/dR66pvenK5IZ8Fi4gh";
       const annualUrl = isTest ? "https://buy.stripe.com/test_4gw17zdUu4nbapG001" : "https://buy.stripe.com/aEU29fgvS1sJdZCfYY";
-      return { monthlyUrl, annualUrl }
+      return { monthlyUrl, annualUrl, env }
   },
 };
 </script>
