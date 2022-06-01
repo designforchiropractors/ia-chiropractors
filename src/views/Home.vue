@@ -17,7 +17,7 @@
       items-center
     "
   >
-    <div class="dsm_chiropractors h-full absolute top-0 left-0 right-0 z-0">
+    <div class="dsm_chiropractors h-full absolute top-12 left-0 right-0 z-0">
       <img
         :src="require('@/assets/dsm-chiropractors.jpg')"
         alt="The city of Des Moines"
