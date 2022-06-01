@@ -2,40 +2,7 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    chiropractors: [
-      {
-        firstName: "This Could",
-        lastName: "Be You",
-        experience: 15,
-        location: "Your Location",
-        focus: "Your Focus",
-        services: ["Potential clients end up here", "So tell them what you do", "And grow your business" ],
-        picture: "this-could-be-you.jpg",
-        contactUrl: "mailto:support@designforchiropractors.com",
-        websiteName: "Design for Chiropractors",
-        websiteUrl: "https://www.designforchiropractors.com/",
-        education: "Take this space to tell your potential clients about your educational background. What degree do you have? Where did you receive it? Were you magna cum laude? Summa cum laude?",
-        specialization: "Do you have a particular specialization? Does your practice focus on rehabilitation? Do you use a particular technology, methodology, etc? Tell potential clients what sets you apart.",
-        about: "Make yourself more personable and relatable. Tell your potential clients about your family, hobbies, passions, and more. The more a client can relate to you, the more motivated they will be to come visit you.",
-        extras: "Perhaps you have something else you would like potential patients to know. Add anything extra that you want to say right here.",
-      },
-      {
-        firstName: "Sarah",
-        lastName: "Example",
-        experience: 6,
-        location: "West Des Moines",
-        focus: "Family",
-        services: ["Attend to something that hurts", "Make right something that was wrong", "Fix that aching shoulder of yours" ],
-        picture: "chiro-1.jpg",
-        contactUrl: "mailto:support@designforchiropractors.com",
-        websiteName: "Design for Chiropractors",
-        websiteUrl: "https://www.designforchiropractors.com/",
-        education: "Take this space to tell your potential clients about your educational background. What degree do you have? Where did you receive it? Were you magna cum laude? Summa cum laude?",
-        specialization: "Do you have a particular specialization? Does your practice focus on rehabilitation? Do you use a particular technology, methodology, etc? Tell potential clients what sets you apart.",
-        about: "Make yourself more personable and relatable. Tell your potential clients about your family, hobbies, passions, and more. The more a client can relate to you, the more motivated they will be to come visit you.",
-        extras: "Perhaps you have something else you would like potential patients to know. Add anything extra that you want to say right here.",
-      },
-    ],
+    chiropractors: [],
     navLinks: [
       {
         id: 1,

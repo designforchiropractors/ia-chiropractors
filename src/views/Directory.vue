@@ -43,7 +43,18 @@
         </p>
       </div>
 
+      <div v-if="chiropractors.length === 0" class="text-center">
+        <p class="text-lg lg:text-lg font-medium mb-6 text-gray-700">
+          Check back soon for new listings of Des Moines chiropractors!
+        </p>
+
+        <h2 class="text-xl lg:text-xl font-medium mb-6 text-gray-700">
+          Are you a chiropractor in the Des Moines area? Get ahead of the crowd and be the first to <router-link :to="{ name: 'apply' }" class="text-green-800">apply for a listing.</router-link>
+        </h2>
+      </div>
+
       <directory-item-component
+        v-else
         v-for="(chiropractor, index) in chiropractors"
         :chiropractor="chiropractor"
         :key="index"
