@@ -78,7 +78,9 @@
               {{ v$.business.$errors[0].$message }}
             </span>
 
-            <label htmlFor="application-email" class="application-label">Contact Email</label>
+            <label htmlFor="application-email" class="application-label"
+              >Contact Email</label
+            >
             <div>
               <input
                 type="email"
@@ -296,17 +298,6 @@
             <span v-if="v$.extras.$error">
               {{ v$.extras.$errors[0].$message }}
             </span>
-
-            <label htmlFor="application-picture" class="application-label"
-              >Picture</label
-            >
-            <div>
-              <input
-                type="file"
-                name="application-picture"
-                id="application-picture"
-              />
-            </div>
 
             <button
               type="submit"
