@@ -6,6 +6,7 @@ import Contact from "../views/Contact.vue";
 import Directory from "../views/Directory.vue";
 import TermsConditions from "../views/TermsConditions.vue";
 import PrivacyPolicy from "../views/PrivacyPolicy.vue";
+import ApplicationForm from "../views/ApplicationForm.vue";
 import BlogPost from "../views/BlogPost.vue";
 import DirectoryListing from "../views/DirectoryListing.vue";
 import NotFound from "../views/NotFound.vue";
@@ -56,6 +57,11 @@ const routes = [
     path: "/blog/:postLink/",
     name: "blogPost",
     component: BlogPost,
+  },
+  {
+    path: "/application-form/",
+    name: "application-form",
+    component: ApplicationForm
   },
   {
     path: "/notfound/",

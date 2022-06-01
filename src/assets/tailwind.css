@@ -14,6 +14,10 @@
     h3 {
       @apply font-serif;
     }
+
+    .mt-15 {
+      margin-top: 3.65rem;
+    }
     /* #endregion */
   
     /* #region SPECIAL */
@@ -34,7 +38,7 @@
     }
     /* #endregion */
   
-    /* #region Contact Form */
+    /* #region Custom Form Elements */
     /* "input-animated" class refers to input where text moves/changes on focus */
     form {
       @apply block mt-4 overflow-hidden;
@@ -46,6 +50,10 @@
   
     form div {
       @apply relative;
+    }
+
+    form .application-label {
+      @apply text-xs font-medium;
     }
   
     form .input-animated input {
@@ -98,7 +106,7 @@
     }
   
     form .input-animated input:valid + .label-name .content-name,
-    form .input-animated input:valid + .label-email .content-email {
+    form .input-animated input:valid + .label-email .content-email{
       color: var(--success);
     }
   
@@ -123,22 +131,37 @@
     form input:invalid {
       @apply shadow-none;
     }
+
+    #application input {
+      @apply w-full;
+    }
   
     /* TEXTAREA ONLY */
     form textarea {
       @apply mt-8 border border-gray-600;
     }
+
+    #application textarea,
+    #application input {
+      @apply mt-2 mb-4 border border-gray-600;
+    }
   
-    form textarea:focus {
+    form textarea:focus,
+    #application textarea:focus,
+    #application input:focus {
       @apply outline-none;
       box-shadow: inset 0px 0px 1px 1px var(--underline);
     }
   
-    form textarea:not(:placeholder-shown) {
+    form textarea:not(:placeholder-shown),
+    #application textarea:not(:placeholder-shown),
+    #application input:not(:placeholder-shown) {
       box-shadow: inset 0px 0px 1px 1px var(--error);
     }
-  
-    form textarea:valid {
+
+    form textarea:valid,
+    #application textarea:valid,
+    #application input:valid {
       box-shadow: inset 0px 0px 1px 1px var(--success);
     }
   
@@ -150,11 +173,13 @@
       @apply shadow-none;
     }
   
-    form textarea {
+    form textarea,
+    #application input {
       @apply text-gray-600 py-3 px-4;
     }
   
-    form textarea::placeholder {
+    form textarea::placeholder,
+    #application input::placeholder {
       @apply text-gray-500 text-sm;
     }
     /* #endregion */

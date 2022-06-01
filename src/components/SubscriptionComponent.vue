@@ -21,8 +21,9 @@
       Choose Your Plan
     </h1>
 
-    <div class="flex justify-evenly py-6">
-      <div>
+    <div class="md:flex md:flex-row
+      flex-wrap justify-evenly py-6">
+      <div class="p-4">
         <h2
           class="
             pb-8
@@ -39,6 +40,8 @@
         <dl
           class="
             space-y-10
+            md:text-left
+            text-center
             md:space-y-0 md:grid md:grid-cols-1 md:gap-x-16 md:gap-y-0
           "
         >
@@ -56,7 +59,7 @@
           ></subscription-benefit-component>
         </dl>
 
-        <div class="flex flex-wrap gap-8 justify-center mt-14">
+        <div class="flex flex-wrap gap-8 justify-center mt-15">
           <a
             :href="monthlyUrl"
             class="
@@ -78,7 +81,8 @@
           </a>
         </div>
       </div>
-      <div>
+
+      <div class="mt-12 md:mt-0 p-4 border-solid border-2 border-green-700">
         <h2
           class="
             pb-8
@@ -95,6 +99,8 @@
         <dl
           class="
             space-y-10
+            md:text-center
+            text-left
             md:space-y-0 md:grid md:grid-cols-1 md:gap-x-16 md:gap-y-0
           "
         >
