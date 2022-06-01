@@ -297,6 +297,17 @@
               {{ v$.extras.$errors[0].$message }}
             </span>
 
+            <label htmlFor="application-picture" class="application-label"
+              >Picture</label
+            >
+            <div>
+              <input
+                type="file"
+                name="application-picture"
+                id="application-picture"
+              />
+            </div>
+
             <button
               type="submit"
               id="submit-button"
