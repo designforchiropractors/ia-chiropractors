@@ -13,6 +13,7 @@
             data-netlify="true"
             autocomplete="off"
             netlify-honeypot="bot-field"
+            enctype="multipart/form-data"
             @submit.prevent="handleSubmit"
           >
             <input type="hidden" name="form-name" value="application" />
