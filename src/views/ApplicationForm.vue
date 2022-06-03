@@ -299,6 +299,19 @@
               {{ v$.extras.$errors[0].$message }}
             </span>
 
+            <label htmlFor="application-picture" class="application-label"
+              >Picture</label
+            >
+            <div>
+              <input
+                type="file"
+                name="application-picture"
+                id="application-picture"
+                placeholder="Picture"
+                accept=".png,.jpg,.svg"
+              />
+            </div>
+
             <button
               type="submit"
               id="submit-button"
@@ -448,6 +461,7 @@ export default {
       specialization: "",
       about: "",
       extras: "",
+      picture: null
     });
 
     const rules = computed(() => {
@@ -512,7 +526,7 @@ export default {
         extras: {
           maxLength: maxLength(500),
           minLength: minLength(10),
-        },
+        }
       };
     });
 
