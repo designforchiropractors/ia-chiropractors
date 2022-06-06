@@ -159,6 +159,7 @@ export default {
     const demoChiropractor = {
       firstName: "This Could",
       lastName: "Be You",
+      link: "kellie-hoover-iowa-family-chiropractic",
       experience: 15,
       location: "Your Location",
       focus: "Your Focus",
@@ -169,7 +170,7 @@ export default {
       ],
       picture: "this-could-be-you.jpg",
       contactUrl: "#",
-      websiteName: "Link to Your Business",
+      businessName: "Link to Your Business",
       websiteUrl: "#",
       education:
         "Take this space to tell your potential clients about your educational background. What degree do you have? Where did you receive it? Were you magna cum laude? Summa cum laude?",

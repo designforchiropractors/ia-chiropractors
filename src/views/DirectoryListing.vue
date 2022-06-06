@@ -40,7 +40,7 @@ export default {
     const chiropractors = computed(() => store.state.chiropractors);
 
     const chiropractor = chiropractors.value.find((item) => {
-      return ChiropractorService.formatLink(item) == route.params.directoryLink;
+      return item.link == route.params.directoryLink;
     });
 
     const chiropractorUrl =

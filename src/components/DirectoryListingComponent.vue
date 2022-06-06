@@ -1,7 +1,7 @@
 <template>
-    <div class="relative w-full h-64 lg:h-full">
+    <div class="relative w-full h-64 lg:h-full text-center">
       <img
-        class="absolute h-full w-full object-cover"
+        class="absolute h-full w-full sm:w-5/12 lg:w-full object-cover"
         :src="require('@/assets/' + chiropractor.picture)"
         :alt="formatName(chiropractor)"
       />
@@ -56,14 +56,14 @@
           </p>
         </div>
 
-        <div v-if="chiropractor.websiteUrl != '' && chiropractor.websiteName != ''">
+        <div v-if="chiropractor.websiteUrl != '' && chiropractor.businessName != ''">
           <h4 class="uppercase font-bold text-xs mb-2 text-green-700">
             Business
           </h4>
           <p>
             <a :href="chiropractor.websiteUrl" target="_blank">
               <u>
-                {{ chiropractor.websiteName }}
+                {{ chiropractor.businessName }}
               </u>
             </a>
           </p>

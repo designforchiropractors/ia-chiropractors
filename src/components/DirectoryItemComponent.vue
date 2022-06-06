@@ -83,7 +83,7 @@
             duration-300
             hover:shadow-md hover:bg-gray-50 hover:text-gray-700
           "
-          :to="{ name: 'directoryListing', params: { directoryLink: formatLink(chiropractor) } }"
+          :to="{ name: 'directoryListing', params: { directoryLink: chiropractor.link } }"
         >
           View Full Profile
         </router-link>
@@ -104,10 +104,7 @@ export default {
     const formatName = (chiropractor) => {
       return ChiropractorService.formatName(chiropractor);
     };
-    const formatLink = (chiropractor) => {
-      return ChiropractorService.formatLink(chiropractor);
-    };
-    return { formatName, formatLink }
+    return { formatName }
   },
 };
 </script>
