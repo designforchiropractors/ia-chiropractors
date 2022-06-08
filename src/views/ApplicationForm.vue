@@ -330,6 +330,7 @@
                 id="application-picture"
                 placeholder="A picture of yourself"
                 accept=".png,.jpg,.svg"
+                @change="handleFileUpload($event)"
               />
             </div>
 
@@ -566,10 +567,16 @@ export default {
       return response;
     };
 
+    var picture = null;
+    const handleFileUpload = (e) => {
+      picture = e.target.files[0];
+    };
+
     const handleSubmit = async (e) => {
       e.preventDefault();
       const form = document.getElementById("application");
       const formData = new FormData(form);
+      formData.append("picture", picture);
 
       fetch("/", {
         method: "POST",
@@ -591,6 +598,7 @@ export default {
       showSuccess,
       formState,
       v$,
+      handleFileUpload,
       handleSubmit,
     };
   },
