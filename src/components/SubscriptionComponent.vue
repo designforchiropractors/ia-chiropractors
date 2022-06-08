@@ -145,7 +145,7 @@
       </div>
     </div>
     <div class="text-sm my-6 text-gray-400">
-        After completing your subscription, we will get in contact with you to finalize all the details of your custom listing. Your payment will be processed by Stripe and paid to Design for Chiropractors LLC, the owner and operator of this directory. 
+        After completing your subscription, we will get in contact with you within 48 hours to finalize all the details of your custom listing before publishing it in our directory. Your payment will be processed by Stripe and paid to Design for Chiropractors LLC, the owner and operator of this directory. 
     </div>
   </div>
 </template>

@@ -1,6 +1,16 @@
 <template>
   <section class="py-16 md:py-20 bg-gray-100 custom_bg-pattern">
-    <div class="lg:max-w-7xl lg:mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 lg:py-16">
+    <div
+      class="
+        lg:max-w-7xl lg:mx-auto
+        px-4
+        sm:px-6
+        lg:px-8
+        py-8
+        md:py-12
+        lg:py-16
+      "
+    >
       <div class="lg:text-center">
         <h1
           class="text-base text-green-700 font-semibold tracking-wide uppercase"
@@ -70,61 +80,98 @@
         </dl>
       </div>
 
-    <div
-      class="
-        lg:max-w-7xl lg:mx-auto
-        px-4
-        sm:px-6
-        lg:px-8
-        py-8
-        md:py-12
-        lg:py-16
-      "
-    >
-      <div class="lg:text-center mb-12">
-        <h2
-          class="
-            mt-2
-            text-3xl
-            leading-8
-            font-extrabold
-            tracking-tight
-            text-gray-900
-            sm:text-4xl
-          "
-        >
-          Take a look at a listing customers will use to find you
-        </h2>
-
-        <h3 class="mt-16 mb-4 max-w-3xl text-xl text-gray-500 lg:mx-auto">
-            An example of how you would appear on <router-link :to="{ name: 'directory' }">our Directory page</router-link>
-        </h3>
-
-        <directory-item-component :chiropractor="demoChiropractor">
-        </directory-item-component>
-
-        <h3 class="mb-4 max-w-3xl text-xl text-gray-500 lg:mx-auto">
-            An example of how you would appear on your individualized listing page
-        </h3>
-
-        <div
+      <div
+        class="
+          lg:max-w-7xl lg:mx-auto
+          px-4
+          sm:px-6
+          lg:px-8
+          py-8
+          md:py-12
+          lg:py-16
+        "
+      >
+        <div class="lg:text-center mb-12">
+          <h2
             class="
-            flex flex-col
-            mx-4
-            lg:grid lg:grid-cols-2
-            2xl:max-w-screen-2xl 2xl:mx-auto
-            shadow-lg
-            bg-white
+              mt-2
+              text-3xl
+              leading-8
+              font-extrabold
+              tracking-tight
+              text-gray-900
+              sm:text-4xl
             "
-        >
+          >
+            Take a look at a listing customers will use to find you
+          </h2>
+
+          <h3 class="mt-16 mb-4 max-w-3xl text-xl text-gray-500 lg:mx-auto">
+            An example of how you would appear on
+            <router-link :to="{ name: 'directory' }"
+              >our Directory page</router-link
+            >
+          </h3>
+
+          <directory-item-component :chiropractor="demoChiropractor">
+          </directory-item-component>
+
+          <h3 class="mb-4 max-w-3xl text-xl text-gray-500 lg:mx-auto">
+            An example of how you would appear on your individualized listing
+            page
+          </h3>
+
+          <div
+            class="
+              flex flex-col
+              mx-4
+              lg:grid lg:grid-cols-2
+              2xl:max-w-screen-2xl 2xl:mx-auto
+              shadow-lg
+              bg-white
+            "
+          >
             <directory-listing-component :chiropractor="demoChiropractor">
             </directory-listing-component>
+          </div>
+        </div>
+
+        <subscription-component></subscription-component>
+
+        <div>
+          <h1
+            class="
+              mb-6
+              text-3xl
+              lg:text-4xl
+              font-bold
+              text-gray-900 text-center
+            "
+          >
+            Interested, but not ready to commit?
+          </h1>
+        </div>
+
+        <div>
+          <h2
+            class="
+              pb-8
+              text-xl
+              lg:text-2xl
+              font-semibold
+              text-center
+              tracking-wide
+              text-gray-900
+            "
+          >
+            Fill out our
+            <router-link :to="{ name: 'application-form' }" class="underline text-green-800"
+              >application form</router-link
+            >
+            so we can get back to you with what your listing would look like before you sign up!
+          </h2>
         </div>
       </div>
-
-      <subscription-component></subscription-component>
-
-    </div>
 
       <div class="w-full lg:flex bg-gray-100">
         <contact-form></contact-form>
@@ -151,7 +198,7 @@ export default {
     ContactForm,
     DirectoryItemComponent,
     DirectoryListingComponent,
-    SubscriptionComponent
+    SubscriptionComponent,
   },
   setup() {
     const store = useStore();

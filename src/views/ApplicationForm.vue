@@ -4,7 +4,7 @@
       <div class="flex justify-center">
         <div>
           <h2 class="text-xl lg:text-xl font-medium mb-8 text-gray-700">
-            Fill us in on the details!
+            We're happy to have you! Fill us in on the details!
           </h2>
           <form
             id="application"
@@ -71,7 +71,7 @@
                 minLength="2"
                 maxLength="80"
                 pattern="\S+.*"
-                placeholder="Business"
+                placeholder="The name of your business"
                 required
               />
             </div>
@@ -89,7 +89,7 @@
                 name="application-email"
                 v-model="formState.email"
                 required
-                placeholder="Contact email"
+                placeholder="A contact email so we can get back to you"
               />
             </div>
             <span v-if="v$.email.$error">
@@ -109,7 +109,7 @@
                 minLength="2"
                 maxLength="80"
                 pattern="\S+.*"
-                placeholder="Location"
+                placeholder="Location such as city, area, or neighborhood"
               />
             </div>
             <span v-if="v$.location.$error">
@@ -127,7 +127,7 @@
                 v-model="formState.experience"
                 maxLength="2"
                 numeric
-                placeholder="Experience in years"
+                placeholder="Your professional experience in years"
               />
             </div>
             <span v-if="v$.experience.$error">
@@ -146,7 +146,7 @@
                 minLength="2"
                 maxLength="80"
                 v-model="formState.patientFocus"
-                placeholder="Patient Focus"
+                placeholder="Any focus you have, e.g. prenatal chiropractic"
               ></textarea>
             </div>
             <span v-if="v$.patientFocus.$error">
@@ -165,7 +165,7 @@
                 minLength="2"
                 maxLength="80"
                 v-model="formState.service1"
-                placeholder="Service #1"
+                placeholder="Service #1, e.g. pediatric chiropractic"
               ></textarea>
             </div>
             <span v-if="v$.service1.$error">
@@ -180,7 +180,7 @@
                 minLength="2"
                 maxLength="80"
                 v-model="formState.service2"
-                placeholder="Service #2"
+                placeholder="Service #2, e.g. athletic injuries"
               ></textarea>
             </div>
             <span v-if="v$.service3.$error">
@@ -195,7 +195,7 @@
                 minLength="2"
                 maxLength="80"
                 v-model="formState.service3"
-                placeholder="Service #3"
+                placeholder="Service #3, e.g. shockwave therapy"
               ></textarea>
             </div>
             <span v-if="v$.service3.$error">
@@ -215,11 +215,31 @@
                 maxLength="80"
                 url
                 v-model="formState.website"
-                placeholder="Website URL"
+                placeholder="The URL for your business' website"
               ></textarea>
             </div>
             <span v-if="v$.website.$error">
               {{ v$.website.$errors[0].$message }}
+            </span>
+
+            <label htmlFor="application-contactUrl" class="application-label"
+              >Contact URL</label
+            >
+            <div>
+              <textarea
+                name="application-contactUrl"
+                id="application-contactUrl"
+                cols="40"
+                rows="2"
+                minLength="5"
+                maxLength="80"
+                url
+                v-model="formState.contactUrl"
+                placeholder="The URL for a contact form on your business' website, if you have one"
+              ></textarea>
+            </div>
+            <span v-if="v$.contactUrl.$error">
+              {{ v$.contactUrl.$errors[0].$message }}
             </span>
 
             <label htmlFor="application-education" class="application-label"
@@ -234,7 +254,7 @@
                 minLength="10"
                 maxLength="500"
                 v-model="formState.education"
-                placeholder="Education"
+                placeholder="Details on your educational background, degrees, awards, etc."
               ></textarea>
             </div>
             <span v-if="v$.education.$error">
@@ -255,7 +275,7 @@
                 minLength="10"
                 maxLength="500"
                 v-model="formState.specialization"
-                placeholder="Specialization"
+                placeholder="Details on any specialization(s) or methodologies you utilize"
               ></textarea>
             </div>
             <span v-if="v$.specialization.$error">
@@ -274,7 +294,7 @@
                 minLength="10"
                 maxLength="500"
                 v-model="formState.about"
-                placeholder="About"
+                placeholder="Details about you as a person, your interests, hobbies, etc."
               ></textarea>
             </div>
             <span v-if="v$.about.$error">
@@ -293,7 +313,7 @@
                 minLength="10"
                 maxLength="500"
                 v-model="formState.extras"
-                placeholder="Extras"
+                placeholder="Any extra information you may want to share"
               ></textarea>
             </div>
             <span v-if="v$.extras.$error">
@@ -308,7 +328,7 @@
                 type="file"
                 name="application-picture"
                 id="application-picture"
-                placeholder="Picture"
+                placeholder="A picture of yourself"
                 accept=".png,.jpg,.svg"
               />
             </div>
@@ -458,6 +478,7 @@ export default {
       service2: "",
       service3: "",
       website: "",
+      contactUrl: "",
       education: "",
       specialization: "",
       about: "",
@@ -508,6 +529,11 @@ export default {
           minLength: minLength(2),
         },
         website: {
+          maxLength: maxLength(80),
+          minLength: minLength(2),
+          url,
+        },
+        contactUrl: {
           maxLength: maxLength(80),
           minLength: minLength(2),
           url,

@@ -132,7 +132,7 @@
       @apply shadow-none;
     }
 
-    #application input {
+    #application input, textarea {
       @apply w-full;
     }
   
