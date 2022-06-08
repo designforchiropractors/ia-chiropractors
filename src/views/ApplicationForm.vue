@@ -567,20 +567,14 @@ export default {
       return response;
     };
 
-    var picture = null;
-    const handleFileUpload = (e) => {
-      picture = e.target.files[0];
-    };
-
     const handleSubmit = async (e) => {
       e.preventDefault();
       const form = document.getElementById("application");
       const formData = new FormData(form);
-      formData.append("picture", picture);
 
       fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        headers: { },
         body: new URLSearchParams(formData).toString(),
       })
         .then(handleErrors)
@@ -598,7 +592,6 @@ export default {
       showSuccess,
       formState,
       v$,
-      handleFileUpload,
       handleSubmit,
     };
   },
