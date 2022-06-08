@@ -482,8 +482,7 @@ export default {
       education: "",
       specialization: "",
       about: "",
-      extras: "",
-      picture: null
+      extras: ""
     });
 
     const rules = computed(() => {
