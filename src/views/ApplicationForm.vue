@@ -330,7 +330,6 @@
                 id="application-picture"
                 placeholder="A picture of yourself"
                 accept=".png,.jpg,.svg"
-                @change="handleFileUpload($event)"
               />
             </div>
 
