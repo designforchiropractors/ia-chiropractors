@@ -572,7 +572,7 @@ export default {
 
       fetch("/", {
         method: "POST",
-        body: new FormData(e.target),
+        body: formData,
       })
         .then(handleErrors)
         .then(() => {
