@@ -572,8 +572,7 @@ export default {
 
       fetch("/", {
         method: "POST",
-        headers: { },
-        body: new URLSearchParams(formData).toString(),
+        body: new FormData(e.target),
       })
         .then(handleErrors)
         .then(() => {
