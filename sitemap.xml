@@ -4,44 +4,68 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
   <loc>https://www.dsmchiropractors.com/</loc>
-  <lastmod>2022-04-13T00:42:34+00:00</lastmod>
+  <lastmod>2022-06-10T20:11:51+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.dsmchiropractors.com/apply/</loc>
-  <lastmod>2022-04-13T00:42:34+00:00</lastmod>
+  <lastmod>2022-06-10T20:11:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dsmchiropractors.com/contact/</loc>
-  <lastmod>2022-04-13T00:42:34+00:00</lastmod>
+  <lastmod>2022-06-10T20:11:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dsmchiropractors.com/blog/</loc>
-  <lastmod>2022-04-13T00:42:34+00:00</lastmod>
+  <lastmod>2022-06-10T20:11:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dsmchiropractors.com/directory/</loc>
-  <lastmod>2022-04-13T00:42:34+00:00</lastmod>
+  <lastmod>2022-06-10T20:11:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dsmchiropractors.com/privacy-policy/</loc>
-  <lastmod>2022-04-13T00:42:34+00:00</lastmod>
+  <lastmod>2022-06-10T20:11:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dsmchiropractors.com/terms-conditions/</loc>
-  <lastmod>2022-04-13T00:42:34+00:00</lastmod>
+  <lastmod>2022-06-10T20:11:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.dsmchiropractors.com/blog/quick-information-on-des-moines-chiropractors-in-2022/</loc>
-  <lastmod>2022-04-13T00:42:34+00:00</lastmod>
+  <loc>https://www.dsmchiropractors.com/directory/kellie-hoover-iowa-family-chiropractic/</loc>
+  <lastmod>2022-06-10T20:11:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+<url>
+  <loc>https://www.dsmchiropractors.com/application-form/</loc>
+  <lastmod>2022-06-10T20:11:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dsmchiropractors.com/blog/quick-information-on-des-moines-chiropractors-in-2022/</loc>
+  <lastmod>2022-06-10T20:11:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dsmchiropractors.com/directory/lydia-krzyzak-iowa-family-chiropractic/</loc>
+  <lastmod>2022-06-10T20:11:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.dsmchiropractors.com/directory/leilani-zinsli-iowa-family-chiropractic/</loc>
+  <lastmod>2022-06-10T20:11:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url
+
 </urlset>
