@@ -231,8 +231,8 @@ export default {
 
     const metaTitle = "Apply to Be Listed among Top Des Moines Chiropractors";
     const metaDescription =
-      "Apply to Be Listed on DSM Chiropractors among the Top Des Moines Chiropractors and turn casual browsers into paying clients.";
-    const metaUrl = "https://www.dsmchiropractors.com/apply/";
+      "Apply to Be Listed on Ankeny Chiropractors among the Top Des Moines Chiropractors and turn casual browsers into paying clients.";
+    const metaUrl = "https://www.Ankenychiropractors.com/apply/";
 
     useMeta({
       title: metaTitle,

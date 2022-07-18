@@ -107,7 +107,7 @@ export default {
     });
 
     const blogUrl =
-      "https://www.dsmchiropractors.com/blog/" + blogPost.postLink + "/";
+      "https://www.Ankenychiropractors.com/blog/" + blogPost.postLink + "/";
 
     useMeta({
       title: blogPost.postTitle,
@@ -118,7 +118,7 @@ export default {
           href:
             blogPost.postOrigin !== ""
               ? blogPost.postOrigin
-              : "https://www.dsmchiropractors.com/blog/" +
+              : "https://www.Ankenychiropractors.com/blog/" +
                 blogPost.postLink +
                 "/",
         },

@@ -44,14 +44,14 @@ export default {
     });
 
     const chiropractorUrl =
-      "https://www.dsmchiropractors.com/directory/" +
+      "https://www.Ankenychiropractors.com/directory/" +
       route.params.directoryLink +
       "/";
 
     useMeta({
       title: ChiropractorService.formatName(chiropractor),
       description:
-        "DSM Chiropractors: " + ChiropractorService.formatName(chiropractor),
+        "Ankeny Chiropractors: " + ChiropractorService.formatName(chiropractor),
       link: [
         {
           rel: "canonical",
@@ -68,7 +68,7 @@ export default {
           property: "og:description",
           vmid: "og:description",
           content:
-            "DSM Chiropractors: " +
+            "Ankeny Chiropractors: " +
             ChiropractorService.formatName(chiropractor),
         },
         { property: "og:type", vmid: "og:type", content: "website" },
@@ -82,7 +82,7 @@ export default {
           property: "twitter:title",
           vmid: "twitter:title",
           content:
-            "DSM Chiropractors: " +
+            "Ankeny Chiropractors: " +
             ChiropractorService.formatName(chiropractor),
         },
         { property: "twitter:card", vmid: "twitter:card", content: "summary" },
@@ -90,7 +90,7 @@ export default {
           property: "twitter:description",
           vmid: "twitter:description",
           content:
-            "DSM Chiropractors: " +
+            "Ankeny Chiropractors: " +
             ChiropractorService.formatName(chiropractor),
         },
         {

@@ -4,7 +4,7 @@
       <h1
         class="text-base text-green-700 font-semibold tracking-wide uppercase"
       >
-        Blog for DSM Chiropractors
+        Blog for Ankeny Chiropractors
       </h1>
       <h2
         class="
@@ -50,8 +50,8 @@ export default {
 
     const metaTitle = "Blog for Des Moines Chiropractors";
     const metaDescription =
-      "Blog for DSM Chiropractors. Advice, articles, and information focused on Des Moines Chiropractors and marketing their businesses.";
-    const metaUrl = "https://www.dsmchiropractors.com/blog/";
+      "Blog for Ankeny Chiropractors. Advice, articles, and information focused on Des Moines Chiropractors and marketing their businesses.";
+    const metaUrl = "https://www.Ankenychiropractors.com/blog/";
 
     useMeta({
       title: metaTitle,

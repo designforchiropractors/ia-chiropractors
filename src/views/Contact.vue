@@ -4,7 +4,7 @@
       <h1
         class="text-base text-green-700 font-semibold tracking-wide uppercase"
       >
-        Contact DSM Chiropractors
+        Contact Ankeny Chiropractors
       </h1>
       <h2
         class="
@@ -65,8 +65,8 @@ export default {
 
     const metaTitle = "Contact Des Moines Chiropractors";
     const metaDescription =
-      "Contact DSM Chiropractors. Inquire about our services or Des Moines Chiropractors by phone, e-mail, or contact form.";
-    const metaUrl = "https://www.dsmchiropractors.com/contact/";
+      "Contact Ankeny Chiropractors. Inquire about our services or Des Moines Chiropractors by phone, e-mail, or contact form.";
+    const metaUrl = "https://www.Ankenychiropractors.com/contact/";
 
     useMeta({
       title: metaTitle,

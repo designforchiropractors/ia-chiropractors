@@ -81,8 +81,8 @@ export default {
 
     const metaTitle = "Directory of Top Des Moines Chiropractors";
     const metaDescription =
-      "Directory of DSM Chiropractors. Find the Top Des Moines Chiropractors to manage pain, prevent injury, and start living again.";
-    const metaUrl = "https://www.dsmchiropractors.com/directory/";
+      "Directory of Ankeny Chiropractors. Find the Top Des Moines Chiropractors to manage pain, prevent injury, and start living again.";
+    const metaUrl = "https://www.Ankenychiropractors.com/directory/";
 
     useMeta({
       title: metaTitle,

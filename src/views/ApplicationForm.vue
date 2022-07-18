@@ -421,10 +421,10 @@ export default {
   setup() {
     const store = useStore();
 
-    const metaTitle = "Application to Be Listed on DSM Chiropractors";
+    const metaTitle = "Application to Be Listed on Ankeny Chiropractors";
     const metaDescription =
-      "Application to Be Listed on DSM Chiropractors. Complete this form to provide the details of your customized listing.";
-    const metaUrl = "https://www.dsmchiropractors.com/application-form/";
+      "Application to Be Listed on Ankeny Chiropractors. Complete this form to provide the details of your customized listing.";
+    const metaUrl = "https://www.Ankenychiropractors.com/application-form/";
 
     useMeta({
       title: metaTitle,

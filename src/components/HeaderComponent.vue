@@ -19,10 +19,10 @@
           <img
             src="../assets/favicon.svg"
             class="h-8"
-            alt="DSM Chiropractors"
+            alt="Ankeny Chiropractors"
           />
           <span class="ml-auto text-md font-bold lg:pt-1">
-            DSM Chiropractors
+            Ankeny Chiropractors
           </span>
         </router-link>
       </div>

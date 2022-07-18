@@ -4,8 +4,8 @@
       cover
       relative
       bg-gradient-to-r
-      from-green-700
-      to-gray-50
+      from-deep-red
+      to-gray-300
       px-4
       sm:px-8
       lg:px-16
@@ -17,7 +17,7 @@
       items-center
     "
   >
-    <div class="dsm_chiropractors h-full absolute top-12 left-0 right-0 z-0">
+    <div class="home-image h-full absolute top-12 left-0 right-0 z-0">
       <img
         :src="require('@/assets/dsm-chiropractors.jpg')"
         alt="The city of Des Moines"
@@ -237,10 +237,10 @@ export default {
   setup() {
     const store = useStore();
 
-    const metaTitle = "DSM Chiropractors";
+    const metaTitle = "Ankeny Chiropractors";
     const metaDescription =
-      "DSM Chiropractors. Find the Top Des Moines Chiropractors or get your business listed in the directory and turn casual browsers into paying clients.";
-    const metaUrl = "https://www.dsmchiropractors.com/";
+      "Ankeny Chiropractors. Find the Top Des Moines Chiropractors or get your business listed in the directory and turn casual browsers into paying clients.";
+    const metaUrl = "https://www.Ankenychiropractors.com/";
 
     useMeta({
       title: metaTitle,
