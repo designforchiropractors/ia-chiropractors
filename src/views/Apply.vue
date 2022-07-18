@@ -206,7 +206,7 @@ export default {
     const demoChiropractor = {
       firstName: "This Could",
       lastName: "Be You",
-      link: "kellie-hoover-iowa-family-chiropractic",
+      link: "rebecca-lake-shine-chiropractic-and-wellness",
       experience: 15,
       location: "Your Location",
       focus: "Your Focus",
