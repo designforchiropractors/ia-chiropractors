@@ -3,9 +3,9 @@
     <div class="flex-grow justify-center bg-white px-8 lg:px-20 py-20 lg:py-28">
       <div class="flex justify-center">
         <div>
-          <h2 class="text-xl lg:text-xl font-medium mb-8 text-gray-700">
+          <h1 class="text-xl lg:text-xl font-medium mb-8 text-gray-700">
             We're happy to have you! Fill us in on the details!
-          </h2>
+          </h1>
           <form
             id="application"
             name="application"
