@@ -60,7 +60,7 @@
             font-semibold
             text-center
             tracking-wide
-            text-gray-900
+            text-deeper-red
           "
         >
           How a Listing Benefits You
@@ -165,7 +165,7 @@
             "
           >
             Fill out our
-            <router-link :to="{ name: 'application-form' }" class="underline text-deeper-red"
+            <router-link :to="{ name: 'application-form' }" class="underline text-shallow-red"
               >application form</router-link
             >
             so we can get back to you with what your listing would look like before you sign up!
@@ -206,7 +206,7 @@ export default {
     const demoChiropractor = {
       firstName: "This Could",
       lastName: "Be You",
-      link: "rebecca-lake-shine-chiropractic-and-wellness",
+      link: "christopher-renze-renze-chiropractic",
       experience: 15,
       location: "Your Location",
       focus: "Your Focus",

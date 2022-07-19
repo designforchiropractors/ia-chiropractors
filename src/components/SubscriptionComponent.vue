@@ -160,8 +160,8 @@ export default {
   },
   setup() {      
       const isTest = process.env.NODE_ENV === 'development';
-      const monthlyUrl = isTest ? "https://buy.stripe.com/test_dR6g2t2bMaLz2Xe7ss" : "https://buy.stripe.com/dR66pvenK5IZ8Fi4gh";
-      const annualUrl = isTest ? "https://buy.stripe.com/test_4gw17zdUu4nbapG001" : "https://buy.stripe.com/aEU29fgvS1sJdZCfYY";
+      const monthlyUrl = isTest ? "https://buy.stripe.com/test_7sI8A103Ef1PgO4cMO" : "https://buy.stripe.com/cN2eW16Vi5IZ9JmaEG";
+      const annualUrl = isTest ? "https://buy.stripe.com/test_9AQ03vg2C3j7gO44gk" : "https://buy.stripe.com/fZebJPenKgnD8Fi9AD";
       return { monthlyUrl, annualUrl }
   },
 };

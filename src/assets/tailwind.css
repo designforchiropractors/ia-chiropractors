@@ -23,7 +23,11 @@
     /* #region SPECIAL */
 
     .blog-post-contents a {
-      @apply underline;
+      @apply underline text-shallow-red;
+    }
+
+    .blog-post-contents h2 {
+      @apply text-deeper-red;
     }
 
     .blog-post-contents address a {

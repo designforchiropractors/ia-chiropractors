@@ -61,7 +61,7 @@
             Business
           </h4>
           <p>
-            <a :href="chiropractor.websiteUrl" target="_blank">
+            <a :href="chiropractor.websiteUrl" target="_blank" class="text-shallow-red">
               <u>
                 {{ chiropractor.businessName }}
               </u>
