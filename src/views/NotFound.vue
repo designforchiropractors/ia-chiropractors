@@ -32,9 +32,9 @@ export default {
   setup() {
     const store = useStore();
 
-    const metaTitle = "404: DSM Chiropractors";
-    const metaDescription = "404 Page not found on DSM Chiropractors";
-    const metaUrl = "https://www.dsmchiropractors.com/notfound/";
+    const metaTitle = "404: Ankeny Chiropractors";
+    const metaDescription = "404 Page not found on Ankeny Chiropractors";
+    const metaUrl = "https://www.ankenychiropractors.com/notfound/";
 
     useMeta({
       title: metaTitle,

@@ -61,7 +61,7 @@
                   border border-gray-700
                 "
               >
-                <span class="font-bold text-xs text-green-700"> {{ index + 1 }} </span>
+                <span class="font-bold text-xs text-deep-red"> {{ index + 1 }} </span>
               </div>
               <li class="text-gray-700 flex justify-center items-center">
                 {{ service }}
@@ -78,7 +78,7 @@
             py-3
             shadow-sm
             text-gray-50
-            bg-green-700
+            bg-deep-red
             transition-colors
             duration-300
             hover:shadow-md hover:bg-gray-50 hover:text-gray-700

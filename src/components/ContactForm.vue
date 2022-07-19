@@ -88,10 +88,10 @@
               lg:mb-0
               focus:ring-4 focus:ring-blue-300
               text-gray-50
-              bg-green-700
+              bg-deep-red
               transition-colors
               duration-300
-              hover:shadow-md hover:bg-gray-100 hover:text-green-700
+              hover:shadow-md hover:bg-gray-100 hover:text-deep-red
             "
           >
             Send Message

@@ -5,7 +5,7 @@
         <h1
           class="
             mx-4
-            text-base text-green-700
+            text-base text-deep-red
             font-semibold
             tracking-wide
             uppercase

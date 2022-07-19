@@ -2,7 +2,7 @@
   <!-- Start of Privacy Policy text-->
   <section class="pt-24 pb-40 lg:pt-28 lg:pb-40 flex justify-center">
     <article class="max-w-screen-xl lg:mx-8">
-      <div class="inline-block p-3 lg:p-4 rounded-full mb-1 ml-5 bg-green-700">
+      <div class="inline-block p-3 lg:p-4 rounded-full mb-1 ml-5 bg-deep-red">
         <svg
           class="h-8 w-8"
           width="24"

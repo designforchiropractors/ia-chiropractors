@@ -22,7 +22,7 @@
     >
       <div class="absolute h-full overflow-hidden">
         <img
-          class="h-full w-full object-cover bg-green-700"
+          class="h-full w-full object-cover bg-deep-red"
           :src="require('@/assets/' + blogPost.postImage)"
           :alt="blogPost.postTitle"
         />

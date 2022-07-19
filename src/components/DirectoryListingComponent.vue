@@ -40,7 +40,7 @@
       <hr class="mb-8" />
       <div class="flex flex-col lg:grid lg:grid-cols-2 gap-8">
         <div v-if="chiropractor.education != ''">
-          <h4 class="uppercase font-bold text-xs mb-2 text-green-700">
+          <h4 class="uppercase font-bold text-xs mb-2 text-deep-red">
             Education
           </h4>
           <p>
@@ -48,7 +48,7 @@
           </p>
         </div>
         <div v-if="chiropractor.specialization != ''">
-          <h4 class="uppercase font-bold text-xs mb-2 text-green-700">
+          <h4 class="uppercase font-bold text-xs mb-2 text-deep-red">
             Specialization
           </h4>
           <p>
@@ -57,7 +57,7 @@
         </div>
 
         <div v-if="chiropractor.websiteUrl != '' && chiropractor.businessName != ''">
-          <h4 class="uppercase font-bold text-xs mb-2 text-green-700">
+          <h4 class="uppercase font-bold text-xs mb-2 text-deep-red">
             Business
           </h4>
           <p>
@@ -82,7 +82,7 @@
               py-3
               shadow-sm
               text-gray-50
-              bg-green-700
+              bg-deep-red
               transition-colors
               duration-300
               hover:shadow-md hover:bg-gray-50 hover:text-gray-700

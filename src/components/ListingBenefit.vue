@@ -14,7 +14,7 @@
         "
       >
         <svg
-          class="fill-current text-green-700 mt-1"
+          class="fill-current text-deep-red mt-1"
           width="24"
           height="18"
           viewBox="0 0 24 18"

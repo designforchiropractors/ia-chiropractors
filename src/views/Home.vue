@@ -5,7 +5,7 @@
       relative
       bg-gradient-to-r
       from-deep-red
-      to-gray-300
+      to-gray-50
       px-4
       sm:px-8
       lg:px-16
@@ -19,8 +19,8 @@
   >
     <div class="home-image h-full absolute top-12 left-0 right-0 z-0">
       <img
-        :src="require('@/assets/dsm-chiropractors.jpg')"
-        alt="The city of Des Moines"
+        :src="require('@/assets/ankeny-chiropractors.jpg')"
+        alt="The High Trestle Trail bridge in Ankeny"
         class="w-full h-full object-cover opacity-20"
       />
     </div>
@@ -209,7 +209,7 @@
             text-lg
             border-gray-100
             hover:bg-gray-100 hover:text-gray-900
-            bg-green-700
+            bg-deep-red
             text-gray-100
             hover:shadow-md
           "

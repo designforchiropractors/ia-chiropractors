@@ -24,7 +24,7 @@
         py-4
         rounded-tr-5xl
         text-gray-50
-        bg-green-700
+        bg-deep-red
       "
     >
       <svg

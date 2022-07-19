@@ -13,7 +13,7 @@
     >
       <div class="lg:text-center">
         <h1
-          class="text-base text-green-700 font-semibold tracking-wide uppercase"
+          class="text-base text-deep-red font-semibold tracking-wide uppercase"
         >
           Apply to Be Listed among Top Des Moines Chiropractors
         </h1>

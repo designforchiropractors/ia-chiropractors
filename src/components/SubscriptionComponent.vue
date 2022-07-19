@@ -82,7 +82,7 @@
         </div>
       </div>
 
-      <div class="mt-12 md:mt-0 p-4 border-solid border-2 border-green-700">
+      <div class="mt-12 md:mt-0 p-4 border-solid border-2 border-deep-red">
         <h2
           class="
             pb-8
