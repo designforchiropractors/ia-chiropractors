@@ -108,7 +108,6 @@
               border
               rounded-sm
               border-shallow-red
-              bg-ankeny-gold
               text-shallow-red
             "
           >
