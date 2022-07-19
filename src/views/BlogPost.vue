@@ -51,7 +51,7 @@
                   {{ blogPost.authorName }}
                 </span>
                 <span class="block text-sm font-medium text-gray-50">
-                  {{ this.formatDate(blogPost.postDate) }}
+                  <!--{{ this.formatDate(blogPost.postDate) }}-->
                 </span>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default {
     });
 
     const blogUrl =
-      "https://www.Ankenychiropractors.com/blog/" + blogPost.postLink + "/";
+      "https://www.ankenychiropractors.com/blog/" + blogPost.postLink + "/";
 
     useMeta({
       title: blogPost.postTitle,
@@ -118,7 +118,7 @@ export default {
           href:
             blogPost.postOrigin !== ""
               ? blogPost.postOrigin
-              : "https://www.Ankenychiropractors.com/blog/" +
+              : "https://www.ankenychiropractors.com/blog/" +
                 blogPost.postLink +
                 "/",
         },

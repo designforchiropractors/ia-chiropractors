@@ -44,7 +44,7 @@ export default {
     });
 
     const chiropractorUrl =
-      "https://www.Ankenychiropractors.com/directory/" +
+      "https://www.ankenychiropractors.com/directory/" +
       route.params.directoryLink +
       "/";
 

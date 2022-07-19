@@ -63,10 +63,10 @@ export default {
   setup() {
     const store = useStore();
 
-    const metaTitle = "Contact Des Moines Chiropractors";
+    const metaTitle = "Contact Ankeny Chiropractors";
     const metaDescription =
-      "Contact Ankeny Chiropractors. Inquire about our services or Des Moines Chiropractors by phone, e-mail, or contact form.";
-    const metaUrl = "https://www.Ankenychiropractors.com/contact/";
+      "Contact Ankeny Chiropractors. Inquire about our services or Ankeny Chiropractors by phone, e-mail, or contact form.";
+    const metaUrl = "https://www.ankenychiropractors.com/contact/";
 
     useMeta({
       title: metaTitle,

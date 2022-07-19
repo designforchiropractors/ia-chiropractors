@@ -34,7 +34,7 @@
               {{ blogPost.postCategory }}
             </span>
             <span class="text-gray-50 mx-2 font-medium text-sm">
-              {{ this.formatDate(blogPost.postDate) }}
+              <!--{{ this.formatDate(blogPost.postDate) }}-->
             </span>
           </div>
           <h2

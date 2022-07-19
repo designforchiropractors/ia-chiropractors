@@ -48,7 +48,7 @@
           text-gray-50
         "
       >
-        Find top Des Moines chiropractors near you to manage pain, prevent
+        Find top Ankeny chiropractors near you to manage pain, prevent
         injury, and start living again
       </p>
     </div>
@@ -190,7 +190,7 @@
       <p
         class="text-xl text-center mx-4 lg:mx-auto lg:w-2/3 mb-12 text-gray-700"
       >
-        Are you a chiropractor in the Des Moines metro area?
+        Are you a chiropractor in Ankeny or the surrounding area?
         <br />
         Get more clients through the door by getting listed in our directory!
       </p>
@@ -239,8 +239,8 @@ export default {
 
     const metaTitle = "Ankeny Chiropractors";
     const metaDescription =
-      "Ankeny Chiropractors. Find the Top Des Moines Chiropractors or get your business listed in the directory and turn casual browsers into paying clients.";
-    const metaUrl = "https://www.Ankenychiropractors.com/";
+      "Ankeny Chiropractors. Find the Top Ankeny Chiropractors or get your business listed in the directory and turn casual browsers into paying clients.";
+    const metaUrl = "https://www.ankenychiropractors.com/";
 
     useMeta({
       title: metaTitle,

@@ -24,7 +24,7 @@
       <div class="max-w-prose mx-6 lg:mx-auto text-gray-600 mt-12">
         <p class="mb-4 leading-relaxed">
           The following Privacy Policy governs the online information collection
-          practices of www.Ankenychiropractors.com (“we” or “us” or “Site”). By
+          practices of www.ankenychiropractors.com (“we” or “us” or “Site”). By
           visiting and using the Site, you agree that your use of our Site, and
           any dispute over privacy, is governed by this Privacy Policy. This
           Site strives to offer its visitors the many advantages of Internet
@@ -114,10 +114,10 @@ export default {
   setup() {
     const store = useStore();
 
-    const metaTitle = "Privacy Policy for Des Moines Chiropractors";
+    const metaTitle = "Privacy Policy for Ankeny Chiropractors";
     const metaDescription =
       "The Privacy Policy that governs online information collection practices for visiting Ankeny Chiropractors.";
-    const metaUrl = "https://www.Ankenychiropractors.com/privacy-policy/";
+    const metaUrl = "https://www.ankenychiropractors.com/privacy-policy/";
 
     useMeta({
       title: metaTitle,

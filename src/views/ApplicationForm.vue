@@ -424,7 +424,7 @@ export default {
     const metaTitle = "Application to Be Listed on Ankeny Chiropractors";
     const metaDescription =
       "Application to Be Listed on Ankeny Chiropractors. Complete this form to provide the details of your customized listing.";
-    const metaUrl = "https://www.Ankenychiropractors.com/application-form/";
+    const metaUrl = "https://www.ankenychiropractors.com/application-form/";
 
     useMeta({
       title: metaTitle,

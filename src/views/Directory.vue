@@ -11,7 +11,7 @@
             uppercase
           "
         >
-          Directory of Top Des Moines Chiropractors
+          Directory of Top Ankeny Chiropractors
         </h1>
         <p
           class="
@@ -45,11 +45,11 @@
 
       <div v-if="chiropractors.length === 0" class="text-center">
         <p class="text-lg lg:text-lg font-medium mb-6 text-gray-700">
-          Check back soon for new listings of Des Moines chiropractors!
+          Check back soon for new listings of Ankeny chiropractors!
         </p>
 
         <h2 class="text-xl lg:text-xl font-medium mb-6 text-gray-700">
-          Are you a chiropractor in the Des Moines area? Get ahead of the crowd and be the first to <router-link :to="{ name: 'apply' }" class="text-deeper-red">apply for a listing.</router-link>
+          Are you a chiropractor in the Ankeny area? Get ahead of the crowd and be the first to <router-link :to="{ name: 'apply' }" class="text-deeper-red">apply for a listing.</router-link>
         </h2>
       </div>
 
@@ -79,10 +79,10 @@ export default {
   setup() {
     const store = useStore();
 
-    const metaTitle = "Directory of Top Des Moines Chiropractors";
+    const metaTitle = "Directory of Top Ankeny Chiropractors";
     const metaDescription =
-      "Directory of Ankeny Chiropractors. Find the Top Des Moines Chiropractors to manage pain, prevent injury, and start living again.";
-    const metaUrl = "https://www.Ankenychiropractors.com/directory/";
+      "Directory of Ankeny Chiropractors. Find the Top Ankeny Chiropractors to manage pain, prevent injury, and start living again.";
+    const metaUrl = "https://www.ankenychiropractors.com/directory/";
 
     useMeta({
       title: metaTitle,

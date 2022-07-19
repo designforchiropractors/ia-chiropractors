@@ -15,7 +15,7 @@
         <h1
           class="text-base text-deep-red font-semibold tracking-wide uppercase"
         >
-          Apply to Be Listed among Top Des Moines Chiropractors
+          Apply to Be Listed among Top Ankeny Chiropractors
         </h1>
         <h2
           class="
@@ -229,10 +229,10 @@ export default {
         "Perhaps you have something else you would like potential patients to know. Add anything extra that you want to say right here.",
     };
 
-    const metaTitle = "Apply to Be Listed among Top Des Moines Chiropractors";
+    const metaTitle = "Apply to Be Listed among Top Ankeny Chiropractors";
     const metaDescription =
-      "Apply to Be Listed on Ankeny Chiropractors among the Top Des Moines Chiropractors and turn casual browsers into paying clients.";
-    const metaUrl = "https://www.Ankenychiropractors.com/apply/";
+      "Apply to Be Listed on Ankeny Chiropractors among the Top Ankeny Chiropractors and turn casual browsers into paying clients.";
+    const metaUrl = "https://www.ankenychiropractors.com/apply/";
 
     useMeta({
       title: metaTitle,

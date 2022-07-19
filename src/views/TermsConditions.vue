@@ -26,7 +26,7 @@
       <div class="max-w-prose mx-6 lg:mx-auto text-gray-600 mt-12">
         <h2 class="text-xl lg:text-2xl mt-12 mb-4 text-gray-600">General</h2>
         <p class="mb-4 leading-relaxed">
-          This website www.Ankenychiropractors.com (the “SITE”) is owned and
+          This website www.ankenychiropractors.com (the “SITE”) is owned and
           operated by Design for Chiropractors LLC (“COMPANY” “we” or “us”). By
           using the Site, you agree to be bound by these Terms of Service and to
           use the Site in accordance with these Terms of Service, our Privacy
@@ -100,10 +100,10 @@ export default {
   setup() {
     const store = useStore();
 
-    const metaTitle = "Terms & Conditions for Des Moines Chiropractors";
+    const metaTitle = "Terms & Conditions for Ankeny Chiropractors";
     const metaDescription =
       "By visiting Ankeny Chiropractors, you agree to be bound by our Terms & Conditions and use this site accordingly.";
-    const metaUrl = "https://www.Ankenychiropractors.com/terms-conditions/";
+    const metaUrl = "https://www.ankenychiropractors.com/terms-conditions/";
 
     useMeta({
       title: metaTitle,
