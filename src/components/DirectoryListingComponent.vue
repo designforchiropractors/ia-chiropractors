@@ -85,7 +85,7 @@
               bg-deep-red
               transition-colors
               duration-300
-              hover:shadow-md hover:bg-gray-50 hover:text-gray-700
+              hover:shadow-md hover:bg-ankeny-gold
               w-full
               sm:w-3/4
               md:w-1/2

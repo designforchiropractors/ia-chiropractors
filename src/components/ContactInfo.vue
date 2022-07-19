@@ -17,7 +17,7 @@
           "
         >
           <svg
-            class="text-green-800 fill-current"
+            class="text-deeper-red fill-current"
             width="18"
             height="18"
             viewBox="0 0 18 18"
@@ -44,7 +44,7 @@
               block
               text-xs
               font-medium
-              text-green-600
+              text-shallow-red
               uppercase
               tracking-widest
             "
@@ -72,7 +72,7 @@
         "
       >
         <svg
-          class="text-green-800 fill-current"
+          class="text-deeper-red fill-current"
           width="16"
           height="12"
           viewBox="0 0 16 12"
@@ -90,7 +90,7 @@
             block
             text-xs
             font-medium
-            text-green-600
+            text-shallow-red
             uppercase
             tracking-widest
           "
@@ -119,7 +119,7 @@
         "
       >
         <svg
-          class="text-green-800 fill-current"
+          class="text-deeper-red fill-current"
           width="18"
           height="18"
           viewBox="0 0 18 18"
@@ -149,7 +149,7 @@
             block
             text-xs
             font-medium
-            text-green-600
+            text-shallow-red
             uppercase
             tracking-widest
           "

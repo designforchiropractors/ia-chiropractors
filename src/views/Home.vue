@@ -5,7 +5,7 @@
       relative
       bg-gradient-to-r
       from-deep-red
-      to-gray-50
+      to-shallow-red
       px-4
       sm:px-8
       lg:px-16
@@ -21,7 +21,7 @@
       <img
         :src="require('@/assets/ankeny-chiropractors.jpg')"
         alt="The High Trestle Trail bridge in Ankeny"
-        class="w-full h-full object-cover opacity-20"
+        class="w-full h-full object-cover opacity-50"
       />
     </div>
 
@@ -151,7 +151,7 @@
             text-lg text-black
             border-gray-100
             bg-gray-200
-            hover:bg-gray-700 hover:text-gray-100 hover:shadow-md
+            hover:bg-ankeny-gold hover:text-gray-100 hover:shadow-md
           "
         >
           View the Directory
@@ -208,7 +208,7 @@
             duration-300
             text-lg
             border-gray-100
-            hover:bg-gray-100 hover:text-gray-900
+            hover:bg-ankeny-gold
             bg-deep-red
             text-gray-100
             hover:shadow-md

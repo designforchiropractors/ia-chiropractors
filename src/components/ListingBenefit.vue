@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="ml-4">
-      <dt class="text-lg leading-6 font-medium text-green-900">
+      <dt class="text-lg leading-6 font-medium text-deeper-red">
         {{ listingBenefit.caption }}
       </dt>
       <dd class="mt-2 text-base text-gray-700">

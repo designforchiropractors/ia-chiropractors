@@ -32,7 +32,7 @@
             font-semibold
             text-center
             tracking-wide
-            text-green-800
+            text-deeper-red
           "
         >
           Monthly Plan ($29.99/mo)
@@ -74,7 +74,7 @@
               text-lg text-black
               border-gray-100
               bg-gray-200
-              hover:bg-gray-700 hover:text-gray-100 hover:shadow-md
+              hover:bg-ankeny-gold hover:text-gray-100 hover:shadow-md
             "
           >
             Subscribe Monthly
@@ -91,7 +91,7 @@
             font-semibold
             text-center
             tracking-wide
-            text-green-800
+            text-deeper-red
           "
         >
           Annual Plan ($299.99/yr)
@@ -133,10 +133,10 @@
               font-medium
               transition-colors
               duration-300
-              text-lg text-black
+              text-lg text-gray-100
               border-gray-100
-              bg-gray-200
-              hover:bg-gray-700 hover:text-gray-100 hover:shadow-md
+              bg-shallow-red
+              hover:bg-ankeny-gold hover:shadow-md
             "
           >
             Subscribe Annually

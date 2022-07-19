@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'deep-red': '#8A2432'
+        'deep-red': '#8A2432',
+        'deeper-red': '#651A24',
+        'shallow-red': '#BF3144',
+        'ankeny-gold': '#EBA900'
       }
     },
   },

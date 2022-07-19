@@ -10,7 +10,7 @@
         opacity-60
         group-hover:opacity-80
         duration-300
-        group-hover:bg-green-800
+        group-hover:bg-deeper-red
         bg-gray-900
         z-10
       "

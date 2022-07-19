@@ -165,7 +165,7 @@
             "
           >
             Fill out our
-            <router-link :to="{ name: 'application-form' }" class="underline text-green-800"
+            <router-link :to="{ name: 'application-form' }" class="underline text-deeper-red"
               >application form</router-link
             >
             so we can get back to you with what your listing would look like before you sign up!

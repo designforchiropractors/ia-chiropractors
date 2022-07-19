@@ -351,7 +351,7 @@
                 bg-deep-red
                 transition-colors
                 duration-300
-                hover:shadow-md hover:bg-gray-100 hover:text-deep-red
+                hover:shadow-md hover:bg-ankeny-gold 
               "
             >
               Submit
@@ -367,9 +367,9 @@
                 font-medium
                 border
                 rounded-sm
-                border-green-500
-                bg-green-100
-                text-green-600
+                border-shallow-red
+                bg-ankeny-gold
+                text-shallow-red
               "
             >
               Thanks! We'll be in touch soon.
