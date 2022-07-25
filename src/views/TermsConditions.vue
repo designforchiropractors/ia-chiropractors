@@ -26,7 +26,7 @@
       <div class="max-w-prose mx-6 lg:mx-auto text-gray-600 mt-12">
         <h2 class="text-xl lg:text-2xl mt-12 mb-4 text-gray-600">General</h2>
         <p class="mb-4 leading-relaxed">
-          This website www.ankenychiropractors.com (the “SITE”) is owned and
+          This website www.iachiropractors.com (the “SITE”) is owned and
           operated by Design for Chiropractors LLC (“COMPANY” “we” or “us”). By
           using the Site, you agree to be bound by these Terms of Service and to
           use the Site in accordance with these Terms of Service, our Privacy
@@ -95,15 +95,15 @@ import { useMeta } from "vue-meta";
 import { useStore } from "vuex";
 
 export default {
-  name: "terms-conditions",
+  name: "TermsConditions",
   components: {},
   setup() {
     const store = useStore();
 
-    const metaTitle = "Terms & Conditions for Ankeny Chiropractors";
+    const metaTitle = "Terms & Conditions for IA Chiropractors";
     const metaDescription =
-      "By visiting Ankeny Chiropractors, you agree to be bound by our Terms & Conditions and use this site accordingly.";
-    const metaUrl = "https://www.ankenychiropractors.com/terms-conditions/";
+      "By visiting IA Chiropractors, you agree to be bound by our Terms & Conditions and use this site accordingly.";
+    const metaUrl = "https://www.iachiropractorsactors.com/terms-conditions/";
 
     useMeta({
       title: metaTitle,

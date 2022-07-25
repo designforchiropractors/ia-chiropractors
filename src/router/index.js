@@ -1,14 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import Apply from "../views/Apply.vue";
-import Blog from "../views/Blog.vue";
-import Contact from "../views/Contact.vue";
-import Directory from "../views/Directory.vue";
 import TermsConditions from "../views/TermsConditions.vue";
 import PrivacyPolicy from "../views/PrivacyPolicy.vue";
-import ApplicationForm from "../views/ApplicationForm.vue";
-import BlogPost from "../views/BlogPost.vue";
-import DirectoryListing from "../views/DirectoryListing.vue";
 import NotFound from "../views/NotFound.vue";
 
 const routes = [
@@ -19,53 +12,18 @@ const routes = [
     alias: ["/home", "/index.html", "/index.htm"],
   },
   {
-    path: "/apply/",
-    name: "apply",
-    component: Apply,
-  },
-  {
-    path: "/contact/",
-    name: "contact",
-    component: Contact,
-  },
-  {
-    path: "/directory/",
-    name: "directory",
-    component: Directory,
-  },
-  {
-    path: "/directory/:directoryLink/",
-    name: "directoryListing",
-    component: DirectoryListing,
-  },
-  {
     path: "/terms-conditions/",
-    name: "terms-conditions",
+    name: "TermsConditions",
     component: TermsConditions,
   },
   {
     path: "/privacy-policy/",
-    name: "privacy-policy",
+    name: "PrivacyPolicy",
     component: PrivacyPolicy,
   },
   {
-    path: "/blog/",
-    name: "blog",
-    component: Blog,
-  },
-  {
-    path: "/blog/:postLink/",
-    name: "blogPost",
-    component: BlogPost,
-  },
-  {
-    path: "/application-form/",
-    name: "application-form",
-    component: ApplicationForm
-  },
-  {
     path: "/notfound/",
-    name: "notfound",
+    name: "NotFound",
     component: NotFound,
   },
   {

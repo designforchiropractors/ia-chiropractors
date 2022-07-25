@@ -2,23 +2,20 @@ var PrerenderSpaPlugin = require('prerender-spa-plugin')
 var path = require('path')
 
 module.exports = {
- configureWebpack: config => {
-   if (process.env.NODE_ENV !== 'production') return
+  configureWebpack: config => {
+    if (process.env.NODE_ENV !== 'production') return
 
-   return {
-     plugins: [
-       new PrerenderSpaPlugin(
-         // Absolute path to compiled SPA
-         path.resolve(__dirname, 'dist'),
-         // List of routes to prerender
-         [
-            '/', '/apply', '/blog', '/contact', '/directory', '/privacy-policy', '/terms-conditions', '/application-form', '/notfound',
-            '/blog/5-reasons-your-business-should-be-listed-in-an-online-directory', '/blog/3-simple-ways-to-grow-your-chiropractor-business-online',
-            '/blog/why-netlify-the-simple-fast-and-secure-platform-for-developers', '/blog/top-standard-color-schemes-for-website-design',
-            '/directory/kellie-hoover-iowa-family-chiropractic'
-        ],
-       ),
-     ]
-   }
- }
+    return {
+      plugins: [
+        new PrerenderSpaPlugin(
+          // Absolute path to compiled SPA
+          path.resolve(__dirname, 'dist'),
+          // List of routes to prerender
+          [
+            '/', '/contact', '/privacy-policy', '/terms-conditions', '/notfound',
+          ],
+        ),
+      ]
+    }
+  }
 }

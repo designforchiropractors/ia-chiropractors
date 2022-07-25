@@ -1,57 +1,23 @@
 <template>
   <footer class="py-8 lg:py-16 bg-white">
-    <div
-      class="
-        flex flex-col
-        lg:flex-row
-        items-center
-        justify-between
-        mx-auto
-        max-w-screen-xl
-      "
-    >
-      <div class="flex items-center"></div>
-      <ul
-        class="
-          flex flex-col
-          lg:flex-row
-          items-center
-          text-sm
-          font-semibold
-          text-gray-500
-          py-12
-          lg:py-0
-        "
-      >
-        <footer-nav-link
-          v-for="navLink in navLinks"
-          :navLink="navLink"
-          :key="navLink.id"
-        >
-        </footer-nav-link>
-      </ul>
-
-      <div class="flex text-gray-700"></div>
-    </div>
-
     <div class="flex flex-col items-center mt-6 lg:mt-12 text-xs text-gray-400">
       <div class="mb-4">
         <router-link
           class="mx-4 hover:text-gray-600"
-          :to="{ name: 'privacy-policy' }"
+          :to="{ name: 'PrivacyPolicy' }"
         >
           Privacy Policy
         </router-link>
         <router-link
           class="mx-4 hover:text-gray-600"
-          :to="{ name: 'terms-conditions' }"
+          :to="{ name: 'TermsConditions' }"
         >
           Terms &amp; Conditions
         </router-link>
       </div>
       <span>
         <a
-          href="https://www.designforchiropractors.com"
+          href="https://www.designforchiropractors.com/"
           class="hover:text-gray-600"
           target="_blank"
         >
@@ -65,17 +31,14 @@
 <script>
 import { computed } from "vue";
 import { useStore } from "vuex";
-import FooterNavLink from "@/components/FooterNavLink";
 
 export default {
   name: "FooterComponent",
-  components: {
-    FooterNavLink,
-  },
+  components: { },
   setup() {
     const store = useStore();
-    const navLinks = computed(() => store.state.navLinks);
-    return { navLinks };
+    const sites = computed(() => store.state.sites);
+    return { sites };
   },
 };
 </script>

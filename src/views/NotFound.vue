@@ -27,14 +27,14 @@ import { useMeta } from "vue-meta";
 import { useStore } from "vuex";
 
 export default {
-  name: "notfound",
+  name: "NotFound",
   components: {},
   setup() {
     const store = useStore();
 
-    const metaTitle = "404: Ankeny Chiropractors";
-    const metaDescription = "404 Page not found on Ankeny Chiropractors";
-    const metaUrl = "https://www.ankenychiropractors.com/notfound/";
+    const metaTitle = "404: IA Chiropractors";
+    const metaDescription = "404 Page not found on IA Chiropractors";
+    const metaUrl = "https://www.iachiropractorsactors.com/notfound/";
 
     useMeta({
       title: metaTitle,

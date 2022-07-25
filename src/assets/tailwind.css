@@ -40,12 +40,6 @@
     }
 
     /* #endregion */
-
-    /* #region Background Images */
-    .chiropractor_select {
-      background: url('../assets/area.jpg');
-    }
-    /* #endregion */
   
     /* #region Custom Form Elements */
     /* "input-animated" class refers to input where text moves/changes on focus */

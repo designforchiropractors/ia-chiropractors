@@ -1,7 +1,7 @@
 <template>
   <metainfo>
     <template v-slot:title="{ content }">
-      {{ content ? `${content}` : `Ankeny Chiropractors` }}
+      {{ content ? `${content}` : `IA Chiropractors` }}
     </template>
   </metainfo>
 
