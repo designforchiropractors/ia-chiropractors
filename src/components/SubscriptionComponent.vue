@@ -23,7 +23,7 @@
 
     <div class="md:flex md:flex-row
       flex-wrap justify-evenly py-6">
-      <div class="p-4">
+      <div class="p-4 mt-half">
         <h2
           class="
             pb-8
@@ -35,8 +35,20 @@
             text-deeper-red
           "
         >
-          Monthly Plan ($29.99/mo)
+          Monthly Plan ($17.99/mo)
         </h2>
+        <h3
+          class="
+            pb-8
+            text-,d
+            lg:text-lg
+            font-semibold
+            text-center
+            tracking-wide
+          "
+        >
+          Normally <span class="line-through">$29.99/mo</span>
+        </h3>
         <dl
           class="
             space-y-10
@@ -46,20 +58,20 @@
           "
         >
           <subscription-benefit-component
+            :text="'SAVE 40% vs. regular monthly rate'"
+          ></subscription-benefit-component>
+          <subscription-benefit-component
             :text="'Appear in our directory'"
           ></subscription-benefit-component>
           <subscription-benefit-component
-            :text="'Custom listing page'"
+            :text="'Customized listing page'"
           ></subscription-benefit-component>
           <subscription-benefit-component
-            :text="'Billed monthly at $29.99'"
-          ></subscription-benefit-component>
-          <subscription-benefit-component
-            :text="'Cancel at any time'"
+            :text="'Auto-renew at SPECIAL monthly rate'"
           ></subscription-benefit-component>
         </dl>
 
-        <div class="flex flex-wrap gap-8 justify-center mt-15">
+        <div class="flex flex-wrap gap-8 justify-center mt-2">
           <a
             :href="monthlyUrl"
             class="
@@ -94,8 +106,20 @@
             text-deeper-red
           "
         >
-          Annual Plan ($299.99/yr)
+          Annual Plan ($149.99/yr)
         </h2>
+        <h3
+          class="
+            pb-8
+            text-,d
+            lg:text-lg
+            font-semibold
+            text-center
+            tracking-wide
+          "
+        >
+          Normally <span class="line-through">$299.99/yr</span>
+        </h3>
         <dl
           class="
             space-y-10
@@ -105,19 +129,16 @@
           "
         >
           <subscription-benefit-component
-            :text="'SAVE over 15% vs. monthly plan'"
+            :text="'SAVE 58% vs. regular monthly rate'"
           ></subscription-benefit-component>
           <subscription-benefit-component
             :text="'Appear in our directory'"
           ></subscription-benefit-component>
           <subscription-benefit-component
-            :text="'Custom listing page'"
+            :text="'Customized listing page'"
           ></subscription-benefit-component>
           <subscription-benefit-component
-            :text="'Billed annually at $299.99'"
-          ></subscription-benefit-component>
-          <subscription-benefit-component
-            :text="'Cancel at any time'"
+            :text="'Auto-renew at SPECIAL annual rate'"
           ></subscription-benefit-component>
         </dl>
 
@@ -160,8 +181,8 @@ export default {
   },
   setup() {      
       const isTest = process.env.NODE_ENV === 'development';
-      const monthlyUrl = isTest ? "https://buy.stripe.com/test_7sI8A103Ef1PgO4cMO" : "https://buy.stripe.com/cN2eW16Vi5IZ9JmaEG";
-      const annualUrl = isTest ? "https://buy.stripe.com/test_9AQ03vg2C3j7gO44gk" : "https://buy.stripe.com/fZebJPenKgnD8Fi9AD";
+      const monthlyUrl = isTest ? "https://buy.stripe.com/test_fZedUl2bMcTHeFW4go" : "https://buy.stripe.com/00geW193qb3j5t63cj";
+      const annualUrl = isTest ? "https://buy.stripe.com/test_9AQ2bDeYy6vj8hy8wD" : "https://buy.stripe.com/7sI5lr5Re3ARdZC5kq";
       return { monthlyUrl, annualUrl }
   },
 };

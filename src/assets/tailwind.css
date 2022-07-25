@@ -18,6 +18,11 @@
     .mt-15 {
       margin-top: 3.65rem;
     }
+    
+    .mt-half {
+      margin-top: 2px;
+    }
+
     /* #endregion */
   
     /* #region SPECIAL */
