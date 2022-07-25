@@ -23,7 +23,7 @@
 
     <div class="md:flex md:flex-row
       flex-wrap justify-evenly py-6">
-      <div class="p-4 mt-half">
+      <div class="p-4">
         <h2
           class="
             pb-8
