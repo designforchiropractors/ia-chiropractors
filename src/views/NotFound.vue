@@ -17,7 +17,7 @@
     <p class="text-xl text-center mx-4 lg:mx-auto lg:w-2/3 my-12 text-gray-700">
       Looks like you're a little lost!
       <br />
-      Click one of the links on the menu above to get back on your way.
+      Click the logo above to get back on your way.
     </p>
   </section>
 </template>
