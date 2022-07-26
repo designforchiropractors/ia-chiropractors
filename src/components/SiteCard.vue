@@ -1,7 +1,7 @@
 <template>
   <div class="group relative flex flex-col transition-all shadow-md">
     <div
-      :class="'absolute top-0 left-0 right-0 h-full opacity-70 group-hover:opacity-80 duration-300 group-hover:bg-gray-900 z-10 bg-' + site.color"
+      :class="site.class"
     ></div>
 
     <a
@@ -10,7 +10,7 @@
     >
       <div class="absolute h-full overflow-hidden">
         <img
-          class="w-full object-cover bg-green-700"
+          class="w-full object-cover"
           :src="require('@/assets/' + site.image)"
           :alt="site.description"
         />
