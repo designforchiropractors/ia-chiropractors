@@ -2,7 +2,7 @@
   <!-- Start of Terms and Conditions text-->
   <section class="pt-24 pb-40 lg:pt-28 lg:pb-40 flex justify-center">
     <article class="max-w-screen-xl lg:mx-8">
-      <div class="inline-block p-3 lg:p-4 rounded-lg mb-1 ml-5 bg-deep-red">
+      <div class="inline-block p-3 lg:p-4 rounded-lg mb-1 ml-5 bg-gray-900">
         <svg
           class="h-8 w-8"
           width="32"
@@ -103,7 +103,7 @@ export default {
     const metaTitle = "Terms & Conditions for IA Chiropractors";
     const metaDescription =
       "By visiting IA Chiropractors, you agree to be bound by our Terms & Conditions and use this site accordingly.";
-    const metaUrl = "https://www.iachiropractorsactors.com/terms-conditions/";
+    const metaUrl = "https://www.iachiropractors.com/terms-conditions/";
 
     useMeta({
       title: metaTitle,

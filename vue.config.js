@@ -12,7 +12,7 @@ module.exports = {
           path.resolve(__dirname, 'dist'),
           // List of routes to prerender
           [
-            '/', '/contact', '/privacy-policy', '/terms-conditions', '/notfound',
+            '/', '/privacy-policy', '/terms-conditions', '/notfound',
           ],
         ),
       ]

@@ -2,7 +2,7 @@
   <!-- Start of Privacy Policy text-->
   <section class="pt-24 pb-40 lg:pt-28 lg:pb-40 flex justify-center">
     <article class="max-w-screen-xl lg:mx-8">
-      <div class="inline-block p-3 lg:p-4 rounded-full mb-1 ml-5 bg-deep-red">
+      <div class="inline-block p-3 lg:p-4 rounded-full mb-1 ml-5 bg-gray-900">
         <svg
           class="h-8 w-8"
           width="24"
@@ -24,7 +24,7 @@
       <div class="max-w-prose mx-6 lg:mx-auto text-gray-600 mt-12">
         <p class="mb-4 leading-relaxed">
           The following Privacy Policy governs the online information collection
-          practices of www.iachiropractorsactors.com (“we” or “us” or “Site”). By
+          practices of www.iachiropractors.com (“we” or “us” or “Site”). By
           visiting and using the Site, you agree that your use of our Site, and
           any dispute over privacy, is governed by this Privacy Policy. This
           Site strives to offer its visitors the many advantages of Internet
@@ -117,7 +117,7 @@ export default {
     const metaTitle = "Privacy Policy for IA Chiropractors";
     const metaDescription =
       "The Privacy Policy that governs online information collection practices for visiting IA Chiropractors.";
-    const metaUrl = "https://www.iachiropractorsactors.com/privacy-policy/";
+    const metaUrl = "https://www.iachiropractors.com/privacy-policy/";
 
     useMeta({
       title: metaTitle,

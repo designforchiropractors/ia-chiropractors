@@ -1,28 +1,12 @@
 <template>
-  <section
-    id="sites"
-    class="
-      custom_bg-pattern
-      relative
-      md:flex md:flex-row
-      flex-wrap
-      justify-center
-      items-center
-      pt-32
-      pb-12
-      z-10
-      shadow-inner
-      bg-gray-200
-    "
-  >
-    <site-card
-      v-for="site in sites"
-      :site="site"
-      :key="site.id"
+  <section class="pt-16 pb-12 md:pt-20 bg-gray-100 custom_bg-pattern">
+    <div
+      id="sites"
+      class="grid lg:grid-cols-2 gap-8 max-w-screen-xl mt-8 mx-4 lg:mx-auto"
     >
-    </site-card>
+      <site-card v-for="site in sites" :site="site" :key="site.id"> </site-card>
+    </div>
   </section>
-
 </template>
 
 <script>

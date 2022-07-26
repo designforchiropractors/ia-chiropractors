@@ -34,7 +34,7 @@ export default {
 
     const metaTitle = "404: IA Chiropractors";
     const metaDescription = "404 Page not found on IA Chiropractors";
-    const metaUrl = "https://www.iachiropractorsactors.com/notfound/";
+    const metaUrl = "https://www.iachiropractors.com/notfound/";
 
     useMeta({
       title: metaTitle,
