@@ -17,7 +17,7 @@
             alt="IA Chiropractors"
           />
           <span class="ml-2 text-md font-bold lg:pt-1">
-            IA Chiropractors
+            <h1>IA Chiropractors</h1>
           </span>
         </router-link>
       </div>
