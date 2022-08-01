@@ -4,7 +4,7 @@
       id="sites"
       class="grid lg:grid-cols-2 gap-8 max-w-screen-xl mt-8 mx-4 lg:mx-auto"
     >
-      <site-card v-for="site in sites" :site="site" :key="site.id"> </site-card>
+      <site-card v-for="(site, index) in sites" :site="site" :key="index"> </site-card>
     </div>
   </section>
 </template>

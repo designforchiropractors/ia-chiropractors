@@ -8,7 +8,9 @@ module.exports = {
         'deeper-red': '#651A24',
         'shallow-red': '#BF3144',
         'ankeny-gold': '#EBA900',
-        'iacity-black': '#151515'
+        'iacity-black': '#151515',
+        'deep-blue': '#333976',
+        'tealish': '#00B1B0',
       }
     },
   },
