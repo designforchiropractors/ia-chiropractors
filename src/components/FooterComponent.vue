@@ -21,7 +21,7 @@
           class="hover:text-gray-600"
           target="_blank"
         >
-          &copy; Design for Chiropractors LLC 2022
+          &copy; Design for Chiropractors LLC {{ new Date().getFullYear() }}
         </a>
       </span>
     </div>
